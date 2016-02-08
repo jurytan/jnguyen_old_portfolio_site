@@ -1,0 +1,17 @@
+# Powered by Arvixe.com
+DirectoryIndex index.php index.cgi index.html
+ErrorDocument 401 "Unauthorized"
+ErrorDocument 403 "Forbidden"
+RewriteEngine On
+
+#### PERSISTENT CONTENT ####
+
+#### PERSISTENT CONTENT END ####
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ sitepro/$1 [L,QSA]
+
+#### PERSISTENT CONTENT ####
+
+
