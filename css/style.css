@@ -1,34 +1,19 @@
 @charset "utf-8";
 /* CSS Document */
 
-/*Navigation Bar*/ 
-#nav a 
-{
-	text-decoration: none;	
-}
-
-#nav ul
-{
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px;
-	list-style: none;
-	line-height: normal;
-}
-
-html, body 
-{
-	height: 100%;	
-}
-
-
 /*Footer*/
-#footer 
-{
-	overflow: hidden;
-	padding: 50px 0px 30px 0px;
-	position: absolute;
-	bottom: 0;
-	margin-left: auto;
-	margin-right: auto;
-}
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+  
+  nav ul li a:hover {
+	text-decoration:none;  
+  }
+ 
 
