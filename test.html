@@ -25,10 +25,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 </head>
-<div class="navbar-fixed">
+<div class="ho">
     <nav class="light-blue">
         <div class="nav-wrapper">
             <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#documents">Documents</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            <ul id="slide-out" class="side-nav">
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#aboutme">About Me</a></li>
@@ -42,7 +50,7 @@
 <div class="container">
     <header class="header center light-blue-text">
     <h1>Nguyening Code</h1>
-    </header>
+</header>
     <main>
     <div class="row center">
         <h5 class="header col s12 light">A look into the life of a programmer</h5>
@@ -51,8 +59,17 @@
     <p>Sorry for the state of the site right now. I've been busy at work, so I haven't had time to create the site from scratch. However, I will be slowly building this over time, so please excuse the mess in the meanwhile! </p>
     <div class="col-sm-4">
         <h3>Projects</h3>
-        <p>These are current code projects I'm working on! Check it out!</p>
-        <a class="waves-effect waves-light btn" href="#projModal">Click Here</a>
+      <p>These are current code projects I'm working on! Check it out!</p>
+      <a class="waves-effect waves-light btn" href="#modal1">Click Here</a>
+      <div id="modal1" class="modal">
+      	<div class="modal-content">
+            <h4>Coming soon...</h4>
+            <p>Uh oh! This page is under construction right now. Please check back at a later time and I promise there'll be more interesting things to look at. Thanks!</p>
+    	</div>
+    	<div class="modal-footer">
+      		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Okay</a>
+    	</div>
+	   </div>
     </div>
     <div class="col-sm-4">
         <h3>About Me</h3>
@@ -77,8 +94,8 @@
         </ul>
     </div>
     <div class="col-sm-4">
-        <h3>Something</h3>
-        <p>This is going to be a filler column for now...</p>
+      <h3>Something</h3>
+      <p>This is going to be a filler column for now...</p>
     </div>
 </div>
 </main>
@@ -98,14 +115,5 @@
     </div>
   </div>
 </footer>
-<div id="projModal" class="modal">
-    <div class="modal-content">
-      <h4>Coming soon...</h4>
-      <p>Uh oh! This page is under construction right now. Please check back at a later time and I promise there'll be more interesting things to look at. Thanks!</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Okay</a>
-    </div>
-  </div>
 </body>
 </html>

@@ -16,4 +16,11 @@
 	text-decoration:none;  
   }
  
+ .media-insert .modal {
+  max-height: 100%;
+  overflow: visible;
+}
+.media-insert .modal .modal-content {
+  text-align: center;
+}
 
