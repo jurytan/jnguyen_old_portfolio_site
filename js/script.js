@@ -6,10 +6,13 @@ $(document).ready(function(){
 		opacity: .5, // Opacity of modal background
 		in_duration: 300, // Transition in duration
 		out_duration: 200, // Transition out duration
+		ready: function() { alert('Ready'); }, // Callback for Modal open
+		complete: function() { alert('Closed'); } // Callback for Modal close
 	});
 	$('.button-collapse').sideNav({
       menuWidth: 300, // Default is 240
       edge: 'left', // Choose the horizontal origin
       closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
     });
+	$('.parallax').parallax();
 });
