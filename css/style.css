@@ -16,4 +16,6 @@
 	text-decoration:none;  
   }
 
-
+  .parallax-container {
+      height: "200px";
+    }
