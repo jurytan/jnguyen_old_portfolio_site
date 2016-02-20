@@ -11,9 +11,9 @@
   main {
     flex: 1 0 auto;
   }
-  
+
   nav ul li a:hover {
-	text-decoration:none;  
+	text-decoration:none;
   }
 
   .parallax-container {
@@ -47,11 +47,15 @@
    .input-field .prefix.active {
      color: #000;
    }
-   
+
    #profilepic {
-	   display: block;
-		max-width: 20%;   
+	  display: block;
+		max-width: 20%;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 3em;
+   }
+
+   #github, #linkedin {
+		max-width: 10%;
    }
