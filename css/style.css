@@ -13,7 +13,7 @@
   }
 
   nav ul li a:hover {
-	text-decoration:none;
+	   text-decoration:none;
   }
 
   .parallax-container {
@@ -46,6 +46,11 @@
    /* icon prefix focus color */
    .input-field .prefix.active {
      color: #000;
+   }
+
+   span {
+     text-align: center;
+     text-decoration: none;
    }
 
    #profilepic {
