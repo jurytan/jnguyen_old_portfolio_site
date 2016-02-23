@@ -67,6 +67,6 @@
     background: transparent;
    }
 
-   a:hover img {
+   #github:hover, #linkedin:hover {
      opacity: 1;
    }
