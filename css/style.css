@@ -63,4 +63,10 @@
 
    #github, #linkedin {
 		max-width: 10%;
+    opacity: 0.3;
+    background: transparent;
+   }
+
+   a:hover img {
+     opacity: 1;
    }
