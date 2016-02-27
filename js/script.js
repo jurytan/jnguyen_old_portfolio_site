@@ -12,5 +12,6 @@ $(document).ready(function(){
       edge: 'left', // Choose the horizontal origin
       closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
     });
+	$('.scrollspy').scrollSpy();
 	$('.parallax').parallax();
 });
