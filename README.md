@@ -16,9 +16,12 @@ Just run the test.html file to get the landing page. All libraries and files are
 - Fix timeline
 - Add in more content
 - Refactor layout of page
+- Parallax kinda wonky. Going to try a different lib
 - Create skills graph
 - Create calendar (?)
-- Fix parallax
-- Fix form at bottom
+- Fix form at bottom (PHP page for form submit?)
 - Do visual cleanup and fix color accents
 - Figure out transition between pages
+
+##Bugs
+- Scrollfire not working

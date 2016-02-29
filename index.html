@@ -85,7 +85,7 @@
                             <span class="card-title">About Me</span>
                             <p>My name is Jonathan Nguyen and I'm a programmer by profession! Here's some things about me:</p>
                             <br/>
-                            <ul class="collapsible hoverable" data-collapsible="accordion">
+                            <ul id="staggered-list-1" class="collapsible hoverable" data-collapsible="accordion">
                                 <li>
                                     <div class="collapsible-header"><i class="material-icons">assessment</i>Skills</div>
                                     <div class="collapsible-body">
@@ -116,7 +116,7 @@
                     <div class="card hoverable">
                         <div class="card-content">
                             <span class="card-title">Timeline</span>
-                            <ul class="collapsible" data-collapsible="accordion">
+                            <ul id="staggered-list-2" class="collapsible" data-collapsible="accordion">
                                 <li>
                                     <div class="collapsible-header"><i class="material-icons">assignment</i>School</div>
                                     <div class="collapsible-body"><p>Rutgers 2015 Graduate - Bachelors</p></div>
@@ -222,5 +222,14 @@
     </div>
   </div>
 </footer>
+<script>
+    var options = [
+      {selector: '#profilepic', offset: 50, callback: 'Materialize.toast("Welcome!", 1500); $("#call-1").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});' },
+      {selector: '#profilepic', offset: 50, callback: 'Materialize.fadeInImage("#profilepic"); $("#call-4").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});' },
+      {selector: '#staggered-list-1', offset: 10, callback: 'Materialize.showStaggeredList("#staggered-list-1"); $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});' },
+      {selector: '#staggered-list-2', offset: 10, callback: 'Materialize.showStaggeredList("#staggered-list-2"); $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});' }
+    ];
+    Materialize.scrollFire(options);
+</script>
 </body>
 </html>
