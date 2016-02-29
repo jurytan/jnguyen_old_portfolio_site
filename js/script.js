@@ -14,4 +14,5 @@ $(document).ready(function(){
     });
 	$('.scrollspy').scrollSpy();
 	$('.parallax').parallax();
+	$('.materialboxed').materialbox();
 });
