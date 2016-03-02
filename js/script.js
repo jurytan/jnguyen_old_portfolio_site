@@ -15,25 +15,29 @@ $(document).ready(function(){
 	$('.scrollspy').scrollSpy();
 	$('.parallax').parallax();
 	$('.materialboxed').materialbox();
-});
+	$.ajax({
+			url: 'https://api.github.com/repos/jnguyen7410/NguyeningCode',
+			type: 'GET',
+			dataType: 'json',
+			contentType: "application/json",
+			success: function(data){
+					var NC_lastUpdated = data.pushed_at;
+					var date = NC_lastUpdated.substring(0, 10);
+					var time = NC_lastUpdated.substring(11, 19);
+					document.getElementById("NC_lastUpdated").innerHTML = "Updated: " + date + " at " + time;
+			}
+	});
+	$.ajax({
+			url: 'https://api.github.com/repos/jnguyen7410/Give-N-Take',
+			type: 'GET',
+			dataType: 'json',
+			contentType: "application/json",
+			success: function(data){
+					var GnT_lastUpdated = data.pushed_at;
+					var date = GnT_lastUpdated.substring(0, 10);
+					var time = GnT_lastUpdated.substring(11, 19);
+					document.getElementById("GnT_lastUpdated").innerHTML = "Updated: " + date + " at " + time;
+			}
+	});
 
-;(function($) {
-  'use strict';
-  var $body = $('html, body'),
-      content = $('#main').smoothState({
-        // Runs when a link has been activated
-        onStart: {
-          duration: 250, // Duration of our animation
-          render: function (url, $container) {
-            // toggleAnimationClass() is a public method
-            // for restarting css animations with a class
-            content.toggleAnimationClass('is-exiting');
-            // Scroll user to the top
-            $body.animate({
-              scrollTop: 0
-            });
-          }
-        }
-      }).data('smoothState');
-      //.data('smoothState') makes public methods available
-})(jQuery);
+});
