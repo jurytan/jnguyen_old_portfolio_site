@@ -5,7 +5,7 @@ Source code for [NguyeningCode] (www.nguyeningcode.com)
 Portfolio website for myself, as well as a landing page for future web endeavors!
 
 ##Running It
-Just run the test.html file to get the landing page. All libraries and files are included in the repository, so everything should work.
+Just run the index.html file to get the landing page. All libraries and files are included in the repository, so everything should work.
 
 ##Features
 - Mobile ready
@@ -24,4 +24,4 @@ Just run the test.html file to get the landing page. All libraries and files are
 - Figure out transition between pages
 
 ##Bugs
-- Scrollfire not working
+- None so far!
