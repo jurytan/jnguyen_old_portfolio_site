@@ -1,5 +1,5 @@
 # NguyeningCode
-Source code for [NguyeningCode] (www.nguyeningcode.com)
+Source code for [NguyeningCode] (http://www.nguyeningcode.com)
 
 ##Introduction
 Portfolio website for myself, as well as a landing page for future web endeavors!
