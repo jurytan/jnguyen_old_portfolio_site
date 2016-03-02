@@ -24,7 +24,9 @@ $(document).ready(function(){
 					var NC_lastUpdated = data.pushed_at;
 					var date = NC_lastUpdated.substring(0, 10);
 					var time = NC_lastUpdated.substring(11, 19);
-					document.getElementById("NC_lastUpdated").innerHTML = "Updated: " + date + " at " + time;
+					if (document.getElementById("NC_lastUpdated") != null) {
+						document.getElementById("NC_lastUpdated").innerHTML = "Updated: " + date + " at " + time;
+					}
 			}
 	});
 	$.ajax({
@@ -36,7 +38,9 @@ $(document).ready(function(){
 					var GnT_lastUpdated = data.pushed_at;
 					var date = GnT_lastUpdated.substring(0, 10);
 					var time = GnT_lastUpdated.substring(11, 19);
-					document.getElementById("GnT_lastUpdated").innerHTML = "Updated: " + date + " at " + time;
+					if (document.getElementById("GnT_lastUpdated") != null) {
+						document.getElementById("GnT_lastUpdated").innerHTML = "Updated: " + date + " at " + time;	
+					}
 			}
 	});
 
