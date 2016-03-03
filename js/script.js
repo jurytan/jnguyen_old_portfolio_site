@@ -22,10 +22,11 @@ $(document).ready(function(){
 			contentType: "application/json",
 			success: function(data){
 					var NC_lastUpdated = data.pushed_at;
+					var dateFinal = convertUTCtoLocalDate(new Date(NC_lastUpdated));
 					var date = NC_lastUpdated.substring(0, 10);
 					var time = NC_lastUpdated.substring(11, 19);
 					if (document.getElementById("NC_lastUpdated") != null) {
-						document.getElementById("NC_lastUpdated").innerHTML = "Updated: " + date + " at " + time;
+						document.getElementById("NC_lastUpdated").innerHTML = "Updated: " + dateFinal.toLocaleString();
 					}
 			}
 	});
@@ -36,12 +37,24 @@ $(document).ready(function(){
 			contentType: "application/json",
 			success: function(data){
 					var GnT_lastUpdated = data.pushed_at;
+					var dateFinal = convertUTCtoLocalDate(new Date(GnT_lastUpdated));
 					var date = GnT_lastUpdated.substring(0, 10);
 					var time = GnT_lastUpdated.substring(11, 19);
 					if (document.getElementById("GnT_lastUpdated") != null) {
-						document.getElementById("GnT_lastUpdated").innerHTML = "Updated: " + date + " at " + time;	
+						document.getElementById("GnT_lastUpdated").innerHTML = "Updated: " + dateFinal.toLocaleString();
 					}
 			}
 	});
 
 });
+
+function convertUTCtoLocalDate (date) {
+	var result = new Date(date.getTime() + date.getTimezoneOffset() * 60 * 1000);
+
+	var offset = date.getTimezoneOffset() / 60;
+	var hours = date.getHours();
+
+	result.setHours(hours - offset);
+
+	return result;
+}
