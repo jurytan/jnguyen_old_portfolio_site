@@ -91,3 +91,8 @@ nav ul li a:hover {
 #NC_commits, #GnT_commits {
   display: inline-block;
 }
+
+footer p a {
+  text-decoration: none;
+  color: white;
+}
