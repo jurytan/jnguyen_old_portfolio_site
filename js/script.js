@@ -54,7 +54,7 @@ $(document).ready(function(){
 			var NC_commits = data[0].total;
 
 			if (document.getElementById("NC_commits") != null) {
-				document.getElementById("NC_commits").innerHTML = "COMMITS: " + NC_commits;
+				document.getElementById("NC_commits").innerHTML = NC_commits + " COMMITS";
 			}
 		}
 	});
@@ -67,7 +67,7 @@ $(document).ready(function(){
 			var GnT_commits = data[0].total;
 
 			if (document.getElementById("GnT_commits") != null) {
-				document.getElementById("GnT_commits").innerHTML = "COMMITS: " + GnT_commits;
+				document.getElementById("GnT_commits").innerHTML = GnT_commits + " COMMITS";
 			}
 		}
 	});
