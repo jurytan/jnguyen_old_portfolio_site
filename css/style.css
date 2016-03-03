@@ -80,3 +80,14 @@ nav ul li a:hover {
  #disappearing-img {
    opacity: 0;
  }
+
+#commit-icon {
+  display: inline-block;
+  width: 25px;
+  height: auto;
+  padding-right: 3px;
+}
+
+#NC_commits, #GnT_commits {
+  display: inline-block;
+}

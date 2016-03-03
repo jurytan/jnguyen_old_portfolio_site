@@ -45,5 +45,31 @@ $(document).ready(function(){
 					}
 			}
 	});
+	$.ajax({
+		url: 'https://api.github.com/repos/jnguyen7410/NguyeningCode/stats/contributors',
+		type: 'GET',
+		dataType: 'json',
+		contentType: "application/json",
+		success: function(data){
+			var NC_commits = data[0].total;
+
+			if (document.getElementById("NC_commits") != null) {
+				document.getElementById("NC_commits").innerHTML = "COMMITS: " + NC_commits;
+			}
+		}
+	});
+	$.ajax({
+		url: 'https://api.github.com/repos/jnguyen7410/Give-N-Take/stats/contributors',
+		type: 'GET',
+		dataType: 'json',
+		contentType: "application/json",
+		success: function(data){
+			var GnT_commits = data[0].total;
+
+			if (document.getElementById("GnT_commits") != null) {
+				document.getElementById("GnT_commits").innerHTML = "COMMITS: " + GnT_commits;
+			}
+		}
+	});
 
 });
