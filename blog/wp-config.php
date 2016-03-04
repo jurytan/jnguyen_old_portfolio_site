@@ -26,7 +26,7 @@ define('DB_NAME', 'jnguyen7_jtnwp');
 define('DB_USER', 'jnguyen7_jtnwp');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'PS292t!UJ-');
+define('DB_PASSWORD', 'v0SP(g7]U8');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -46,14 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '7u2bxp4bdb7oees6zbld5eijreik08qbqlirjzj6ee7xlwg6pgp2usb4ehbowoiw');
-define('SECURE_AUTH_KEY',  'irk8ryejc8cfdvbkqbll5oeydskw8dut8amrw3xu1rgm73dgfjyauc5kwoegrwar');
-define('LOGGED_IN_KEY',    '59rgpso93lmjpxo1pfbne6zxgxvqieg3qoycdh8sa07jfi0tlo24b39izbjq3nsy');
-define('NONCE_KEY',        '5xlavovrsswol89n8ipxwqxa8ctcgfk7daowhajnniebdmau5bagbgohloha7j44');
-define('AUTH_SALT',        'o75nbmzcidbapt0osonauzfuuxrgpdb5npajipifkx8q1bbolzlw6ehyqg9mubbk');
-define('SECURE_AUTH_SALT', 'hrpgzlbymb88xktwqxyi0zeoyimkv9gqwedzo9egbxrqhlvjrxsjetenkjj4e5tw');
-define('LOGGED_IN_SALT',   'p92ujzdmoidk8bwrman3hlpmnd0cegny6khoe7bblkj9q1nh5va1dhc0myvpmcnr');
-define('NONCE_SALT',       'j391gmb6ynkobrn4m5erxvbksmia9kaeuplyvziwbjz1ydttzpvs1wclzmxjjghu');
+define('AUTH_KEY',         'kiapdrjq7y4fjloewfzxbhq4apjfjbnvvboz84cs7zg6bjhtoerpzf6n6fwmi5yn');
+define('SECURE_AUTH_KEY',  'n6udapyk09da061dqc448m2xg7ddsxtws3zeknke24oyxmn1vxhf4x3lm51gegnq');
+define('LOGGED_IN_KEY',    '06ksmklrbywfuuzywdxy5vs6zfbyqlkcvgvzdbisuexsnna1r7abckncdrpllssx');
+define('NONCE_KEY',        'xitw518tgraeqm4iktiwi2u8ys1vmol02wfqwbdcfczmkd1s4tcmgu6ewxi4fhqz');
+define('AUTH_SALT',        '8ka9okcgovdbinuef0h9o9e0saja2ocjsho2s1jrqpr2r3lperrduyejmfldlcwm');
+define('SECURE_AUTH_SALT', 'fx1edszwjzwoh0offdre9onivi9xzyoztaxdbi1j8m7zww3adz1dsmxnbypzsklv');
+define('LOGGED_IN_SALT',   'nogtgnnh40eyliihqn75rzeusy4xmawikz80kjpfhsfl6tbgk9canww4glcuwcmv');
+define('NONCE_SALT',       '2kvo2ljftktbga5sztgyhqoxjzbsakl48v9jqwudexenxwsb128lbob7l6cs9ois');
 
 /**#@-*/
 
@@ -63,7 +63,7 @@ define('NONCE_SALT',       'j391gmb6ynkobrn4m5erxvbksmia9kaeuplyvziwbjz1ydttzpvs
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'jtnwp';
+$table_prefix  = 'jtnwp_';
 
 /**
  * For developers: WordPress debugging mode.
