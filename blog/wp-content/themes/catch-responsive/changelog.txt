@@ -1,0 +1,56 @@
+== Change log ==
+
+= 1.4 =
+* Bug Fixed: Featured page content structure
+* Bug Fixed: Featured page slider missing paragraph tag
+* Bug Fixed: Header Text only CSS change when not displaying site title and tagline
+* Bug Fixed: Metabox Options not saving properly
+* Bug Fixed: Single page/post image size issue
+* Bug Fixed: Fixed Slider height overlaps issue. Added Image Loader option on Featured Slider that specifies image-loading support
+
+= 1.3.1 [Merger verson 1.3] =
+* Bug Fixed: Featured page content title issue
+* Added Brazilian Portuguese translation pt_BR.po and pt_BR.mo
+* Bug Fixed: Featured content issues
+** Added missing link in title of Page
+** Remove extra link below the content
+
+= 1.2 =
+* Added French translation fr_FR.po and fr_FR.mo
+* Bug Fixed: Sidebar layout option
+* Removed irrelevant function catchresponsive_layout_condition_check() in catchresponsive-structure.php
+
+= 1.1 =
+* Added Swedish translation sv_SE.po and sv_SE.mo
+* Added viewport meta in catchresponsive_head function
+* Bug Fixed: Skype Social icon and open link in new window for email issues
+* Bug Fixed: Removed unnecessary function catchresponsive_responsive
+* Bug Fixed: Removed assistive-text from Featured Demo Slider ( Reported by bydlo )
+* Bug Fixed: Added jquery.cycle2.js.map ( Reported by tualatinweb )
+
+= 1.0.3 =
+* Bug Fixed: Featured Content Layout Type CSS issue
+* Bug Fixed: Promotion headline button issue
+* Bug Fixed: Color Scheme
+* Bug Fixed: Fixing CSS
+* Bug Fixed: added missing keyword _nx:1,2,4c and esc_html__ in language file catchresponsive.pot
+* Renamed CATCHBASE_* to CATHCRESPONSIVE_*
+* Removed irrelevant move_posts_home option
+* Removed irrelevant tag three-columns
+
+= 1.0.2 =
+* Added default search in header right section to match screenshot
+* Bug Fixed: Slider design
+* Bug Fixed: Secondary mobile colors
+* Bug Fixed: Dark color scheme
+* Bug Fixed: Responsive css
+* Bug Fixed: Replaced excerpt featured image with excerpt image-left in archive content layout
+* Bug Fixed: Error 404 page css
+* Bug Fixed: Archive/page layout conflicting css
+* Bug Fixed: Removed unused secondary sidebar
+
+= 1.0.1 =
+* New version of Catch Resposnive submitted to WordPress.org
+
+= 1.0 =
+* Submitted to WordPress.org
