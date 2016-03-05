@@ -11,6 +11,7 @@ Just run the index.html file to get the landing page. All libraries and files ar
 - Mobile ready
 - Materalize CSS (Pretty!)
 - Links to other profiles
+- Wordpress Blog
 
 ##To-Do
 - Fix timeline
@@ -22,6 +23,7 @@ Just run the index.html file to get the landing page. All libraries and files ar
 - Fix form at bottom (PHP page for form submit?)
 - Do visual cleanup and fix color accents
 - Figure out transition between pages
+- Try to recreate graph dashboard layout for portfolio
 
 ##Bugs
 - None so far!
