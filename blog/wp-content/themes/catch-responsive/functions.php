@@ -12,8 +12,11 @@
  */
 
 //define theme version
-if ( !defined( 'CATCHRESPONSIVE_THEME_VERSION' ) )
-define ( 'CATCHRESPONSIVE_THEME_VERSION', '1.4' );
+if ( !defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
+	$theme_data = wp_get_theme();
+	
+	define ( 'CATCHRESPONSIVE_THEME_VERSION', $theme_data->get( 'Version' ) );
+}
 
 /**
  * Implement the core functions

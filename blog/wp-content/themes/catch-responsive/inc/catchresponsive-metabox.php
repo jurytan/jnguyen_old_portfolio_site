@@ -90,9 +90,9 @@ class CatchresponsiveMetaBox {
 	    // Begin the field table and loop  ?>  
 	    <div id="catchresponsive-ui-tabs" class="ui-tabs">
 		    <ul class="catchresponsive-ui-tabs-nav" id="catchresponsive-ui-tabs-nav">
-		    	<li><a href="#frag1"><?php _e( 'Layout Options', 'catchresponsive' ); ?></a></li>
-		    	<li><a href="#frag3"><?php _e( 'Header Featured Image Options', 'catchresponsive' ); ?></a></li>
-		    	<li><a href="#frag4"><?php _e( 'Single Page/Post Image Layout ', 'catchresponsive' ); ?></a></li>
+		    	<li><a href="#frag1"><?php _e( 'Layout Options', 'catch-responsive' ); ?></a></li>
+		    	<li><a href="#frag3"><?php _e( 'Header Featured Image Options', 'catch-responsive' ); ?></a></li>
+		    	<li><a href="#frag4"><?php _e( 'Single Page/Post Image Layout ', 'catch-responsive' ); ?></a></li>
 		    </ul> 
 		    <div id="frag1" class="catch_ad_tabhead">
 		    	<table id="layout-options" class="form-table" width="100%">
@@ -218,6 +218,6 @@ class CatchresponsiveMetaBox {
 
 $catchresponsive_metabox = new CatchresponsiveMetaBox( 
 									'catchresponsive-options', 					//metabox id
-									__( 'Catchresponsive Options', 'catchresponsive' ), //metabox title
+									__( 'Catchresponsive Options', 'catch-responsive' ), //metabox title
 									array( 'page', 'post' )				//metabox post types
 									);

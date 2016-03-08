@@ -1,6 +1,6 @@
 === Catch Responsive ===
 
-Catch Responsive is an extremely flexible and customizable WordPress theme suitable for almost any kind of professional website. It is based on responsive design where each element has been carefully configured for perfect display on all devices and platforms. It is built in HTML5, CSS3 and WordPress Theme Customizer for real time customization. It comes with a wide variety of options so you can modify layout, styling, featured content, promotion headline, featured slider, pagination, icons, menus, breadcrumb, widgets and much more, directly from theme customizer. This theme is translation ready and also currently translated in Swedish, French and Brazilian Portuguese. Check out Theme Instructions at http://catchthemes.com/theme-instructions/catch-responsive/, Support at http://catchthemes.com/support/ and Demo at http://catchthemes.com/demo/catch-responsive/
+Catch Responsive is an extremely flexible and customizable Responsive WordPress theme suitable for almost any kind of professional website. It is based on responsive web design where each element has been carefully configured for perfect display on all devices and platforms. It is built in HTML5, CSS3 and WordPress Theme Customizer for real time customization. It comes with a wide variety of options so you can modify layout, styling, featured content, promotion headline, featured slider, pagination, icons, menus, breadcrumb, widgets and much more, directly from theme customizer. This theme is translation ready and also currently translated in Swedish, French, Brazilian Portuguese, German, Russian, Ukrainian and Polish languages. Check out Theme Instructions at http://catchthemes.com/theme-instructions/catch-responsive/, Support at http://catchthemes.com/support/ and Demo at http://catchthemes.com/demo/catch-responsive/
 
 == Support ==
 
@@ -14,6 +14,11 @@ Catch Responsive theme is translation ready.
 Added Translation for Swedish by Anders Paulcén ( Email: anderspaulcen@gmail.com )
 Added Translation for French by Jérôme Joseph ( Email: jerome.joseph28@hotmail.com )
 Added Translation for Brazilian Portuguese by Valdir Trombini ( Email: valdir.trombini@gmail.com )
+Added Translation for Lithuanian by Jurgis Šatas ( Email: ssattass@gmail.com )
+Added Translation for German by Micky261 ( Email: karlo261@hotmail.de )
+Added Translation for Russian and Ukrainian by Alexander Chernyh (alexch@alexch.com.ua)
+Added Translation for Hungarian by Kürti Gábor ( Email: gabor.kurti@gmail.com )
+Added Translation for Polish by Darek Pruchniak ( Email: darek@team4x4.home.pl )
 
 
 == License ==
@@ -42,7 +47,7 @@ Font Icons
 
 JS Files
     HTML5-Shiv is Licensed under the MIT and GPL licenses
-    https://code.google.com/p/html5shiv/
+    https://github.com/afarkas/html5shiv
 
     jQuery Cycle 2 is Licensed under the MIT and GPL licenses
     http://jquery.malsup.com/cycle2/

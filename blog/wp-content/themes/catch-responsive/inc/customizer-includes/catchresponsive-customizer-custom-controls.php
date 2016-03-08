@@ -42,7 +42,6 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 					'hide_empty'       => false,
 					'show_option_none' => false,
 					'hide_if_empty'    => false,
-					'selected'         => $this->value(),
 				)
 			);
 
@@ -54,7 +53,7 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 				$dropdown
 			);
 
-			echo '<p class="description">'. __( 'Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.', 'catchresponsive' ) . '</p>';
+			echo '<p class="description">'. __( 'Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.', 'catch-responsive' ) . '</p>';
 		}
 	}
 
@@ -67,39 +66,39 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
             $important_links = array(
 							'theme_instructions' => array( 
 								'link'	=> esc_url( 'http://catchthemes.com/theme-instructions/catch-responsive/' ),
-								'text' 	=> __( 'Theme Instructions', 'catchresponsive' ),
+								'text' 	=> __( 'Theme Instructions', 'catch-responsive' ),
 								),
 							'support' => array( 
 								'link'	=> esc_url( 'http://catchthemes.com/support/' ),
-								'text' 	=> __( 'Support', 'catchresponsive' ),
+								'text' 	=> __( 'Support', 'catch-responsive' ),
 								),
 							'changelog' => array( 
 								'link'	=> esc_url( 'http://catchthemes.com/changelogs/catch-responsive-theme/' ),
-								'text' 	=> __( 'Changelog', 'catchresponsive' ),
+								'text' 	=> __( 'Changelog', 'catch-responsive' ),
 								),
 							'donate' => array( 
 								'link'	=> esc_url( 'http://catchthemes.com/donate/' ),
-								'text' 	=> __( 'Donate Now', 'catchresponsive' ),
+								'text' 	=> __( 'Donate Now', 'catch-responsive' ),
 								),
 							'review' => array( 
 								'link'	=> esc_url( 'https://wordpress.org/support/view/theme-reviews/catch-responsive' ),
-								'text' 	=> __( 'Review', 'catchresponsive' ),
+								'text' 	=> __( 'Review', 'catch-responsive' ),
 								),
 							'facebook' => array( 
 								'link'	=> esc_url( 'https://www.facebook.com/catchthemes/' ),
-								'text' 	=> __( 'Facebook', 'catchresponsive' ),
+								'text' 	=> __( 'Facebook', 'catch-responsive' ),
 								),
 							'twitter' => array( 
 								'link'	=> esc_url( 'https://twitter.com/catchthemes/' ),
-								'text' 	=> __( 'Twitter', 'catchresponsive' ),
+								'text' 	=> __( 'Twitter', 'catch-responsive' ),
 								),
 							'gplus' => array( 
 								'link'	=> esc_url( 'https://plus.google.com/+Catchthemes/' ),
-								'text' 	=> __( 'Google+', 'catchresponsive' ),
+								'text' 	=> __( 'Google+', 'catch-responsive' ),
 								),
 							'pinterest' => array( 
 								'link'	=> esc_url( 'http://www.pinterest.com/catchthemes/' ),
-								'text' 	=> __( 'Pinterest', 'catchresponsive' ),
+								'text' 	=> __( 'Pinterest', 'catch-responsive' ),
 								),
 							);
 			foreach ( $important_links as $important_link) {

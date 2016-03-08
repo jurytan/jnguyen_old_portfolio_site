@@ -24,8 +24,8 @@ function catchresponsive_primary_menu() {
     ?>
 	<nav class="nav-primary search-enabled" role="navigation">
         <div class="wrapper">
-            <h1 class="assistive-text"><?php _e( 'Primary Menu', 'catchresponsive' ); ?></h1>
-            <div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'catchresponsive' ); ?>"><?php _e( 'Skip to content', 'catchresponsive' ); ?></a></div>
+            <h1 class="assistive-text"><?php _e( 'Primary Menu', 'catch-responsive' ); ?></h1>
+            <div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'catch-responsive' ); ?>"><?php _e( 'Skip to content', 'catch-responsive' ); ?></a></div>
             <?php
                 if ( has_nav_menu( 'primary' ) ) { 
                     $catchresponsive_primary_menu_args = array(
@@ -41,7 +41,7 @@ function catchresponsive_primary_menu() {
                 
                 ?>
                 <div id="search-toggle" class="genericon">
-                    <a class="screen-reader-text" href="#search-container"><?php _e( 'Search', 'catchresponsive' ); ?></a>
+                    <a class="screen-reader-text" href="#search-container"><?php _e( 'Search', 'catch-responsive' ); ?></a>
                 </div>
 
                 <div id="search-container" class="displaynone">
@@ -66,8 +66,8 @@ function catchresponsive_secondary_menu() {
 	?>
     	<nav class="nav-secondary" role="navigation">
             <div class="wrapper">
-                <h1 class="assistive-text"><?php _e( 'Secondary Menu', 'catchresponsive' ); ?></h1>
-                <div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'catchresponsive' ); ?>"><?php _e( 'Skip to content', 'catchresponsive' ); ?></a></div>
+                <h1 class="assistive-text"><?php _e( 'Secondary Menu', 'catch-responsive' ); ?></h1>
+                <div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'catch-responsive' ); ?>"><?php _e( 'Skip to content', 'catch-responsive' ); ?></a></div>
                 <?php             
                     $catchresponsive_secondary_menu_args = array(
                         'theme_location'    => 'secondary',
@@ -143,7 +143,7 @@ function catchresponsive_mobile_header_nav_anchor() {
     
     <div id="mobile-header-left-menu" class="<?php echo $classes; ?>">
         <a href="#mobile-header-left-nav" id="header-left-menu" class="genericon genericon-menu">
-            <span class="mobile-menu-text"><?php _e( 'Menu', 'catchresponsive' );?></span>
+            <span class="mobile-menu-text"><?php _e( 'Menu', 'catch-responsive' );?></span>
         </a>
     </div><!-- #mobile-header-menu -->
     <?php    
@@ -162,7 +162,7 @@ function catchresponsive_mobile_secondary_nav_anchor() {
         ?>    
         <div id="mobile-header-right-menu" class="mobile-menu-anchor secondary-menu">
             <a href="#mobile-header-right-menu" id="secondary-menu" class="genericon genericon-menu">
-                <span class="mobile-menu-text"><?php _e( 'Menu', 'catchresponsive' );?></span>
+                <span class="mobile-menu-text"><?php _e( 'Menu', 'catch-responsive' );?></span>
             </a>
         </div><!-- #mobile-header-menu -->
     <?php    

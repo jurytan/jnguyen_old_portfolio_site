@@ -15,9 +15,14 @@ get_header(); ?>
 
 		<?php get_template_part( 'content', 'single' ); ?>
 
-		<?php //catchresponsive_content_nav( 'nav-below' ); ?>
-
 		<?php 
+			/** 
+			 * catchresponsive_after_post hook
+			 *
+			 * @hooked catchresponsive_post_navigation - 10
+			 */
+			do_action( 'catchresponsive_after_post' ); 
+			
 			/** 
 			 * catchresponsive_comment_section hook
 			 *

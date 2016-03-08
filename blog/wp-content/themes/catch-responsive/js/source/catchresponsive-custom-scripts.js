@@ -24,12 +24,16 @@ jQuery(document).ready(function() {
 	//sidr
 	if ( jQuery.isFunction( jQuery.fn.sidr ) ) {
 		jQuery('#mobile-header-left-menu').sidr({
-		   name: 'mobile-header-left-nav',
-		   side: 'left' // By default
+			name: 'mobile-header-left-nav',
+			side: 'left', // By default
+			timing: 'ease-in-out',
+			speed: 500
 		});	
 		jQuery('#mobile-header-right-menu').sidr({
-		   name: 'mobile-header-right-nav',
-		   side: 'right' // By default
+			name: 'mobile-header-right-nav',
+			side: 'right', // By default
+			timing: 'ease-in-out',
+			speed: 500
 		});
 	}
 });

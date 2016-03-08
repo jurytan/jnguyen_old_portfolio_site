@@ -1,0 +1,1273 @@
+# Copyright (C) 2014 Catch Themes
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Catch Responsive\n"
+"Report-Msgid-Bugs-To: http://catchthemes.com/support-forum/forum/catch-"
+"responsive-free/\n"
+"POT-Creation-Date: 2016-03-03 14:21+0545\n"
+"PO-Revision-Date: 2016-03-03 14:21+0545\n"
+"Last-Translator: Catch Themes <info@catchthemes.com>\n"
+"Language-Team: Catch Themes <info@catchthemes.com>\n"
+"Language: uk_UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.6.10\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;esc_attr_e;esc_attr__;"
+"_nx:1,2,4c;esc_html__;esc_attr_x:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:19
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Сторінку не знайдено"
+
+#: ../404.php:24
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Нічого не знайдено. Перейдіть за посиланнями нижче або ж скористайтеся "
+"пошуком"
+
+#: ../archive.php:30
+#, php-format
+msgid "Author: %s"
+msgstr "Автор: %s"
+
+#: ../archive.php:33
+#, php-format
+msgid "Day: %s"
+msgstr "День: %s"
+
+#: ../archive.php:36
+#, php-format
+msgid "Month: %s"
+msgstr "Місяць: %s"
+
+#: ../archive.php:36
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "П Р"
+
+#: ../archive.php:39
+#, php-format
+msgid "Year: %s"
+msgstr "Рік: %s"
+
+#: ../archive.php:39
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Р"
+
+#: ../archive.php:42
+msgid "Asides"
+msgstr "Нотатки"
+
+#: ../archive.php:45
+msgid "Galleries"
+msgstr "Галерея"
+
+#: ../archive.php:48
+msgid "Images"
+msgstr "Зображення"
+
+#: ../archive.php:51
+msgid "Videos"
+msgstr "Відео"
+
+#: ../archive.php:54
+msgid "Quotes"
+msgstr "Лапки"
+
+#: ../archive.php:57
+msgid "Links"
+msgstr "Посилання"
+
+#: ../archive.php:60
+msgid "Statuses"
+msgstr "Статуси"
+
+#: ../archive.php:63
+msgid "Audios"
+msgstr "Аудіо"
+
+#: ../archive.php:66
+msgid "Chats"
+msgstr "Чат"
+
+#: ../archive.php:69 ../sidebar.php:92
+msgid "Archives"
+msgstr "Архіви"
+
+#: ../comments.php:27
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:34 ../comments.php:59
+msgid "Comment navigation"
+msgstr "Навігація по коментарях"
+
+#: ../comments.php:35 ../comments.php:60
+msgid "&larr; Older Comments"
+msgstr "&larr; Минулі коментарі"
+
+#: ../comments.php:36 ../comments.php:61
+msgid "Newer Comments &rarr;"
+msgstr "Нові коментарі &rarr;"
+
+#: ../comments.php:71
+msgid "Comments are closed."
+msgstr "Коментарі заборонені"
+
+#: ../content-none.php:15
+msgid "Nothing Found"
+msgstr "Нічого не знайдено"
+
+#: ../content-none.php:21 ../no-results.php:20
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Чи готові опублікувати свій перший пост? <a href=\"%1$s\">Get started here</"
+"a>."
+
+#: ../content-none.php:25 ../no-results.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Даруйте, по вашому запиті нічого не знайдено. Будь ласка введіть для пошуку "
+"інші слова"
+
+#: ../content-none.php:30 ../no-results.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Ми не можемо знайти те, що ви шукаєте. Скористуйтесь пошуком."
+
+#: ../content-page.php:28 ../content-single.php:31 ../content.php:46
+msgid "Pages:"
+msgstr "Сторінки:"
+
+#: ../content-page.php:35 ../inc/catchresponsive-core.php:659
+#: ../inc/catchresponsive-core.php:678 ../inc/catchresponsive-core.php:804
+msgid "Edit"
+msgstr "Редагувати"
+
+#: ../inc/catchresponsive-breadcrumb.php:57
+msgid "Home"
+msgstr "Головна"
+
+#: ../inc/catchresponsive-breadcrumb.php:58
+#, php-format
+msgid "%1$s Archive for %2$s"
+msgstr "%1$s Архів на %2$s"
+
+#: ../inc/catchresponsive-breadcrumb.php:59
+#, php-format
+msgid "%1$sSearch results for: %2$s"
+msgstr "%1$sРезультат пошуку: %2$s"
+
+#: ../inc/catchresponsive-breadcrumb.php:60
+#, php-format
+msgid "%1$sPosts tagged %2$s"
+msgstr "%1$sПостів з теґами %2$s"
+
+#: ../inc/catchresponsive-breadcrumb.php:61
+#, php-format
+msgid "%1$sView all posts by %2$s"
+msgstr "%1$sПерегляд всіх постів від %2$s"
+
+#: ../inc/catchresponsive-breadcrumb.php:62
+msgid "Error 404"
+msgstr "Помилка 404"
+
+#: ../inc/catchresponsive-breadcrumb.php:222
+#, php-format
+msgid "Page %s"
+msgstr "Сторінка %s"
+
+#: ../inc/catchresponsive-core.php:77 ../inc/catchresponsive-menus.php:27
+msgid "Primary Menu"
+msgstr "Головне меню"
+
+#: ../inc/catchresponsive-core.php:78 ../inc/catchresponsive-menus.php:69
+msgid "Secondary Menu"
+msgstr "Додаткове меню"
+
+#: ../inc/catchresponsive-core.php:162
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr "увімкнути"
+
+#: ../inc/catchresponsive-core.php:168
+msgctxt "Droid Sans font: on or off"
+msgid "on"
+msgstr "увімкнути"
+
+#: ../inc/catchresponsive-core.php:625
+msgid "Post navigation"
+msgstr "Навігація"
+
+#: ../inc/catchresponsive-core.php:634
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Старі пости"
+
+#: ../inc/catchresponsive-core.php:635
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Нові пости <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../inc/catchresponsive-core.php:659
+msgid "Pingback:"
+msgstr ""
+
+#: ../inc/catchresponsive-core.php:669
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">сказано:</span>"
+
+#: ../inc/catchresponsive-core.php:675
+#, php-format
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s у %2$s"
+
+#: ../inc/catchresponsive-core.php:682
+msgid "Your comment is awaiting moderation."
+msgstr "Модератор повинен схвалити коментар"
+
+#: ../inc/catchresponsive-core.php:785
+msgctxt "Used before publish date."
+msgid "<span class=\"screen-reader-text\">Posted on</span>"
+msgstr "<span class=\"screen-reader-text\">Опубліковано</span>"
+
+#: ../inc/catchresponsive-core.php:792
+msgctxt "Used before post author name."
+msgid "<span class=\"screen-reader-text\">Author</span>"
+msgstr "<span class=\"screen-reader-text\">Автор</span>"
+
+#: ../inc/catchresponsive-core.php:800
+msgid "Leave a comment"
+msgstr "Коментувати"
+
+#: ../inc/catchresponsive-core.php:800
+msgid "1 Comment"
+msgstr "1 Коментар"
+
+#: ../inc/catchresponsive-core.php:800
+msgid "% Comments"
+msgstr "% Коментарів"
+
+#: ../inc/catchresponsive-core.php:821 ../inc/catchresponsive-core.php:829
+msgctxt "Used between list items, there is a space after the comma."
+msgid ", "
+msgstr ", "
+
+#: ../inc/catchresponsive-core.php:824
+msgctxt "Used before category names."
+msgid "<span class=\"screen-reader-text\">Categories</span>"
+msgstr "<span class=\"screen-reader-text\">Розділи</span>"
+
+#: ../inc/catchresponsive-core.php:832
+msgctxt "Used before tag names."
+msgid "<span class=\"screen-reader-text\">Tags</span>"
+msgstr "<span class=\"screen-reader-text\">Теґи</span>"
+
+#: ../inc/catchresponsive-core.php:975
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: ../inc/catchresponsive-core.php:1425
+msgid "Scroll Up"
+msgstr "Прокрутка вгору"
+
+#: ../inc/catchresponsive-core.php:1443
+msgid "Posted on"
+msgstr "Опубліковано"
+
+#: ../inc/catchresponsive-core.php:1444
+msgid "By"
+msgstr " "
+
+#: ../inc/catchresponsive-core.php:1486
+msgid "Next &rarr;"
+msgstr "Далі  &rarr;"
+
+#: ../inc/catchresponsive-core.php:1487
+msgid "Next post:"
+msgstr "Наступний пост:"
+
+#: ../inc/catchresponsive-core.php:1489
+msgid "&larr; Previous"
+msgstr "&larr; Попередній"
+
+#: ../inc/catchresponsive-core.php:1490
+msgid "Previous post:"
+msgstr "Минулий пост"
+
+#: ../inc/catchresponsive-default-options.php:57
+msgid "Read More ..."
+msgstr "Читати далі ..."
+
+#: ../inc/catchresponsive-default-options.php:68
+msgid "Catch Responsive is a Premium Responsive WordPress Theme"
+msgstr "Catch Responsive - самі круті теми для WordPress"
+
+#: ../inc/catchresponsive-default-options.php:69
+msgid ""
+"This is promotion headline. You can edit this from Appearance -> Customize -"
+"> Theme Options -> Promotion Headline Options"
+msgstr ""
+"Це рекламний рядок. Ви можете його редагувати скориставшись меню Зовнішній "
+"вигляд  -> Налаштування -> Налаштування теми -> Налаштування рекламного рядка"
+
+#: ../inc/catchresponsive-default-options.php:70
+msgid "Reviews"
+msgstr "Переглядів"
+
+#: ../inc/catchresponsive-default-options.php:75
+msgid "Search..."
+msgstr "Пошук ..."
+
+#: ../inc/catchresponsive-default-options.php:87
+#: ../inc/catchresponsive-featured-content.php:56
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-content-setting.php:21
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-content-setting.php:34
+msgid "Featured Content"
+msgstr "Вибране"
+
+#: ../inc/catchresponsive-default-options.php:88
+msgid "Here you can showcase the x number of Featured Content."
+msgstr "Приклад підрядка для верхнього колонтитулу для вібраних сторінок."
+
+#: ../inc/catchresponsive-default-options.php:119
+msgid "Light"
+msgstr "Світлий"
+
+#: ../inc/catchresponsive-default-options.php:123
+msgid "Dark"
+msgstr "Темний"
+
+#: ../inc/catchresponsive-default-options.php:140
+#: ../inc/catchresponsive-default-options.php:651
+msgid "Primary Sidebar, Content"
+msgstr "Основна бічна панель, Зміст"
+
+#: ../inc/catchresponsive-default-options.php:144
+#: ../inc/catchresponsive-default-options.php:656
+msgid "Content, Primary Sidebar"
+msgstr "Зміст, Основна бічна панель"
+
+#: ../inc/catchresponsive-default-options.php:148
+#: ../inc/catchresponsive-default-options.php:661
+msgid "No Sidebar ( Content Width )"
+msgstr "Зміст без бічної панелі"
+
+#: ../inc/catchresponsive-default-options.php:164
+#: ../inc/catchresponsive-default-options.php:318
+msgid "Show Excerpt"
+msgstr "Лише уривок"
+
+#: ../inc/catchresponsive-default-options.php:168
+msgid "Show Full Content (No Featured Image)"
+msgstr "Повний зміст"
+
+#: ../inc/catchresponsive-default-options.php:185
+#: ../inc/catchresponsive-default-options.php:251
+msgid "Homepage / Frontpage"
+msgstr "Лише на головній сторінці"
+
+#: ../inc/catchresponsive-default-options.php:189
+msgid "Excluding Homepage"
+msgstr "Всюди, крім головної"
+
+#: ../inc/catchresponsive-default-options.php:193
+msgid "Excluding Homepage, Page/Post Featured Image"
+msgstr ""
+
+#: ../inc/catchresponsive-default-options.php:197
+#: ../inc/catchresponsive-default-options.php:255
+msgid "Entire Site"
+msgstr "На всьому сайті"
+
+#: ../inc/catchresponsive-default-options.php:201
+msgid "Entire Site, Page/Post Featured Image"
+msgstr "На всьому сайті, Page/Post Featured Image"
+
+#: ../inc/catchresponsive-default-options.php:205
+msgid "Pages and Posts"
+msgstr "На сторінках та в постах"
+
+#: ../inc/catchresponsive-default-options.php:209
+#: ../inc/catchresponsive-default-options.php:259
+#: ../inc/catchresponsive-default-options.php:479
+msgid "Disabled"
+msgstr "Вимкнути"
+
+#: ../inc/catchresponsive-default-options.php:226
+#: ../inc/catchresponsive-default-options.php:714
+msgid "Full Image"
+msgstr "Розмір оригіналу"
+
+#: ../inc/catchresponsive-default-options.php:230
+msgid "Large Image"
+msgstr "Збільшене зображення"
+
+#: ../inc/catchresponsive-default-options.php:234
+msgid "Slider Image"
+msgstr "Слайдер"
+
+#: ../inc/catchresponsive-default-options.php:276
+msgid "Demo Featured Content"
+msgstr "Приклад вибраних сторінок"
+
+#: ../inc/catchresponsive-default-options.php:280
+msgid "Featured Page Content"
+msgstr "Сторінки користувача"
+
+#: ../inc/catchresponsive-default-options.php:297
+msgid "3 columns"
+msgstr "3"
+
+#: ../inc/catchresponsive-default-options.php:301
+msgid "4 columns"
+msgstr "4"
+
+#: ../inc/catchresponsive-default-options.php:322
+msgid "Show Full Content"
+msgstr "Зміст повніттю"
+
+#: ../inc/catchresponsive-default-options.php:326
+msgid "Hide Content"
+msgstr "Приховати зміст"
+
+#: ../inc/catchresponsive-default-options.php:343
+msgid "Demo Featured Slider"
+msgstr "Приклад слайдера за замовчуванням"
+
+#: ../inc/catchresponsive-default-options.php:347
+msgid "Featured Page Slider"
+msgstr "Слайдер користувача"
+
+#: ../inc/catchresponsive-default-options.php:364
+msgid "Fade"
+msgstr ""
+
+#: ../inc/catchresponsive-default-options.php:368
+msgid "Fade Out"
+msgstr ""
+
+#: ../inc/catchresponsive-default-options.php:372
+msgid "None"
+msgstr "Нічого"
+
+#: ../inc/catchresponsive-default-options.php:376
+msgid "Scroll Horizontal"
+msgstr ""
+
+#: ../inc/catchresponsive-default-options.php:380
+msgid "Scroll Vertical"
+msgstr ""
+
+#: ../inc/catchresponsive-default-options.php:384
+msgid "Flip Horizontal"
+msgstr ""
+
+#: ../inc/catchresponsive-default-options.php:388
+msgid "Flip Vertical"
+msgstr ""
+
+#: ../inc/catchresponsive-default-options.php:392
+msgid "Tile Slide"
+msgstr ""
+
+#: ../inc/catchresponsive-default-options.php:396
+msgid "Tile Blind"
+msgstr ""
+
+#: ../inc/catchresponsive-default-options.php:400
+msgid "Suffle"
+msgstr ""
+
+#: ../inc/catchresponsive-default-options.php:417
+msgid "True"
+msgstr ""
+
+#: ../inc/catchresponsive-default-options.php:421
+msgid "Wait"
+msgstr ""
+
+#: ../inc/catchresponsive-default-options.php:425
+msgid "False"
+msgstr ""
+
+#: ../inc/catchresponsive-default-options.php:442
+msgid "Default(Older Posts/Newer Posts)"
+msgstr "За замовчуванням (Старі/Нові) пости"
+
+#: ../inc/catchresponsive-default-options.php:446
+msgid "Numeric"
+msgstr "Цифровий"
+
+#: ../inc/catchresponsive-default-options.php:450
+msgid "Infinite Scroll (Click)"
+msgstr "Нескінчена прокрутка (Клік)"
+
+#: ../inc/catchresponsive-default-options.php:454
+msgid "Infinite Scroll (Scroll)"
+msgstr "Нескінчена прокрутка (Прокрутка)"
+
+#: ../inc/catchresponsive-default-options.php:471
+msgid "Featured"
+msgstr "Зміст для прикладу"
+
+#: ../inc/catchresponsive-default-options.php:475
+msgid "Full Size"
+msgstr "Повний розмір"
+
+#: ../inc/catchresponsive-default-options.php:500
+#: ../inc/customizer-includes/catchresponsive-customizer-custom-controls.php:89
+msgid "Facebook"
+msgstr "Facebook"
+
+#: ../inc/catchresponsive-default-options.php:504
+#: ../inc/customizer-includes/catchresponsive-customizer-custom-controls.php:93
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../inc/catchresponsive-default-options.php:508
+msgid "Googleplus"
+msgstr "Googleplus"
+
+#: ../inc/catchresponsive-default-options.php:512
+#: ../inc/catchresponsive-social-icons.php:36
+msgid "Email"
+msgstr "Email"
+
+#: ../inc/catchresponsive-default-options.php:516
+msgid "Feed"
+msgstr "Feed"
+
+#: ../inc/catchresponsive-default-options.php:520
+msgid "WordPress"
+msgstr "WordPress"
+
+#: ../inc/catchresponsive-default-options.php:524
+msgid "GitHub"
+msgstr "GitHub"
+
+#: ../inc/catchresponsive-default-options.php:528
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: ../inc/catchresponsive-default-options.php:532
+#: ../inc/customizer-includes/catchresponsive-customizer-custom-controls.php:101
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: ../inc/catchresponsive-default-options.php:536
+msgid "Flickr"
+msgstr "Flickr"
+
+#: ../inc/catchresponsive-default-options.php:540
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: ../inc/catchresponsive-default-options.php:544
+msgid "YouTube"
+msgstr "YouTube"
+
+#: ../inc/catchresponsive-default-options.php:548
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: ../inc/catchresponsive-default-options.php:552
+msgid "Instagram"
+msgstr "Instagram"
+
+#: ../inc/catchresponsive-default-options.php:556
+msgid "PollDaddy"
+msgstr "PollDaddy"
+
+#: ../inc/catchresponsive-default-options.php:560
+msgid "CodePen"
+msgstr "CodePen"
+
+#: ../inc/catchresponsive-default-options.php:564
+msgid "Path"
+msgstr "Path"
+
+#: ../inc/catchresponsive-default-options.php:568
+msgid "Dribbble"
+msgstr "Dribbble"
+
+#: ../inc/catchresponsive-default-options.php:572
+msgid "Skype"
+msgstr "Skype"
+
+#: ../inc/catchresponsive-default-options.php:576
+msgid "Digg"
+msgstr "Digg"
+
+#: ../inc/catchresponsive-default-options.php:580
+msgid "Reddit"
+msgstr "Reddit"
+
+#: ../inc/catchresponsive-default-options.php:584
+msgid "Stumbleupon"
+msgstr ""
+
+#: ../inc/catchresponsive-default-options.php:588
+msgid "Pocket"
+msgstr "Pocket"
+
+#: ../inc/catchresponsive-default-options.php:592
+msgid "DropBox"
+msgstr "DropBox"
+
+#: ../inc/catchresponsive-default-options.php:596
+msgid "Spotify"
+msgstr "Spotify"
+
+#: ../inc/catchresponsive-default-options.php:600
+msgid "Foursquare"
+msgstr "Foursquare"
+
+#: ../inc/catchresponsive-default-options.php:604
+msgid "Twitch"
+msgstr "Twitch"
+
+#: ../inc/catchresponsive-default-options.php:608
+msgid "Website"
+msgstr ""
+
+#: ../inc/catchresponsive-default-options.php:612
+msgid "Phone"
+msgstr ""
+
+#: ../inc/catchresponsive-default-options.php:616
+msgid "Handset"
+msgstr ""
+
+#: ../inc/catchresponsive-default-options.php:620
+msgid "Cart"
+msgstr ""
+
+#: ../inc/catchresponsive-default-options.php:624
+msgid "Cloud"
+msgstr ""
+
+#: ../inc/catchresponsive-default-options.php:628
+msgid "Link"
+msgstr ""
+
+#: ../inc/catchresponsive-default-options.php:646
+#: ../inc/catchresponsive-default-options.php:677
+#: ../inc/catchresponsive-default-options.php:704
+msgid "Default"
+msgstr "За замовчуванням"
+
+#: ../inc/catchresponsive-default-options.php:682
+msgid "Enable"
+msgstr "Увімкнути"
+
+#: ../inc/catchresponsive-default-options.php:687
+msgid "Disable"
+msgstr "Вимкнути"
+
+#: ../inc/catchresponsive-default-options.php:709
+msgid "Featured Image"
+msgstr ""
+
+#: ../inc/catchresponsive-default-options.php:719
+msgid "Disable Image"
+msgstr "Вимкнуті зображення"
+
+#: ../inc/catchresponsive-default-options.php:734
+#, php-format
+msgctxt "1: Year, 2: Site Title with home URL"
+msgid "Copyright &copy; %1$s %2$s. All Rights Reserved."
+msgstr "Авторське право &copy; %1$s %2$s. Усі права захищені."
+
+#: ../inc/catchresponsive-default-options.php:736
+msgid "by"
+msgstr " "
+
+#: ../inc/catchresponsive-featured-content.php:57
+msgid ""
+"Here you can showcase the x number of Featured Content. You can edit this "
+"Headline, Subheadline and Feaured Content from \"Appearance -> Customize -> "
+"Featured Content Options\"."
+msgstr ""
+
+#: ../inc/catchresponsive-featured-content.php:256
+#: ../inc/catchresponsive-featured-slider.php:178
+msgid "Permalink to: "
+msgstr "Посилання на : "
+
+#: ../inc/catchresponsive-menus.php:28 ../inc/catchresponsive-menus.php:70
+msgid "Skip to content"
+msgstr "Перейти до"
+
+#: ../inc/catchresponsive-menus.php:44
+msgid "Search"
+msgstr "Пошук"
+
+#: ../inc/catchresponsive-menus.php:146 ../inc/catchresponsive-menus.php:165
+msgid "Menu"
+msgstr "Меню"
+
+#: ../inc/catchresponsive-metabox.php:93
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:205
+msgid "Layout Options"
+msgstr "Налаштування відображення постів"
+
+#: ../inc/catchresponsive-metabox.php:94
+msgid "Header Featured Image Options"
+msgstr "Налаштування зображень у верхньому колонтитулі"
+
+#: ../inc/catchresponsive-metabox.php:95
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:262
+msgid "Single Page/Post Image Layout "
+msgstr "Зображення в пості/сторінці"
+
+#: ../inc/catchresponsive-metabox.php:221
+msgid "Catchresponsive Options"
+msgstr "Налаштування Catchresponsive"
+
+#: ../inc/catchresponsive-widgets.php:30
+msgid "Primary Sidebar"
+msgstr "Основна бічна панель"
+
+#: ../inc/catchresponsive-widgets.php:36
+msgid ""
+"This is the primary sidebar if you are using a two or three column site "
+"layout option."
+msgstr "Це основна бічна панель, якщо ви використовуєте 2 або 3 стовпчики"
+
+#: ../inc/catchresponsive-widgets.php:43
+#, php-format
+msgid "Footer Area %d"
+msgstr "Нижній колонтитул %d"
+
+#: ../inc/catchresponsive-widgets.php:49
+#, php-format
+msgid "Footer %d widget area."
+msgstr "Список віджетів %d"
+
+#: ../inc/catchresponsive-widgets.php:69
+msgid "CT: Social Icons"
+msgstr "CT: Піктограми соцмереж"
+
+#: ../inc/catchresponsive-widgets.php:70
+msgid "Use this widget to add Social Icons as a widget. "
+msgstr "Додати піктограму соцмережі як віджет"
+
+#: ../inc/catchresponsive-widgets.php:111
+msgid "Title (optional):"
+msgstr "Назва (за бажанням)"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-custom-controls.php:56
+msgid ""
+"Hold down the Ctrl (windows) / Command (Mac) button to select multiple "
+"options."
+msgstr ""
+"Затисніть Ctrl (windows) / Command (Mac) клавішу, щоб вибрати декілька "
+"розділів."
+
+#: ../inc/customizer-includes/catchresponsive-customizer-custom-controls.php:69
+msgid "Theme Instructions"
+msgstr "Інструкції"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-custom-controls.php:73
+msgid "Support"
+msgstr "Підтримка"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-custom-controls.php:77
+msgid "Changelog"
+msgstr "Зміни"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-custom-controls.php:81
+msgid "Donate Now"
+msgstr "Зробити пожертву"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-custom-controls.php:85
+msgid "Review"
+msgstr "Відгуки про тему на сайті Wordpress"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-custom-controls.php:97
+msgid "Google+"
+msgstr "Google+"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-content-setting.php:19
+msgid "Options for Featured Content"
+msgstr ""
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-content-setting.php:28
+msgid "Featured Content Options"
+msgstr "Налаштування вибраного"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-content-setting.php:52
+msgid "Enable Featured Content on"
+msgstr "Увімкнути вибрані сторінки"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-content-setting.php:74
+msgid "Select Featured Content Layout"
+msgstr "Кількість стовпчиків"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-content-setting.php:89
+msgid "Check to Move above Footer"
+msgstr "Показувати над нижнім колонтитулом"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-content-setting.php:111
+msgid "Select Content Type"
+msgstr "Відобразити зміст"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-content-setting.php:126
+msgid "Leave field empty if you want to remove Headline"
+msgstr "Залиште пустим, щоб не показувати"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-content-setting.php:127
+msgid "Headline for Featured Content"
+msgstr "Рядок верхнього колонтитулу вибраних сторінок"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-content-setting.php:143
+msgid "Leave field empty if you want to remove Sub-headline"
+msgstr "Залиште пустим, щоб не показувати"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-content-setting.php:144
+msgid "Sub-headline for Featured Content"
+msgstr "Підрядок верхнього колонтитулу вибраних сторінок"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-content-setting.php:160
+msgid ""
+"Save and refresh the page if No. of Featured Content is changed (Max no of "
+"Featured Content is 20)"
+msgstr ""
+"Не більш ніж 20. Якщо змінили цей параметр, збережіть налаштування та "
+"оновіть сторінку."
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-content-setting.php:167
+msgid "No of Featured Content"
+msgstr "Кількість вибраних"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-content-setting.php:190
+msgid "Display Content"
+msgstr "Як відобразити"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-content-setting.php:208
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-slider.php:195
+msgid "Featured Page"
+msgstr "Сторінка"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-slider.php:19
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-slider.php:27
+msgid "Featured Slider Options"
+msgstr "Налаштування слайдера"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-slider.php:21
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-slider.php:33
+msgid "Featured Slider"
+msgstr "Слайдер"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-slider.php:51
+msgid "Enable Slider on"
+msgstr "Увімкнути слайдер"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-slider.php:73
+msgid "Transition Effect"
+msgstr "Ефект переходу"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-slider.php:89
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-slider.php:108
+msgid "seconds(s)"
+msgstr "в секундах"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-slider.php:93
+msgid "Transition Delay"
+msgstr "Затримка переходу"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-slider.php:112
+msgid "Transition Length"
+msgstr "Час переходу"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-slider.php:134
+msgid "Image Loader"
+msgstr ""
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-slider.php:156
+msgid "Select Slider Type"
+msgstr "Тип слайдера"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-slider.php:171
+msgid ""
+"Save and refresh the page if No. of Slides is changed (Max no of slides is "
+"20)"
+msgstr ""
+"Не більш ніж 20. Якщо змінили цей параметр, збережіть налаштування та "
+"оновіть сторінку."
+
+#: ../inc/customizer-includes/catchresponsive-customizer-featured-slider.php:178
+msgid "No of Slides"
+msgstr "Кількість слайдів"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-header-options.php:31
+msgid "Enable Featured Header Image on "
+msgstr "Увімкнути зображення в назві"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-header-options.php:52
+msgid "Page/Post Featured Header Image Size"
+msgstr "Розмір зображення у верхньому колонтитулі"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-header-options.php:65
+msgid "Featured Header Image Alt/Title Tag "
+msgstr "Альтернативний текст/підказка"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-header-options.php:78
+msgid "Featured Header Image Link URL"
+msgstr "Посилання"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-header-options.php:91
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:419
+msgid "Check to Open Link in New Window/Tab"
+msgstr "Відкрити у новому вікні"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-social-icons.php:19
+msgid "Note: Enter the url for correponding social networking website"
+msgstr "Примітка: Введіть адресу відповідної соціальної мережі"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-social-icons.php:21
+#: ../inc/customizer-includes/catchresponsive-customizer-social-icons.php:28
+msgid "Social Links"
+msgstr "Соціальні мережі"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-social-icons.php:45
+msgid ""
+"Skype link can be of formats:<br>callto://+{number}<br> skype:{username}?"
+"{action}. More Information in readme file"
+msgstr ""
+"Щоб відкрити у Skype використовуйте посилання у наступних форматах:"
+"<br>callto://+{number}<br> skype:{username}?{action}. Подробиці дивіться у "
+"файлі readme"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:20
+msgid "Basic theme Options"
+msgstr "Основні налаштування теми"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:23
+msgid "Theme Options"
+msgstr "Налаштування теми"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:29
+msgid ""
+"Breadcrumbs are a great way of letting your visitors find out where they are "
+"on your site with just a glance. You can enable/disable them on homepage and "
+"entire site."
+msgstr ""
+"Навігатор (Хлібні крихти) - це чудовий інструмент, який дозволяє швидко "
+"орієнтуватись відвідувачам вашого сайту. Ви маєте можливість увімкнути його "
+"лише на головній, або на всьому сайті"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:31
+msgid "Breadcrumb Options"
+msgstr "Налаштування навігатора"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:42
+msgid "Check to enable Breadcrumb"
+msgstr "Увімкнути на всьому сайті"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:55
+msgid "Check to enable Breadcrumb on Homepage"
+msgstr "Увімкнути лише на головній"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:71
+msgid "Separator between Breadcrumbs"
+msgstr ""
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:81
+msgid "Custom/Inline CSS"
+msgstr "У випадку оновлення теми внесені зміни будуть збережені"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:84
+msgid "Custom CSS Options"
+msgstr "CSS налаштування користувача"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:94
+msgid "Enter Custom CSS"
+msgstr "Зміни в CSS робіть тут"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:106
+msgid "Excerpt Options"
+msgstr "Налаштування уривку"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:116
+msgid "Excerpt length. Default is 55 words"
+msgstr "За замовчуванням 55 слів"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:123
+msgid "Excerpt Length (words)"
+msgstr "Довжина уривку в словах"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:137
+msgid "Read More Text"
+msgstr "Для читання далі"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:146
+msgid ""
+"Only posts that belong to the categories selected here will be displayed on "
+"the front page"
+msgstr "Пости з вибраних розділів будуть відображені на сайті"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:149
+msgid "Homepage / Frontpage Options"
+msgstr "Налаштування головної сторінки"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:159
+msgid "Select Categories"
+msgstr "Вибір розділу"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:170
+msgid "Remove Icon images to disable."
+msgstr ""
+"Видаліть Favicon, якщо не бажаєте, щоб вона відображалась у переглядачі"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:173
+msgid "Icon Options"
+msgstr "Налаштування Favicon"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:182
+msgid "Select/Add Favicon"
+msgstr "Додати/Вибрати Favicon"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:193
+msgid ""
+"Web Clip Icon for Apple devices. Recommended Size - Width 144px and Height "
+"144px height, which will support High Resolution Devices like iPad Retina."
+msgstr ""
+"Для пристроїв Apple бажаний розмір піктограм Web Clip складає 144х144 "
+"пікселів. Цей розмір підтримується екранами з високою роздільною здатністтю. "
+"Наприклад iPad Retina."
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:194
+msgid "Select/Add Web Clip Icon"
+msgstr "Додати/Вибрати піктограму Web Clip"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:222
+msgid "Default Layout"
+msgstr "Відображення за замовчуванням"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:242
+msgid "Archive Content Layout"
+msgstr "Відображення посту за замовчуванням"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:273
+#, php-format
+msgid ""
+"Numeric Option requires <a target=\"_blank\" href=\"%s\">WP-PageNavi Plugin</"
+"a>.<br/>Infinite Scroll Options requires <a target=\"_blank\" href=\"%s"
+"\">JetPack Plugin</a> with Infinite Scroll module Enabled."
+msgstr ""
+"Необхідно налаштувати нумерацію <a target=\"_blank\" href=\"%s\">WP-PageNavi "
+"плагіну</a>.<br/>Вкажіть параметри прокрутки <a target=\"_blank\" href=\"%s"
+"\">JetPack плагіну</a>параметри скролінгу повинні бути увімкнуті."
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:280
+#, php-format
+msgid ""
+"Infinite Scroll Options requires <a target=\"_blank\" href=\"%s\">JetPack "
+"Plugin</a> with Infinite Scroll module Enabled."
+msgstr ""
+"Необхідно зазначити параметри прокрутки <a target=\"_blank\" href=\"%s"
+"\">JetPack плагіну</a> параметри скролінгу повинні бути увімкнуті."
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:291
+#, php-format
+msgid ""
+"Numeric Option requires <a target=\"_blank\" href=\"%s\">WP-PageNavi Plugin</"
+"a>."
+msgstr ""
+"Необхідно налаштувати нумерацію <a target=\"_blank\" href=\"%s\">WP-PageNavi "
+"плагіну</a>."
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:302
+msgid "Pagination Options"
+msgstr "Налаштування нумерації сторінок"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:319
+msgid "Pagination type"
+msgstr "Тип нумерації"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:328
+msgid "To disable the fields, simply leave them empty."
+msgstr "Не заповнюйте, якщо бажаєте вимкнути рекламний рядок"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:331
+msgid "Promotion Headline Options"
+msgstr "Налаштування рекламного рядка"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:348
+msgid "Enable Promotion Headline on"
+msgstr "Увімкнути рекламний рядок"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:362
+msgid "Appropriate Words: 10"
+msgstr "Приблизно 10 слів"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:363
+msgid "Promotion Headline Text"
+msgstr "Текст рекламного рядка"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:376
+msgid "Appropriate Words: 15"
+msgstr "Приблизно 15 слів"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:377
+msgid "Promotion Subheadline Text"
+msgstr "Текст рекламного підрядка"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:390
+msgid "Appropriate Words: 3"
+msgstr "Приблизно 3 слова"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:391
+msgid "Promotion Headline Button Text "
+msgstr "Надпис на рекламній кнопці"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:405
+msgid "Promotion Headline Link"
+msgstr "Рекламне посилання для кнопки"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:431
+msgid "Scrollup Options"
+msgstr ""
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:441
+msgid "Check to disable Scroll Up"
+msgstr ""
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:450
+msgid "Change default placeholder text in Search."
+msgstr "Слово, яке буде відображене у вікні пошуку"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:453
+msgid "Search Options"
+msgstr "Налаштування пошуку"
+
+#: ../inc/customizer-includes/catchresponsive-customizer-theme-options.php:463
+msgid "Default Display Text in Search"
+msgstr " "
+
+#: ../inc/customizer-includes/catchresponsive-customizer.php:51
+msgid "Logo"
+msgstr "Логотип"
+
+#: ../inc/customizer-includes/catchresponsive-customizer.php:64
+msgid "Check to disable logo"
+msgstr "Не показувати логотип"
+
+#: ../inc/customizer-includes/catchresponsive-customizer.php:78
+msgid "Logo Alt Text"
+msgstr "Підпис для логотипу"
+
+#: ../inc/customizer-includes/catchresponsive-customizer.php:92
+msgid "Check to move Site Title and Tagline before logo"
+msgstr "Логотип під назвою сайту"
+
+#: ../inc/customizer-includes/catchresponsive-customizer.php:118
+msgid "Color Scheme"
+msgstr "Колір теми"
+
+#: ../inc/customizer-includes/catchresponsive-customizer.php:133
+msgid "Mobile Menu Color Scheme"
+msgstr ""
+
+#: ../inc/customizer-includes/catchresponsive-customizer.php:157
+msgid ""
+"Caution: Reset all settings to default. Refresh the page after save to view "
+"full effects."
+msgstr ""
+"Увага!!! Ви можете скинути ваші налаштування на налаштування за "
+"замовчуванням. Збережіть зміни та оновіть сторінку."
+
+#: ../inc/customizer-includes/catchresponsive-customizer.php:159
+msgid "Reset all settings"
+msgstr "Скинути налаштування користувача"
+
+#: ../inc/customizer-includes/catchresponsive-customizer.php:170
+msgid "Check to reset all settings to default"
+msgstr "Налаштувати за замовчуванням"
+
+#: ../inc/customizer-includes/catchresponsive-customizer.php:180
+#: ../inc/customizer-includes/catchresponsive-customizer.php:191
+msgid "Important Links"
+msgstr "Корисні посилання"
+
+#: ../inc/customizer-includes/catchresponsive-customizer.php:226
+msgid "Upgrade To Pro &raquo;"
+msgstr "Оновити до версії Pro &raquo;"
+
+#: ../inc/customizer-includes/catchresponsive-customizer.php:228
+msgid ""
+"Some settings might be missing or disorganized in this version of WordPress. "
+"So we suggest you to upgrade to version 4.0 or better."
+msgstr ""
+"Деякі налаштування можуть бути відсутніми у новій версії WordPress. "
+"Пропонуємо вам оновити вашу версію WordPress до 4.0 та вище."
+
+#: ../no-results.php:14
+msgid "Error 404-Page NOT Found"
+msgstr "Помилка 404-Сторінку не знайдено"
+
+#: ../search.php:19
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Результат пошуку для: %s"
+
+#: ../searchform.php:14 ../searchform.php:15
+msgctxt "label"
+msgid "Search for:"
+msgstr "Пошук:"
+
+#: ../searchform.php:17
+msgctxt "submit button"
+msgid "Search"
+msgstr "Пошук"
+
+#: ../sidebar.php:75
+msgid "Primary Sidebar Widget Area"
+msgstr "Місце розташування основної бічної панелі"
+
+#: ../sidebar.php:78
+msgid ""
+"This is the Primary Sidebar Widget Area if you are using a two or three "
+"column site layout option."
+msgstr ""
+"Це місце розташування основної бічної панелі, якщо ви використовуєте лише 2 "
+"або 3 стовпчики."
+
+#: ../sidebar.php:79
+#, php-format
+msgid ""
+"By default it will load Search and Archives widgets as shown below. You can "
+"add widget to this area by visiting your <a href=\"%s\">Widgets Panel</a> "
+"which will replace default widgets."
+msgstr ""
+"За замовчуванням будуть відображені віджети Пошук та Архів. Ви маєте "
+"можливість додати віджетів, якщо перейдете на  <a href=\"%s\">Панель "
+"віджетів</a>."
+
+#~ msgid "StumbleUpon"
+#~ msgstr "StumbleUpon"
+
+#~ msgid "Seperator between Breadcrumbs"
+#~ msgstr "Розділовий знак"

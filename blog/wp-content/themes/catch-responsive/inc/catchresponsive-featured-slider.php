@@ -50,10 +50,10 @@ function catchresponsive_featured_slider() {
 						    data-cycle-pause-on-hover="true"
 						    data-cycle-swipe="true"
 						    data-cycle-auto-height=container
-						    data-cycle-fx="'. $options['featured_slide_transition_effect'] .'"
-							data-cycle-speed="'. $options['featured_slide_transition_length'] * 1000 .'"
-							data-cycle-timeout="'. $options['featured_slide_transition_delay'] * 1000 .'"
-							data-cycle-loader="'. $imageloader .'"
+						    data-cycle-fx="'. esc_attr( $options['featured_slide_transition_effect'] ) .'"
+							data-cycle-speed="'. esc_attr( $options['featured_slide_transition_length'] ) * 1000 .'"
+							data-cycle-timeout="'. esc_attr( $options['featured_slide_transition_delay'] ) * 1000 .'"
+							data-cycle-loader="'. esc_attr( $imageloader ) .'"
 							data-cycle-slides="> article"
 							>
 						    
@@ -183,7 +183,7 @@ function catchresponsive_page_slider( $options ) {
 				<figure class="slider-image">';
 				if ( has_post_thumbnail() ) {
 					$catchresponsive_page_slider .= '<a title="Permalink to '.the_title('','',false).'" href="' . get_permalink() . '">
-						'. get_the_post_thumbnail( $post->ID, 'catchresponsive_slider', array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ), 'class'	=> 'attached-page-image' ) ).'
+						'. get_the_post_thumbnail( $post->ID, 'catchresponsive-slider', array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ), 'class'	=> 'attached-page-image' ) ).'
 					</a>';
 				}
 				else {
@@ -191,7 +191,7 @@ function catchresponsive_page_slider( $options ) {
 					$catchresponsive_image = '<img class="pngfix wp-post-image" src="'.get_template_directory_uri().'/images/gallery/no-featured-image-1200x514.jpg" >';
 					
 					//Get the first image in page, returns false if there is no image
-					$catchresponsive_first_image = catchresponsive_get_first_image( $post->ID, 'catchresponsive_slider', array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ), 'class' => 'attached-page-image' ) );
+					$catchresponsive_first_image = catchresponsive_get_first_image( $post->ID, 'catchresponsive-slider', array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ), 'class' => 'attached-page-image' ) );
 
 					//Set value of image as first image if there is an image present in the page
 					if ( '' != $catchresponsive_first_image ) {

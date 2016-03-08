@@ -26,16 +26,18 @@ if ( ! function_exists( 'catchresponsive_custom_header' ) ) :
 
 		$options 	= catchresponsive_get_theme_options();
 		
-		if ( $options['color_scheme'] != 'light' ) {
-			$default_color = 'dddddd';
+		if ( 'light' == $options['color_scheme'] ) {
+			$default_header_color = catchresponsive_get_default_theme_options();
+			$default_header_color = $default_header_color['header_textcolor'];
 		}
-		else {
-			$default_color = '111111';
+		else if ( 'dark' == $options['color_scheme'] ) {
+			$default_header_color = catchresponsive_default_dark_color_options();
+			$default_header_color = $default_header_color['header_textcolor'];
 		}
-
+		
 		$args = array(
 		// Text color and image (empty to use none).
-		'default-text-color'     => $default_color,
+		'default-text-color'     => $default_header_color,
 
 		// Header image default
 		'default-image'			=> get_template_directory_uri() . '/images/headers/buddha.jpg',
@@ -268,6 +270,11 @@ if ( ! function_exists( 'catchresponsive_featured_image' ) ) :
 		
 		$header_image 			= get_header_image();
 			
+		//Support Random Header Image
+		if ( is_random_header_image() ) {
+			delete_transient( 'catchresponsive_featured_image' );
+		}
+
 		if ( !$catchresponsive_featured_image = get_transient( 'catchresponsive_featured_image' ) ) {
 			
 			echo '<!-- refreshing cache -->';
@@ -339,9 +346,20 @@ if ( ! function_exists( 'catchresponsive_featured_page_post_image' ) ) :
 	 * @since Catch Responsive 1.0
 	 */
 	function catchresponsive_featured_page_post_image() {
-		global $post;
+		global $post, $wp_query;
 
-		if( has_post_thumbnail( ) ) {
+		// Get Page ID outside Loop
+		$page_id = $wp_query->get_queried_object_id();
+		$page_for_posts = get_option('page_for_posts');
+
+		if ( is_home() && $page_for_posts == $page_id ) {
+			$header_page_id = $page_id;
+		}
+		else {
+			$header_page_id = $post->ID;
+		}
+
+		if( has_post_thumbnail( $header_page_id ) ) {
 		   	$options					= catchresponsive_get_theme_options();	
 			$featured_header_image_url	= $options['featured_header_image_url'];
 			$featured_header_image_base	= $options['featured_header_image_base'];

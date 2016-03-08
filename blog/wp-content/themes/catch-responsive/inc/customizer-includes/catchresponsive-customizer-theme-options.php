@@ -4,7 +4,7 @@
  *
  * @package Catch Themes
  * @subpackage Catch Responsive
- * @since Catch Responsive 1.0 
+ * @since Catch Responsive 1.0
  */
 
 // Additional Color Scheme (added to Color Scheme section in Theme Customizer)
@@ -14,22 +14,21 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 	exit();
 }
 
-	
+
 	//Theme Options
-	if( 4 <= get_bloginfo( 'version' ) ) {
-		$wp_customize->add_panel( 'catchresponsive_theme_options', array(
-		    'description'    => __( 'Basic theme Options', 'catchresponsive' ),
-		    'capability'     => 'edit_theme_options',
-		    'priority'       => 200,
-		    'title'    		 => __( 'Theme Options', 'catchresponsive' ),
-		) );
-	}
+	$wp_customize->add_panel( 'catchresponsive_theme_options', array(
+	    'description'    => __( 'Basic theme Options', 'catch-responsive' ),
+	    'capability'     => 'edit_theme_options',
+	    'priority'       => 200,
+	    'title'    		 => __( 'Theme Options', 'catch-responsive' ),
+	) );
+
 
 	// Breadcrumb Option
 	$wp_customize->add_section( 'catchresponsive_breadcumb_options', array(
-		'description'	=> __( 'Breadcrumbs are a great way of letting your visitors find out where they are on your site with just a glance. You can enable/disable them on homepage and entire site.', 'catchresponsive' ),
+		'description'	=> __( 'Breadcrumbs are a great way of letting your visitors find out where they are on your site with just a glance. You can enable/disable them on homepage and entire site.', 'catch-responsive' ),
 		'panel'			=> 'catchresponsive_theme_options',
-		'title'    		=> __( 'Breadcrumb Options', 'catchresponsive' ),
+		'title'    		=> __( 'Breadcrumb Options', 'catch-responsive' ),
 		'priority' 		=> 201,
 	) );
 
@@ -39,8 +38,8 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 		'sanitize_callback' => 'catchresponsive_sanitize_checkbox'
 	) );
 
-	$wp_customize->add_control( 'catchresponsive_breadcumb_options', array(
-		'label'    => __( 'Check to enable Breadcrumb', 'catchresponsive' ),
+	$wp_customize->add_control( 'catchresponsive_theme_options[breadcumb_option]', array(
+		'label'    => __( 'Check to enable Breadcrumb', 'catch-responsive' ),
 		'section'  => 'catchresponsive_breadcumb_options',
 		'settings' => 'catchresponsive_theme_options[breadcumb_option]',
 		'type'     => 'checkbox',
@@ -52,8 +51,8 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 		'sanitize_callback' => 'catchresponsive_sanitize_checkbox'
 	) );
 
-	$wp_customize->add_control( 'catchresponsive_breadcumb_onhomepage', array(
-		'label'    => __( 'Check to enable Breadcrumb on Homepage', 'catchresponsive' ),
+	$wp_customize->add_control( 'catchresponsive_theme_options[breadcumb_onhomepage]', array(
+		'label'    => __( 'Check to enable Breadcrumb on Homepage', 'catch-responsive' ),
 		'section'  => 'catchresponsive_breadcumb_options',
 		'settings' => 'catchresponsive_theme_options[breadcumb_onhomepage]',
 		'type'     => 'checkbox',
@@ -65,24 +64,24 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 		'sanitize_callback'	=> 'sanitize_text_field',
 	) );
 
-	$wp_customize->add_control( 'catchresponsive_breadcumb_seperator', array(
+	$wp_customize->add_control( 'catchresponsive_theme_options[breadcumb_seperator]', array(
 			'input_attrs' => array(
 	            'style' => 'width: 40px;'
             	),
-            'label'    	=> __( 'Seperator between Breadcrumbs', 'catchresponsive' ),
+            'label'    	=> __( 'Separator between Breadcrumbs', 'catch-responsive' ),
 			'section' 	=> 'catchresponsive_breadcumb_options',
 			'settings' 	=> 'catchresponsive_theme_options[breadcumb_seperator]',
 			'type'     	=> 'text'
-		) 
+		)
 	);
    	// Breadcrumb Option End
-   	
+
    	// Custom CSS Option
 	$wp_customize->add_section( 'catchresponsive_custom_css', array(
-		'description'	=> __( 'Custom/Inline CSS', 'catchresponsive'),
+		'description'	=> __( 'Custom/Inline CSS', 'catch-responsive'),
 		'panel'  		=> 'catchresponsive_theme_options',
 		'priority' 		=> 203,
-		'title'    		=> __( 'Custom CSS Options', 'catchresponsive' ),
+		'title'    		=> __( 'Custom CSS Options', 'catch-responsive' ),
 	) );
 
 	$wp_customize->add_setting( 'catchresponsive_theme_options[custom_css]', array(
@@ -92,7 +91,7 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( new Catchresponsive_Customize_Textarea_Control ( $wp_customize, 'catchresponsive_theme_options[custom_css]', array(
-			'label'		=> __( 'Enter Custom CSS', 'catchresponsive' ),
+			'label'		=> __( 'Enter Custom CSS', 'catch-responsive' ),
 	        'priority'	=> 1,
 			'section'   => 'catchresponsive_custom_css',
 	        'settings'  => 'catchresponsive_theme_options[custom_css]',
@@ -104,7 +103,7 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 	$wp_customize->add_section( 'catchresponsive_excerpt_options', array(
 		'panel'  	=> 'catchresponsive_theme_options',
 		'priority' 	=> 204,
-		'title'    	=> __( 'Excerpt Options', 'catchresponsive' ),
+		'title'    	=> __( 'Excerpt Options', 'catch-responsive' ),
 	) );
 
 	$wp_customize->add_setting( 'catchresponsive_theme_options[excerpt_length]', array(
@@ -113,15 +112,15 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 		'sanitize_callback' => 'absint',
 	) );
 
-	$wp_customize->add_control( 'catchresponsive_excerpt_length', array(
-		'description' => __('Excerpt length. Default is 55 words', 'catchresponsive'),
+	$wp_customize->add_control( 'catchresponsive_theme_options[excerpt_length]', array(
+		'description' => __('Excerpt length. Default is 55 words', 'catch-responsive'),
 		'input_attrs' => array(
             'min'   => 10,
             'max'   => 200,
             'step'  => 5,
             'style' => 'width: 60px;'
             ),
-        'label'    => __( 'Excerpt Length (words)', 'catchresponsive' ),
+        'label'    => __( 'Excerpt Length (words)', 'catch-responsive' ),
 		'section'  => 'catchresponsive_excerpt_options',
 		'settings' => 'catchresponsive_theme_options[excerpt_length]',
 		'type'	   => 'number',
@@ -134,8 +133,8 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 		'sanitize_callback'	=> 'sanitize_text_field',
 	) );
 
-	$wp_customize->add_control( 'catchresponsive_excerpt_more_text', array(
-		'label'    => __( 'Read More Text', 'catchresponsive' ),
+	$wp_customize->add_control( 'catchresponsive_theme_options[excerpt_more_text]', array(
+		'label'    => __( 'Read More Text', 'catch-responsive' ),
 		'section'  => 'catchresponsive_excerpt_options',
 		'settings' => 'catchresponsive_theme_options[excerpt_more_text]',
 		'type'	   => 'text',
@@ -144,10 +143,10 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 
 	//Homepage / Frontpage Options
 	$wp_customize->add_section( 'catchresponsive_homepage_options', array(
-		'description'	=> __( 'Only posts that belong to the categories selected here will be displayed on the front page', 'catchresponsive' ),
+		'description'	=> __( 'Only posts that belong to the categories selected here will be displayed on the front page', 'catch-responsive' ),
 		'panel'			=> 'catchresponsive_theme_options',
 		'priority' 		=> 209,
-		'title'   	 	=> __( 'Homepage / Frontpage Options', 'catchresponsive' ),
+		'title'   	 	=> __( 'Homepage / Frontpage Options', 'catch-responsive' ),
 	) );
 
 	$wp_customize->add_setting( 'catchresponsive_theme_options[front_page_category]', array(
@@ -157,7 +156,7 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( new Catchresponsive_Customize_Dropdown_Categories_Control( $wp_customize, 'catchresponsive_theme_options[front_page_category]', array(
-        'label'   	=> __( 'Select Categories', 'catchresponsive' ),
+        'label'   	=> __( 'Select Categories', 'catch-responsive' ),
         'name'	 	=> 'catchresponsive_theme_options[front_page_category]',
 		'priority'	=> '6',
         'section'  	=> 'catchresponsive_homepage_options',
@@ -165,13 +164,13 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
         'type'     	=> 'dropdown-categories',
     ) ) );
 	//Homepage / Frontpage Settings End
-	
+
 	// Icon Options
 	$wp_customize->add_section( 'catchresponsive_icons', array(
-		'description'	=> __( 'Remove Icon images to disable.', 'catchresponsive'),
+		'description'	=> __( 'Remove Icon images to disable.', 'catch-responsive'),
 		'panel'  => 'catchresponsive_theme_options',
 		'priority' 		=> 210,
-		'title'    		=> __( 'Icon Options', 'catchresponsive' ),
+		'title'    		=> __( 'Icon Options', 'catch-responsive' ),
 	) );
 
 	$wp_customize->add_setting( 'catchresponsive_theme_options[favicon]', array(
@@ -180,7 +179,7 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'catchresponsive_theme_options[favicon]', array(
-		'label'		=> __( 'Select/Add Favicon', 'catchresponsive' ),
+		'label'		=> __( 'Select/Add Favicon', 'catch-responsive' ),
 		'section'    => 'catchresponsive_icons',
         'settings'   => 'catchresponsive_theme_options[favicon]',
 	) ) );
@@ -191,8 +190,8 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'catchresponsive_theme_options[web_clip]', array(
-		'description'	=> __( 'Web Clip Icon for Apple devices. Recommended Size - Width 144px and Height 144px height, which will support High Resolution Devices like iPad Retina.', 'catchresponsive'),
-		'label'		 	=> __( 'Select/Add Web Clip Icon', 'catchresponsive' ),
+		'description'	=> __( 'Web Clip Icon for Apple devices. Recommended Size - Width 144px and Height 144px height, which will support High Resolution Devices like iPad Retina.', 'catch-responsive'),
+		'label'		 	=> __( 'Select/Add Web Clip Icon', 'catch-responsive' ),
 		'section'    	=> 'catchresponsive_icons',
         'settings'   	=> 'catchresponsive_theme_options[web_clip]',
 	) ) );
@@ -203,13 +202,13 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 		'capability'=> 'edit_theme_options',
 		'panel'		=> 'catchresponsive_theme_options',
 		'priority'	=> 211,
-		'title'		=> __( 'Layout Options', 'catchresponsive' ),
+		'title'		=> __( 'Layout Options', 'catch-responsive' ),
 	) );
 
 	$wp_customize->add_setting( 'catchresponsive_theme_options[theme_layout]', array(
 		'capability'		=> 'edit_theme_options',
 		'default'			=> $defaults['theme_layout'],
-		'sanitize_callback' => 'sanitize_key',
+		'sanitize_callback' => 'catchresponsive_sanitize_select',
 	) );
 
 	$layouts = catchresponsive_layouts();
@@ -220,7 +219,7 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 
 	$wp_customize->add_control( 'catchresponsive_theme_options[theme_layout]', array(
 		'choices'	=> $choices,
-		'label'		=> __( 'Default Layout', 'catchresponsive' ),
+		'label'		=> __( 'Default Layout', 'catch-responsive' ),
 		'section'	=> 'catchresponsive_layout',
 		'settings'   => 'catchresponsive_theme_options[theme_layout]',
 		'type'		=> 'select',
@@ -229,7 +228,7 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 	$wp_customize->add_setting( 'catchresponsive_theme_options[content_layout]', array(
 		'capability'		=> 'edit_theme_options',
 		'default'			=> $defaults['content_layout'],
-		'sanitize_callback' => 'sanitize_key',
+		'sanitize_callback' => 'catchresponsive_sanitize_select',
 	) );
 
 	$layouts = catchresponsive_get_archive_content_layout();
@@ -240,7 +239,7 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 
 	$wp_customize->add_control( 'catchresponsive_theme_options[content_layout]', array(
 		'choices'   => $choices,
-		'label'		=> __( 'Archive Content Layout', 'catchresponsive' ),
+		'label'		=> __( 'Archive Content Layout', 'catch-responsive' ),
 		'section'   => 'catchresponsive_layout',
 		'settings'  => 'catchresponsive_theme_options[content_layout]',
 		'type'      => 'select',
@@ -249,10 +248,10 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 	$wp_customize->add_setting( 'catchresponsive_theme_options[single_post_image_layout]', array(
 		'capability'		=> 'edit_theme_options',
 		'default'			=> $defaults['single_post_image_layout'],
-		'sanitize_callback' => 'sanitize_key',
+		'sanitize_callback' => 'catchresponsive_sanitize_select',
 	) );
 
-	
+
 	$single_post_image_layouts = catchresponsive_single_post_image_layout_options();
 	$choices = array();
 	foreach ( $single_post_image_layouts as $single_post_image_layout ) {
@@ -260,25 +259,25 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 	}
 
 	$wp_customize->add_control( 'catchresponsive_theme_options[single_post_image_layout]', array(
-			'label'		=> __( 'Single Page/Post Image Layout ', 'catchresponsive' ),
+			'label'		=> __( 'Single Page/Post Image Layout ', 'catch-responsive' ),
 			'section'   => 'catchresponsive_layout',
 	        'settings'  => 'catchresponsive_theme_options[single_post_image_layout]',
 	        'type'	  	=> 'select',
 			'choices'  	=> $choices,
 	) );
    	// Layout Options End
-	
+
 	// Pagination Options
 	$pagination_type	= $options['pagination_type'];
 
-	$catchresponsive_navigation_description = sprintf( __( 'Numeric Option requires <a target="_blank" href="%s">WP-PageNavi Plugin</a>.<br/>Infinite Scroll Options requires <a target="_blank" href="%s">JetPack Plugin</a> with Infinite Scroll module Enabled.', 'catchresponsive' ), esc_url( 'https://wordpress.org/plugins/wp-pagenavi' ), esc_url( 'https://wordpress.org/plugins/jetpack/' ) );
-	
+	$catchresponsive_navigation_description = sprintf( __( 'Numeric Option requires <a target="_blank" href="%s">WP-PageNavi Plugin</a>.<br/>Infinite Scroll Options requires <a target="_blank" href="%s">JetPack Plugin</a> with Infinite Scroll module Enabled.', 'catch-responsive' ), esc_url( 'https://wordpress.org/plugins/wp-pagenavi' ), esc_url( 'https://wordpress.org/plugins/jetpack/' ) );
+
 	/**
 	 * Check if navigation type is Jetpack Infinite Scroll and if it is enabled
 	 */
 	if ( ( 'infinite-scroll-click' == $pagination_type || 'infinite-scroll-scroll' == $pagination_type ) ) {
 		if ( ! (class_exists( 'Jetpack' ) && Jetpack::is_module_active( 'infinite-scroll' ) ) ) {
-			$catchresponsive_navigation_description = sprintf( __( 'Infinite Scroll Options requires <a target="_blank" href="%s">JetPack Plugin</a> with Infinite Scroll module Enabled.', 'catchresponsive' ), esc_url( 'https://wordpress.org/plugins/jetpack/' ) );
+			$catchresponsive_navigation_description = sprintf( __( 'Infinite Scroll Options requires <a target="_blank" href="%s">JetPack Plugin</a> with Infinite Scroll module Enabled.', 'catch-responsive' ), esc_url( 'https://wordpress.org/plugins/jetpack/' ) );
 		}
 		else {
 			$catchresponsive_navigation_description = '';
@@ -289,7 +288,7 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 	*/
 	else if ( 'numeric' == $pagination_type ) {
 		if ( !function_exists( 'wp_pagenavi' ) ) {
-			$catchresponsive_navigation_description = sprintf( __( 'Numeric Option requires <a target="_blank" href="%s">WP-PageNavi Plugin</a>.', 'catchresponsive' ), esc_url( 'https://wordpress.org/plugins/wp-pagenavi' ) );
+			$catchresponsive_navigation_description = sprintf( __( 'Numeric Option requires <a target="_blank" href="%s">WP-PageNavi Plugin</a>.', 'catch-responsive' ), esc_url( 'https://wordpress.org/plugins/wp-pagenavi' ) );
 		}
 		else {
 			$catchresponsive_navigation_description = '';
@@ -300,13 +299,13 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 		'description'	=> $catchresponsive_navigation_description,
 		'panel'  		=> 'catchresponsive_theme_options',
 		'priority'		=> 212,
-		'title'    		=> __( 'Pagination Options', 'catchresponsive' ),
+		'title'    		=> __( 'Pagination Options', 'catch-responsive' ),
 	) );
 
 	$wp_customize->add_setting( 'catchresponsive_theme_options[pagination_type]', array(
 		'capability'		=> 'edit_theme_options',
 		'default'			=> $defaults['pagination_type'],
-		'sanitize_callback' => 'sanitize_key',
+		'sanitize_callback' => 'catchresponsive_sanitize_select',
 	) );
 
 	$pagination_types = catchresponsive_get_pagination_types();
@@ -315,9 +314,9 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 		$choices[$pagination_type['value']] = $pagination_type['label'];
 	}
 
-	$wp_customize->add_control( 'catchresponsive_pagination_options', array(
+	$wp_customize->add_control( 'catchresponsive_theme_options[pagination_type]', array(
 		'choices'  => $choices,
-		'label'    => __( 'Pagination type', 'catchresponsive' ),
+		'label'    => __( 'Pagination type', 'catch-responsive' ),
 		'section'  => 'catchresponsive_pagination_options',
 		'settings' => 'catchresponsive_theme_options[pagination_type]',
 		'type'	   => 'select',
@@ -326,16 +325,16 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 
 	//Promotion Headline Options
     $wp_customize->add_section( 'catchresponsive_promotion_headline_options', array(
-		'description'	=> __( 'To disable the fields, simply leave them empty.', 'catchresponsive' ),
+		'description'	=> __( 'To disable the fields, simply leave them empty.', 'catch-responsive' ),
 		'panel'			=> 'catchresponsive_theme_options',
 		'priority' 		=> 213,
-		'title'   	 	=> __( 'Promotion Headline Options', 'catchresponsive' ),
+		'title'   	 	=> __( 'Promotion Headline Options', 'catch-responsive' ),
 	) );
 
 	$wp_customize->add_setting( 'catchresponsive_theme_options[promotion_headline_option]', array(
 		'capability'		=> 'edit_theme_options',
 		'default'			=> $defaults['promotion_headline_option'],
-		'sanitize_callback' => 'sanitize_key',
+		'sanitize_callback' => 'catchresponsive_sanitize_select',
 	) );
 
 	$catchresponsive_featured_slider_content_options = catchresponsive_featured_slider_content_options();
@@ -346,7 +345,7 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 
 	$wp_customize->add_control( 'catchresponsive_theme_options[promotion_headline_option]', array(
 		'choices'  	=> $choices,
-		'label'    	=> __( 'Enable Promotion Headline on', 'catchresponsive' ),
+		'label'    	=> __( 'Enable Promotion Headline on', 'catch-responsive' ),
 		'priority'	=> '0.5',
 		'section'  	=> 'catchresponsive_promotion_headline_options',
 		'settings' 	=> 'catchresponsive_theme_options[promotion_headline_option]',
@@ -360,8 +359,8 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( new Catchresponsive_Customize_Textarea_Control( $wp_customize, 'catchresponsive_theme_options[promotion_headline]', array(
-		'description'	=> __( 'Appropriate Words: 10', 'catchresponsive' ),
-		'label'    	=> __( 'Promotion Headline Text', 'catchresponsive' ),
+		'description'	=> __( 'Appropriate Words: 10', 'catch-responsive' ),
+		'label'    	=> __( 'Promotion Headline Text', 'catch-responsive' ),
 		'priority'	=> '1',
 		'section' 	=> 'catchresponsive_promotion_headline_options',
 		'settings'	=> 'catchresponsive_theme_options[promotion_headline]',
@@ -374,8 +373,8 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( new Catchresponsive_Customize_Textarea_Control( $wp_customize, 'catchresponsive_theme_options[promotion_subheadline]', array(
-		'description'	=> __( 'Appropriate Words: 15', 'catchresponsive' ),
-		'label'    	=> __( 'Promotion Subheadline Text', 'catchresponsive' ),
+		'description'	=> __( 'Appropriate Words: 15', 'catch-responsive' ),
+		'label'    	=> __( 'Promotion Subheadline Text', 'catch-responsive' ),
 		'priority'	=> '2',
 		'section' 	=> 'catchresponsive_promotion_headline_options',
 		'settings'	=> 'catchresponsive_theme_options[promotion_subheadline]',
@@ -388,8 +387,8 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( 'catchresponsive_theme_options[promotion_headline_button]', array(
-		'description'	=> __( 'Appropriate Words: 3', 'catchresponsive' ),
-		'label'    	=> __( 'Promotion Headline Button Text ', 'catchresponsive' ),
+		'description'	=> __( 'Appropriate Words: 3', 'catch-responsive' ),
+		'label'    	=> __( 'Promotion Headline Button Text ', 'catch-responsive' ),
 		'priority'	=> '3',
 		'section' 	=> 'catchresponsive_promotion_headline_options',
 		'settings'	=> 'catchresponsive_theme_options[promotion_headline_button]',
@@ -403,7 +402,7 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( 'catchresponsive_theme_options[promotion_headline_url]', array(
-		'label'    	=> __( 'Promotion Headine Link', 'catchresponsive' ),
+		'label'    	=> __( 'Promotion Headline Link', 'catch-responsive' ),
 		'priority'	=> '4',
 		'section' 	=> 'catchresponsive_promotion_headline_options',
 		'settings'	=> 'catchresponsive_theme_options[promotion_headline_url]',
@@ -417,7 +416,7 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( 'catchresponsive_theme_options[promotion_headline_target]', array(
-		'label'    	=> __( 'Check to Open Link in New Window/Tab', 'catchresponsive' ),
+		'label'    	=> __( 'Check to Open Link in New Window/Tab', 'catch-responsive' ),
 		'priority'	=> '5',
 		'section'  	=> 'catchresponsive_promotion_headline_options',
 		'settings' 	=> 'catchresponsive_theme_options[promotion_headline_target]',
@@ -425,12 +424,33 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 	) );
 	// Promotion Headline Options End
 
+	// Scrollup
+	$wp_customize->add_section( 'catchresponsive_scrollup', array(
+		'panel'    => 'catchresponsive_theme_options',
+		'priority' => 215,
+		'title'    => __( 'Scrollup Options', 'catch-responsive' ),
+	) );
+
+	$wp_customize->add_setting( 'catchresponsive_theme_options[disable_scrollup]', array(
+		'capability'		=> 'edit_theme_options',
+        'default'			=> $defaults['disable_scrollup'],
+		'sanitize_callback' => 'catchresponsive_sanitize_checkbox',
+	) );
+
+	$wp_customize->add_control( 'catchresponsive_theme_options[disable_scrollup]', array(
+		'label'		=> __( 'Check to disable Scroll Up', 'catch-responsive' ),
+		'section'   => 'catchresponsive_scrollup',
+        'settings'  => 'catchresponsive_theme_options[disable_scrollup]',
+		'type'		=> 'checkbox',
+	) );
+	// Scrollup End
+
 	// Search Options
 	$wp_customize->add_section( 'catchresponsive_search_options', array(
-		'description'=> __( 'Change default placeholder text in Search.', 'catchresponsive'),
+		'description'=> __( 'Change default placeholder text in Search.', 'catch-responsive'),
 		'panel'  => 'catchresponsive_theme_options',
 		'priority' => 216,
-		'title'    => __( 'Search Options', 'catchresponsive' ),
+		'title'    => __( 'Search Options', 'catch-responsive' ),
 	) );
 
 	$wp_customize->add_setting( 'catchresponsive_theme_options[search_text]', array(
@@ -440,7 +460,7 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( 'catchresponsive_theme_options[search_text]', array(
-		'label'		=> __( 'Default Display Text in Search', 'catchresponsive' ),
+		'label'		=> __( 'Default Display Text in Search', 'catch-responsive' ),
 		'section'   => 'catchresponsive_search_options',
         'settings'  => 'catchresponsive_theme_options[search_text]',
 		'type'		=> 'text',

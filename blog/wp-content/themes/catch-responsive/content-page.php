@@ -4,13 +4,13 @@
  *
  * @package Catch Themes
  * @subpackage Catch Responsive
- * @since Catch Responsive 1.0 
+ * @since Catch Responsive 1.0
  */
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php 
-	/** 
+	<?php
+	/**
 	 * catchresponsive_before_page_container hook
 	 *
 	 * @hooked catchresponsive_single_content_image - 10
@@ -25,13 +25,13 @@
 			<?php the_content(); ?>
 			<?php
 				wp_link_pages( array(
-					'before' => '<div class="page-links"><span class="pages">' . __( 'Pages:', 'catchresponsive' ) . '</span>',
+					'before' => '<div class="page-links"><span class="pages">' . __( 'Pages:', 'catch-responsive' ) . '</span>',
 					'after'  => '</div>',
 					'link_before' 	=> '<span>',
                     'link_after'   	=> '</span>',
 				) );
 			?>
 		</div><!-- .entry-content -->
-		<?php edit_post_link( __( 'Edit', 'catchresponsive' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer>' ); ?>
+		<?php edit_post_link( __( 'Edit', 'catch-responsive' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer>' ); ?>
 	</div><!-- .entry-container -->
 </article><!-- #post-## -->

@@ -53,8 +53,8 @@ function catchresponsive_featured_content_display() {
 
 			if( $contentselect == 'demo-featured-content' ) {
 				$classes 		.= ' demo-featured-content' ;
-				$headline 		= __( 'Featured Content', 'catchresponsive' );
-				$subheadline 	= __( 'Here you can showcase the x number of Featured Content. You can edit this Headline, Subheadline and Feaured Content from "Appearance -> Customize -> Featured Content Options".', 'catchresponsive' );
+				$headline 		= __( 'Featured Content', 'catch-responsive' );
+				$subheadline 	= __( 'Here you can showcase the x number of Featured Content. You can edit this Headline, Subheadline and Feaured Content from "Appearance -> Customize -> Featured Content Options".', 'catch-responsive' );
 			} 
 			elseif ( $contentselect == 'featured-page-content' ) {
 				$classes .= ' featured-page-content' ;
@@ -225,6 +225,8 @@ function catchresponsive_page_content( $options ) {
 	$quantity 					= $options [ 'featured_content_number' ];
 
 	$more_link_text				= $options['excerpt_more_text'];
+
+	$show_content	= isset( $options['featured_content_show'] ) ? $options['featured_content_show'] : 'excerpt';
 	
 	$catchresponsive_page_content 	= '';
 
@@ -254,7 +256,7 @@ function catchresponsive_page_content( $options ) {
 			$title_attribute = the_title_attribute( array( 'before' => __( 'Permalink to: ', 'catch-responsive' ), 'echo' => false ) );
 			
 			$excerpt = get_the_excerpt();
-			
+
 			$catchresponsive_page_content .= '
 				<article id="featured-post-' . $i . '" class="post hentry featured-page-content">';	
 				if ( has_post_thumbnail() ) {
@@ -285,8 +287,13 @@ function catchresponsive_page_content( $options ) {
 								<a href="' . get_permalink() . '" rel="bookmark">' . the_title( '','', false ) . '</a>
 							</h1>
 						</header>';
-						if( $excerpt !='') {
-							$catchresponsive_page_content .= '<div class="entry-content"><p>'. $excerpt.'</p></div>';
+						if ( 'excerpt' == $show_content ) {
+							$catchresponsive_page_content .= '<div class="entry-excerpt"><p>' . $excerpt . '</p></div><!-- .entry-excerpt -->';
+						}
+						elseif ( 'full-content' == $show_content ) { 
+							$content = apply_filters( 'the_content', get_the_content() );
+							$content = str_replace( ']]>', ']]&gt;', $content );
+							$catchresponsive_page_content .= '<div class="entry-content">' . $content . '</div><!-- .entry-content -->';
 						}
 					$catchresponsive_page_content .= '
 					</div><!-- .entry-container -->

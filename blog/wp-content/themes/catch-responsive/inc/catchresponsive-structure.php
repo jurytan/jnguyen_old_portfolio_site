@@ -4,7 +4,7 @@
  *
  * @package Catch Themes
  * @subpackage Catch Responsive
- * @since Catch Responsive 1.0 
+ * @since Catch Responsive 1.0
  */
 
 if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
@@ -41,12 +41,9 @@ if ( ! function_exists( 'catchresponsive_head' ) ) :
 	function catchresponsive_head() {
 		?>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-		<!--[if lt IE 9]>
-			<script src="<?php echo get_template_directory_uri(); ?>/js/html5.min.js"></script>
-		<![endif]-->
 		<?php
 	}
 endif;
@@ -214,10 +211,10 @@ function catchresponsive_header_right() { ?>
 					<?php echo $catchresponsive_social_icons; ?>
 				</div><!-- .widget-wrap -->
 			</section><!-- #header-right-social-icons -->
-		<?php 
-		} ?>	
-	</aside><!-- .sidebar .header-sidebar .widget-area -->	
-<?php	
+		<?php
+		} ?>
+	</aside><!-- .sidebar .header-sidebar .widget-area -->
+<?php
 }
 endif;
 add_action( 'catchresponsive_header', 'catchresponsive_header_right', 60 );

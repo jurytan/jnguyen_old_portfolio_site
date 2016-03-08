@@ -13,26 +13,32 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 	exit();
 }
 	// Featured Content Options
-	if( 4 <= get_bloginfo( 'version' ) ) {
+	if ( 4.3 > get_bloginfo( 'version' ) ) {
 		$wp_customize->add_panel( 'catchresponsive_featured_content_options', array(
 		    'capability'     => 'edit_theme_options',
-			'description'    => __( 'Options for Featured Content', 'catchresponsive' ),
+			'description'    => __( 'Options for Featured Content', 'catch-responsive' ),
 		    'priority'       => 400,
-		    'title'    		 => __( 'Featured Content Options', 'catchresponsive' ),
+		    'title'    		 => __( 'Featured Content', 'catch-responsive' ),
+		) );
+
+
+		$wp_customize->add_section( 'catchresponsive_featured_content_settings', array(
+			'panel'			=> 'catchresponsive_featured_content_options',
+			'priority'		=> 1,
+			'title'			=> __( 'Featured Content Options', 'catch-responsive' ),
 		) );
 	}
-
-
-	$wp_customize->add_section( 'catchresponsive_featured_content_settings', array(
-		'panel'			=> 'catchresponsive_featured_content_options',
-		'priority'		=> 1,
-		'title'			=> __( 'Featured Content Settings', 'catchresponsive' ),
-	) );
+	else {
+		$wp_customize->add_section( 'catchresponsive_featured_content_settings', array(
+			'priority'      => 400,
+			'title'			=> __( 'Featured Content', 'catch-responsive' ),
+		) );
+	}
 
 	$wp_customize->add_setting( 'catchresponsive_theme_options[featured_content_option]', array(
 		'capability'		=> 'edit_theme_options',
 		'default'			=> $defaults['featured_content_option'],
-		'sanitize_callback' => 'sanitize_key',
+		'sanitize_callback' => 'catchresponsive_sanitize_select',
 	) );
 
 	$catchresponsive_featured_slider_content_options = catchresponsive_featured_slider_content_options();
@@ -43,7 +49,7 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 
 	$wp_customize->add_control( 'catchresponsive_theme_options[featured_content_option]', array(
 		'choices'  	=> $choices,
-		'label'    	=> __( 'Enable Featured Content on', 'catchresponsive' ),
+		'label'    	=> __( 'Enable Featured Content on', 'catch-responsive' ),
 		'priority'	=> '1',
 		'section'  	=> 'catchresponsive_featured_content_settings',
 		'settings' 	=> 'catchresponsive_theme_options[featured_content_option]',
@@ -53,7 +59,7 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 	$wp_customize->add_setting( 'catchresponsive_theme_options[featured_content_layout]', array(
 		'capability'		=> 'edit_theme_options',
 		'default'			=> $defaults['featured_content_layout'],
-		'sanitize_callback' => 'sanitize_key',
+		'sanitize_callback' => 'catchresponsive_sanitize_select',
 	) );
 
 	$catchresponsive_featured_content_layout_options = catchresponsive_featured_content_layout_options();
@@ -63,12 +69,13 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 	}
 
 	$wp_customize->add_control( 'catchresponsive_theme_options[featured_content_layout]', array(
-		'choices'  	=> $choices,
-		'label'    	=> __( 'Select Featured Content Layout', 'catchresponsive' ),
-		'priority'	=> '2',
-		'section'  	=> 'catchresponsive_featured_content_settings',
-		'settings' 	=> 'catchresponsive_theme_options[featured_content_layout]',
-		'type'	  	=> 'select',
+		'active_callback'	=> 'catchresponsive_is_featured_content_active',
+		'choices'  			=> $choices,
+		'label'    			=> __( 'Select Featured Content Layout', 'catch-responsive' ),
+		'priority'			=> '2',
+		'section'  			=> 'catchresponsive_featured_content_settings',
+		'settings' 			=> 'catchresponsive_theme_options[featured_content_layout]',
+		'type'	  			=> 'select',
 	) );
 
 	$wp_customize->add_setting( 'catchresponsive_theme_options[featured_content_position]', array(
@@ -78,23 +85,18 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( 'catchresponsive_theme_options[featured_content_position]', array(
-		'label'		=> __( 'Check to Move above Footer', 'catchresponsive' ),
-		'priority'	=> '3',
-		'section'  	=> 'catchresponsive_featured_content_settings',
-		'settings'	=> 'catchresponsive_theme_options[featured_content_position]',
-		'type'		=> 'checkbox',
-	) );  
-
-	$wp_customize->add_section( 'catchresponsive_featured_content_type', array(
-		'panel'			=> 'catchresponsive_featured_content_options',
-		'priority'		=> 2,
-		'title'			=> __( 'Featured Content Type', 'catchresponsive' ),
+		'active_callback'	=> 'catchresponsive_is_featured_content_active',
+		'label'				=> __( 'Check to Move above Footer', 'catch-responsive' ),
+		'priority'			=> '3',
+		'section'  			=> 'catchresponsive_featured_content_settings',
+		'settings'			=> 'catchresponsive_theme_options[featured_content_position]',
+		'type'				=> 'checkbox',
 	) );
 
 	$wp_customize->add_setting( 'catchresponsive_theme_options[featured_content_type]', array(
 		'capability'		=> 'edit_theme_options',
 		'default'			=> $defaults['featured_content_type'],
-		'sanitize_callback'	=> 'sanitize_key',
+		'sanitize_callback'	=> 'catchresponsive_sanitize_select',
 	) );
 
 	$catchresponsive_featured_content_types = catchresponsive_featured_content_types();
@@ -104,12 +106,13 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 	}
 
 	$wp_customize->add_control( 'catchresponsive_theme_options[featured_content_type]', array(
-		'choices'  	=> $choices,
-		'label'    	=> __( 'Select Content Type', 'catchresponsive' ),
-		'priority'	=> '3',
-		'section'  	=> 'catchresponsive_featured_content_type',
-		'settings' 	=> 'catchresponsive_theme_options[featured_content_type]',
-		'type'	  	=> 'select',
+		'active_callback'	=> 'catchresponsive_is_featured_content_active',
+		'choices'  			=> $choices,
+		'label'    			=> __( 'Select Content Type', 'catch-responsive' ),
+		'priority'			=> '3',
+		'section'  			=> 'catchresponsive_featured_content_settings',
+		'settings' 			=> 'catchresponsive_theme_options[featured_content_type]',
+		'type'	  			=> 'select',
 	) );
 
 	$wp_customize->add_setting( 'catchresponsive_theme_options[featured_content_headline]', array(
@@ -119,12 +122,13 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( 'catchresponsive_theme_options[featured_content_headline]' , array(
-		'description'	=> __( 'Leave field empty if you want to remove Headline', 'catchresponsive' ),
-		'label'    		=> __( 'Headline for Featured Content', 'catchresponsive' ),
-		'priority'		=> '4',
-		'section'  		=> 'catchresponsive_featured_content_type',
-		'settings' 		=> 'catchresponsive_theme_options[featured_content_headline]',
-		'type'	   		=> 'text',
+		'active_callback'	=> 'catchresponsive_is_featured_content_active',
+		'description'		=> __( 'Leave field empty if you want to remove Headline', 'catch-responsive' ),
+		'label'    			=> __( 'Headline for Featured Content', 'catch-responsive' ),
+		'priority'			=> '4',
+		'section'  			=> 'catchresponsive_featured_content_settings',
+		'settings' 			=> 'catchresponsive_theme_options[featured_content_headline]',
+		'type'	   			=> 'text',
 		)
 	);
 
@@ -135,36 +139,61 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( 'catchresponsive_theme_options[featured_content_subheadline]' , array(
-		'description'	=> __( 'Leave field empty if you want to remove Sub-headline', 'catchresponsive' ),
-		'label'    		=> __( 'Sub-headline for Featured Content', 'catchresponsive' ),
-		'priority'		=> '5',
-		'section'  		=> 'catchresponsive_featured_content_type',
-		'settings' 		=> 'catchresponsive_theme_options[featured_content_subheadline]',
-		'type'	   		=> 'text',
+		'active_callback'	=> 'catchresponsive_is_featured_content_active',
+		'description'		=> __( 'Leave field empty if you want to remove Sub-headline', 'catch-responsive' ),
+		'label'    			=> __( 'Sub-headline for Featured Content', 'catch-responsive' ),
+		'priority'			=> '5',
+		'section'  			=> 'catchresponsive_featured_content_settings',
+		'settings' 			=> 'catchresponsive_theme_options[featured_content_subheadline]',
+		'type'	   			=> 'text',
 		) 
 	);
 
 	$wp_customize->add_setting( 'catchresponsive_theme_options[featured_content_number]', array(
 		'capability'		=> 'edit_theme_options',
 		'default'			=> $defaults['featured_content_number'],
-		'sanitize_callback'	=> 'catchresponsive_sanitize_no_of_slider',
+		'sanitize_callback'	=> 'catchresponsive_sanitize_number_range',
 	) );
 
 	$wp_customize->add_control( 'catchresponsive_theme_options[featured_content_number]' , array(
-		'description'	=> __( 'Save and refresh the page if No. of Featured Content is changed (Max no of Featured Content is 20)', 'catchresponsive' ),
-		'input_attrs' 	=> array(
-            'style' => 'width: 45px;',
-            'min'   => 0,
-            'max'   => 20,
-            'step'  => 1,
-        	),
-		'label'    		=> __( 'No of Featured Content', 'catchresponsive' ),
-		'priority'		=> '6',
-		'section'  		=> 'catchresponsive_featured_content_type',
-		'settings' 		=> 'catchresponsive_theme_options[featured_content_number]',
-		'type'	   		=> 'number',
+		'active_callback'	=> 'catchresponsive_is_demo_featured_content_inactive',
+		'description'		=> __( 'Save and refresh the page if No. of Featured Content is changed (Max no of Featured Content is 20)', 'catch-responsive' ),
+		'input_attrs' 		=> array(
+						            'style' => 'width: 45px;',
+						            'min'   => 0,
+						            'max'   => 20,
+						            'step'  => 1,
+						        	),
+		'label'    			=> __( 'No of Featured Content', 'catch-responsive' ),
+		'priority'			=> '6',
+		'section'  			=> 'catchresponsive_featured_content_settings',
+		'settings' 			=> 'catchresponsive_theme_options[featured_content_number]',
+		'type'	   			=> 'number',
 		) 
 	);
+
+	$wp_customize->add_setting( 'catchresponsive_theme_options[featured_content_show]', array(
+		'capability'		=> 'edit_theme_options',
+		'default'			=> $defaults['featured_content_show'],
+		'sanitize_callback'	=> 'catchresponsive_sanitize_select',
+	) ); 
+
+	$catchresponsive_featured_content_show = catchresponsive_featured_content_show();
+	$choices = array();
+	foreach ( $catchresponsive_featured_content_show as $catchresponsive_featured_content_shows ) {
+		$choices[$catchresponsive_featured_content_shows['value']] = $catchresponsive_featured_content_shows['label'];
+	}
+
+	$wp_customize->add_control( 'catchresponsive_theme_options[featured_content_show]', array(
+		'active_callback'	=> 'catchresponsive_is_demo_featured_content_inactive',
+		'choices'  			=> $choices,
+		'label'    			=> __( 'Display Content', 'catch-responsive' ),
+		'priority'			=> '6.1',
+		'section'  			=> 'catchresponsive_featured_content_settings',
+		'settings' 			=> 'catchresponsive_theme_options[featured_content_show]',
+		'type'	  			=> 'select',
+	) );	
+
 
 
 	//loop for featured page content
@@ -174,12 +203,13 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 			'sanitize_callback'	=> 'catchresponsive_sanitize_page',
 		) );
 
-		$wp_customize->add_control( 'catchresponsive_featured_content_page_'. $i .'', array(
-			'label'    	=> __( 'Featured Page', 'catchresponsive' ) . ' ' . $i ,
-			'priority'	=> '7' . $i,
-			'section'  	=> 'catchresponsive_featured_content_type',
-			'settings' 	=> 'catchresponsive_theme_options[featured_content_page_'. $i .']',
-			'type'	   	=> 'dropdown-pages',
+		$wp_customize->add_control( 'catchresponsive_theme_options[featured_content_page_'. $i .']', array(
+			'active_callback'	=> 'catchresponsive_is_demo_featured_content_inactive',
+			'label'    			=> __( 'Featured Page', 'catch-responsive' ) . ' ' . $i ,
+			'priority'			=> '7' . $i,
+			'section'  			=> 'catchresponsive_featured_content_settings',
+			'settings' 			=> 'catchresponsive_theme_options[featured_content_page_'. $i .']',
+			'type'	   			=> 'dropdown-pages',
 		) );
 	}
 // Featured Content Setting End

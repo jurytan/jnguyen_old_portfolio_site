@@ -27,26 +27,26 @@ if ( ! defined( 'CATCHRESPONSIVE_THEME_VERSION' ) ) {
 function catchresponsive_widgets_init() {
 	//Primary Sidebar
 	register_sidebar( array(
-		'name'          => __( 'Primary Sidebar', 'catchresponsive' ),
+		'name'          => __( 'Primary Sidebar', 'catch-responsive' ),
 		'id'            => 'primary-sidebar',
 		'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="widget-wrap">',
 		'after_widget'  => '</div><!-- .widget-wrap --></section><!-- #widget-default-search -->',
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
-		'description'	=> __( 'This is the primary sidebar if you are using a two or three column site layout option.', 'catchresponsive' ),
+		'description'	=> __( 'This is the primary sidebar if you are using a two or three column site layout option.', 'catch-responsive' ),
 	) );
 
 	$footer_sidebar_number = 3; //Number of footer sidebars
 	
 	for( $i=1; $i <= $footer_sidebar_number; $i++ ) {
 		register_sidebar( array(
-			'name'          => sprintf( __( 'Footer Area %d', 'catchresponsive' ), $i ),
+			'name'          => sprintf( __( 'Footer Area %d', 'catch-responsive' ), $i ),
 			'id'            => sprintf( 'footer-%d', $i ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="widget-wrap">',
 			'after_widget'  => '</div><!-- .widget-wrap --></section><!-- #widget-default-search -->',
 			'before_title'  => '<h4 class="widget-title">',
 			'after_title'   => '</h4>',
-			'description'	=> sprintf( __( 'Footer %d widget area.', 'catchresponsive' ), $i ),
+			'description'	=> sprintf( __( 'Footer %d widget area.', 'catch-responsive' ), $i ),
 		) );
 	}
 }
@@ -66,8 +66,8 @@ class Catchresponsive_social_icons_widget extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'catchresponsive_social_icons', // Base ID
-			'Catchresponsive Social Icons', // Name
-			array( 'description' => __( 'Use this widget to add Social Icons as a widget. ', 'catchresponsive' ) ) // Args
+			__( 'CT: Social Icons', 'catch-responsive' ), // Name
+			array( 'description' => __( 'Use this widget to add Social Icons as a widget. ', 'catch-responsive' ) ) // Args
 		);
 	}
 
@@ -108,7 +108,7 @@ class Catchresponsive_social_icons_widget extends WP_Widget {
 		}
 		?>
 		<p>
-		<label for="<?php echo $this->get_field_name( 'title' ); ?>"><?php _e( 'Title (optional):', 'catchresponsive' ); ?></label>
+		<label for="<?php echo $this->get_field_name( 'title' ); ?>"><?php _e( 'Title (optional):', 'catch-responsive' ); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 		</p>
         <?php
