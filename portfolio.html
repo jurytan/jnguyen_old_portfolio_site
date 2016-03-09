@@ -11,13 +11,17 @@
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="js/script.js"></script>
 <script src="js/parallax.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+<script src="js/materialize.js"></script>
+<!--<script src="js/materialize.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>-->
 
 <!-- CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
 <link rel="stylesheet" href="css/style.css">
+<!-- <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/> -->
+<!--<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
 <!--Import Google Icon Font-->
 <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -54,9 +58,9 @@
 <div class="parallax-container">
       <div class="parallax"><img src="imgs/parallax1.jpg" alt="Sunset in Big Sur, CA"></div>
 </div>
-<main>
-  <div class="container">
-      <img id="profilepic" class="circle responsive-img" src="imgs/profile.jpg" alt="" data-caption="Profile pic of me!">
+<div class="main">
+  <div class="container" id="portfolio-container">
+      <img id="profilepic" class="circle responsive-img hoverable" src="imgs/profile.jpg" alt="" data-caption="Profile pic of me!">
       <header class="header center light-blue-text">
           <h1>Jonathan Nguyen</h1>
       </header>
@@ -200,7 +204,7 @@
           </div>
       </div>
   </div>
-</main>
+</div>
 <footer class="page-footer light-blue">
   <div class="container">
     <div class="row">
@@ -225,7 +229,7 @@
 <script>
     var options = [
       //{selector: '#profilepic', offset: 50, callback: 'Materialize.toast("Welcome!", 1500); $("#call-1").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});' },
-      {selector: '#profilepic', offset: 50, callback: 'Materialize.fadeInImage("#profilepic"); $("#call-4").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});' },
+      {selector: '#profilepic', offset: 0, callback: 'Materialize.fadeInImage("#profilepic"); $("#call-4").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});' },
       {selector: '#staggered-list-1', offset: 10, callback: 'Materialize.showStaggeredList("#staggered-list-1"); $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});' },
       {selector: '#staggered-list-2', offset: 10, callback: 'Materialize.showStaggeredList("#staggered-list-2"); $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});' }
     ];

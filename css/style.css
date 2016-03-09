@@ -8,7 +8,7 @@ body {
   flex-direction: column;
 }
 
-main {
+.main {
   flex: 1 0 auto;
 }
 
@@ -17,7 +17,7 @@ nav ul li a:hover {
 }
 
 .parallax-container {
-    height: "200px";
+    height: "25px";
   }
 
 /* label color */
@@ -60,6 +60,7 @@ nav ul li a:hover {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 3em;
+  position: relative;
   opacity: 0;
  }
 
@@ -92,7 +93,24 @@ nav ul li a:hover {
   display: inline-block;
 }
 
+@media (max-width: 600px) {
+  #portfolio-container {
+    top: -130px;
+  }
+
+}
+
+#portfolio-container {
+  position: relative;
+  top: -175px;
+  /*top: -130px; //for mobile*/
+}
+
 footer p a {
   text-decoration: none;
   color: white;
+}
+
+.mdi-navigation-menu:before {
+  padding-left: 10px;
 }
