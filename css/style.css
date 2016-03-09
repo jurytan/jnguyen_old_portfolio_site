@@ -93,7 +93,7 @@ nav ul li a:hover {
   display: inline-block;
 }
 
-@media (max-width: 600px) {
+@/media (max-width: 600px) {
   #portfolio-container {
     top: -130px;
   }
@@ -103,6 +103,7 @@ nav ul li a:hover {
 #portfolio-container {
   position: relative;
   top: -175px;
+  /*top: -18vh;*/
   /*top: -130px; //for mobile*/
 }
 
