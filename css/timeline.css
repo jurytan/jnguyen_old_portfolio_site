@@ -117,6 +117,10 @@
   right: auto;
 }
 
+.timeline-badge i {
+  vertical-align: sub;
+}
+
 .timeline-badge.primary {
   background-color: #2e6da4 !important;
 }
