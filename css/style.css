@@ -93,7 +93,7 @@ nav ul li a:hover {
   display: inline-block;
 }
 
-@/media (max-width: 600px) {
+@media (max-width: 992px) {
   #portfolio-container {
     top: -130px;
   }

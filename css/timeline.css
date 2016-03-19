@@ -154,3 +154,33 @@
 .timeline-body > p + p {
   margin-top: 5px;
 }
+
+@media (max-width: 992px) {
+  .timeline:before {
+    left: 0;
+  }
+
+  .timeline > li > .timeline-badge {
+    left: 0;
+  }
+
+  .timeline > li > .timeline-panel:before,
+  .timeline > li > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+
+  .timeline > li > .timeline-panel {
+      float: left;
+      margin-left: 5vh;
+      width: auto;
+  }
+
+  .timeline > li.timeline-inverted > .timeline-panel {
+      float: left;
+      margin-left: 5vh;
+      width: auto;
+  }
+}
