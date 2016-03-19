@@ -155,6 +155,8 @@
   margin-top: 5px;
 }
 
+/* Written by me to make it mobile friendly :) */
+
 @media (max-width: 992px) {
   .timeline:before {
     left: 0;
