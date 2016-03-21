@@ -115,3 +115,12 @@ footer p a {
 .mdi-navigation-menu:before {
   padding-left: 10px;
 }
+
+.card .card-content a:not(.btn):not(.btn-large):not(.btn-floating):hover {
+  color: #C5C2C2;
+}
+
+.card .card-content a:not(.btn):not(.btn-large):not(.btn-floating) {
+  color: #FFFFFF;
+  transition: color .3s ease;
+}
