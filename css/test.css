@@ -1,0 +1,159 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Footer*/
+body {
+  background-color: #002331;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+nav ul li a:hover {
+   text-decoration:none;
+}
+
+.parallax-container {
+    height: "25px";
+  }
+
+@media (min-width: 600px) {
+  .card {
+    margin: 0 0.1rem 0.05rem 0 !important;
+    height: 23vh;
+    width: 100%;
+  }
+}
+
+.navbar .nav-wrapper .brand-logo {
+  padding-left: 5vh;
+}
+
+.background {
+  background-color: #002331 !important;
+}
+
+.sub-text {
+  color: #507D7A !important;
+}
+
+.col {
+  padding: 0 0.15rem !important;
+}
+
+.row {
+  margin-bottom: 0.25rem !important;
+}
+
+.blue.darken-7 {
+  background-color: #00202B !important;
+}
+
+/* label color */
+ .input-field label {
+   color: #000;
+ }
+ /* label focus color */
+ .input-field input[type=text]:focus + label {
+   color: #000;
+ }
+ /* label underline focus color */
+ .input-field input[type=text]:focus {
+   border-bottom: 1px solid #000;
+   box-shadow: 0 1px 0 0 #000;
+ }
+ /* valid color */
+ .input-field input[type=text].valid {
+   border-bottom: 1px solid #000;
+   box-shadow: 0 1px 0 0 #000;
+ }
+ /* invalid color */
+ .input-field input[type=text].invalid {
+   border-bottom: 1px solid #000;
+   box-shadow: 0 1px 0 0 #000;
+ }
+ /* icon prefix focus color */
+ .input-field .prefix.active {
+   color: #000;
+ }
+
+ span {
+   text-align: center;
+   text-decoration: none;
+ }
+
+ #profilepic {
+  display: block;
+	width: 50%;
+  max-width: 256px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3em;
+  position: relative;
+  opacity: 0;
+ }
+
+ #github, #linkedin {
+	max-width: 10%;
+  opacity: 0.3;
+  background: transparent;
+ }
+
+ #github:hover, #linkedin:hover {
+   opacity: 1;
+ }
+
+ #staggered-list-1 li, #staggered-list-2 li{
+   opacity: 0;
+ }
+
+ #disappearing-img {
+   opacity: 0;
+ }
+
+#commit-icon {
+  display: inline-block;
+  width: 25px;
+  height: auto;
+  padding-right: 3px;
+}
+
+#NC_commits, #GnT_commits {
+  display: inline-block;
+}
+
+@media (max-width: 992px) {
+  #portfolio-container {
+    top: -130px;
+  }
+
+}
+
+#portfolio-container {
+  position: relative;
+  top: -175px;
+  /*top: -18vh;*/
+  /*top: -130px; //for mobile*/
+}
+
+footer p a {
+  text-decoration: none;
+  color: white;
+}
+
+.mdi-navigation-menu:before {
+  padding-left: 10px;
+}
+
+.card .card-content a:not(.btn):not(.btn-large):not(.btn-floating):hover {
+  color: #C5C2C2;
+}
+
+.card .card-content a:not(.btn):not(.btn-large):not(.btn-floating) {
+  color: #FFFFFF;
+  transition: color .3s ease;
+}
