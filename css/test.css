@@ -25,12 +25,21 @@ nav ul li a:hover {
   .card {
     margin: 0 0.1rem 0.05rem 0 !important;
     height: 23vh;
-    width: 100%;
   }
 }
 
 .navbar .nav-wrapper .brand-logo {
   padding-left: 5vh;
+}
+
+.logo {
+  height: 15vh;
+}
+
+#logo {
+  height: 15vh;
+  display: block;
+  margin: auto;
 }
 
 .background {
@@ -47,6 +56,10 @@ nav ul li a:hover {
 
 .row {
   margin-bottom: 0.25rem !important;
+}
+
+.card {
+  width: 100%;
 }
 
 .blue.darken-7 {
