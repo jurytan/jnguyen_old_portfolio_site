@@ -30,14 +30,17 @@ nav ul li a:hover {
 
 .navbar .nav-wrapper .brand-logo {
   padding-left: 5vh;
+  font-weight: 100;
+  font-family: "Roboto";
+  text-transform: uppercase;
 }
 
 .logo {
-  height: 15vh;
+  height: 10vh;
 }
 
 #logo {
-  height: 15vh;
+  height: 10vh;
   display: block;
   margin: auto;
 }
@@ -64,7 +67,7 @@ nav ul li a:hover {
 }
 
 
-.sub-text {
+.text {
   color: #507D7A !important;
 }
 
@@ -117,8 +120,40 @@ nav ul li a:hover {
    text-decoration: none;
  }
 
- .hover-detail card:hover {
-   /*adding this for later when I add in a hover for the cards*/
+#intro-card {
+  font-weight: 100;
+  color: white !important;
+}
+
+ .overlay    {
+   background:rgba(0,0,0,.40);
+   text-align:center;
+   width: inherit;
+   height: inherit;
+   opacity:0;
+   -webkit-transition: opacity .25s ease;
+   -moz-transition: opacity .25s ease;
+   position: relative;
+ }
+
+ .card:hover .overlay {
+   opacity:1;
+ }
+
+ .hover-text {
+
+   font-family: "Roboto Light";
+   color:rgba(255,255,255,.85);
+ }
+
+ .hover-header {
+   position: absolute;
+   top:  50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-transform: uppercase;
+   font-weight:100;
+   font-size:3vw;
  }
 
  #profilepic {
