@@ -13,8 +13,14 @@ body {
   flex: 1 0 auto;
 }
 
+nav ul li a {
+  text-transform: uppercase;
+}
+
 nav ul li a:hover {
    text-decoration:none;
+   background-color: white;
+   color: black;
 }
 
 .parallax-container {
@@ -28,11 +34,19 @@ nav ul li a:hover {
   }
 }
 
+@media (max-width: 600px) {
+  .card {
+    height: 20vh;
+  }
+}
+
+
 .navbar .nav-wrapper .brand-logo {
   padding-left: 5vh;
   font-weight: 100;
   font-family: "Roboto";
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .logo {
@@ -126,7 +140,6 @@ nav ul li a:hover {
 }
 
  .overlay    {
-   background:rgba(0,0,0,.40);
    text-align:center;
    width: inherit;
    height: inherit;
@@ -136,12 +149,19 @@ nav ul li a:hover {
    position: relative;
  }
 
+ .active-page {
+   background-color: #FD3D50 !important;
+ }
+
+ .blue-violet {
+   background-color: #6B30EA !important;
+ }
+
  .card:hover .overlay {
    opacity:1;
  }
 
  .hover-text {
-
    font-family: "Roboto Light";
    color:rgba(255,255,255,.85);
  }
@@ -152,8 +172,9 @@ nav ul li a:hover {
    left: 50%;
    transform: translate(-50%, -50%);
    text-transform: uppercase;
-   font-weight:100;
+   font-weight: bold;
    font-size:3vw;
+   letter-spacing: 2px;
  }
 
  #profilepic {
