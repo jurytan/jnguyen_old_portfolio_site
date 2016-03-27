@@ -23,6 +23,13 @@ nav ul li a:hover {
    color: black;
 }
 
+.card-image {
+    height: 20vh !important;
+    display: block !important;
+    left-margin: auto !important;
+    right-margin: auto !important;
+}
+
 .parallax-container {
     height: "25px";
   }
@@ -33,9 +40,7 @@ nav ul li a:hover {
     height: 23vh;
   }
 
-  #test-parallax {
-    width: 85.45vw;
-    left:  -0.6em;
+    #test-parallax {
     height: 30vh;
     margin-bottom: 5px;
   }
@@ -48,8 +53,6 @@ nav ul li a:hover {
   }
 
   #test-parallax {
-    width: 70.5vw;
-    left:  -0.6em;
     height: 30vh;
     margin-bottom: 5px;
   }
@@ -60,12 +63,12 @@ nav ul li a:hover {
     height: 20vh;
   }
 
+
   #test-parallax {
-    width: 90vw;
-    left:  -0.6em;
     height: 30vh;
     margin-bottom: 5px;
   }
+
 }
 
 
@@ -168,6 +171,7 @@ nav ul li a:hover {
    -webkit-transition: opacity .25s ease;
    -moz-transition: opacity .25s ease;
    position: relative;
+   z-index: 1000;
  }
 
  .active-page {
