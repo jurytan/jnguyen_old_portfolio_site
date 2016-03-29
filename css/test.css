@@ -23,11 +23,16 @@ nav ul li a:hover {
    color: black;
 }
 
+.card {
+  position: relative !important;
+}
+
 .card-image {
     height: 23vh !important;
     display: block !important;
-    margin-left: auto;
-    margin-right: auto;
+    overflow: auto;
+    margin: auto;
+
 }
 
 .parallax-container {
