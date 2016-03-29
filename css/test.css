@@ -24,10 +24,10 @@ nav ul li a:hover {
 }
 
 .card-image {
-    height: 20vh !important;
+    height: 23vh !important;
     display: block !important;
-    left-margin: auto !important;
-    right-margin: auto !important;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .parallax-container {
