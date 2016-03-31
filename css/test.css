@@ -30,16 +30,28 @@ nav ul li a:hover {
 }
 
 .card-full-image {
-  height: 23vh;
+  height: auto;
+  width: 43vw;
   display: block;
   position: absolute;
   overflow: auto;
   margin: auto;
-  z-index: 100;
+  bottom: 0px;
+  right: 0px;
 }
 
 .card-full-image:hover {
   opacity: 0;
+}
+
+#website-img {
+  height: 23vh;
+  width: auto;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  display: block;
+  overflow:hidden;
 }
 
 .card-image {
@@ -120,7 +132,7 @@ nav ul li a:hover {
     height: "25px";
   }
 
-@media (max-width: 980px) {
+@media screen and (min-width: 600px) and (max-width: 980px) {
   .card {
     margin: 0 0.1rem 0.05rem 0 !important;
     height: 23vh;
@@ -134,6 +146,11 @@ nav ul li a:hover {
   .hover-header{
     font-size: 5vw;
     word-wrap: break-word;
+  }
+
+  .card-full-image {
+    width: 60vw;
+    top: 15%;
   }
 
 }
@@ -158,6 +175,7 @@ nav ul li a:hover {
 @media (max-width: 600px) {
   .card {
     height: 20vh;
+    margin: 10px 0 0 0;
   }
 
 
@@ -168,6 +186,16 @@ nav ul li a:hover {
 
   .hover-header{
     font-size: 10vw;
+  }
+
+  #timeline-img {
+    height: auto;
+    width: 95vw;
+    top: 15%;
+  }
+
+  #website-img {
+    height: 20vh;
   }
 
 }
