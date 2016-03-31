@@ -29,6 +29,19 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
+.card-full-image {
+  height: 23vh;
+  display: block;
+  position: absolute;
+  overflow: auto;
+  margin: auto;
+  z-index: 100;
+}
+
+.card-full-image:hover {
+  opacity: 0;
+}
+
 .card-image {
     height: 125px !important;
     display: block !important;
