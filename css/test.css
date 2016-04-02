@@ -155,6 +155,19 @@ nav ul li a:hover {
 
 }
 
+table tr td {
+  color: white;
+  font-family: 'Roboto Thin';
+}
+
+.info-table {
+  font-size: 20px;
+}
+
+#GnT-parallax {
+  height: 70vh;
+}
+
 @media (min-width: 980px) {
   .card {
     margin: 0 0.1rem 0.05rem 0 !important;
