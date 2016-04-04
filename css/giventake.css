@@ -23,6 +23,22 @@
 
 }
 
+.on-row {
+  background-color: ;
+}
+
+.off-row {
+  background-color: white;
+}
+
+.on-row-text *{
+
+}
+
+.off-row-text *{
+  color: black;
+}
+
 .info {
   color: white;
   text-decoration: none;
@@ -30,7 +46,7 @@
   overflow: auto;
 }
 
-.info p {
+.info * {
   font-size: 2em;
   position: flex;
   align-items: center;
@@ -38,14 +54,15 @@
 }
 
 #GnT-github-link {
-  max-height: 120px;
-  max-width: 120px;
+  max-height: 90px;
+  max-width: 90px;
   opacity: 0.7;
   background: transparent;
   display: block;
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  top: 20px;
 }
 
 #GnT-github-link:hover {
