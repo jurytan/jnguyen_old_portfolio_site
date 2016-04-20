@@ -23,6 +23,10 @@
 
 }
 
+.row {
+  padding: 5rem !important;
+}
+
 .on-row {
   background-color: ;
 }
