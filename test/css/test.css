@@ -1,6 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 
+h1 {
+  font-family: "Roboto Thin" !important;
+  color: white !important;
+}
+
 /*Footer*/
 body {
   background-color: #002331;
