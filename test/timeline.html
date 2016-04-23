@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Nguyening Code</title>
+
+<!-- Define all CDNs for Angular, JQuery, Bootstrap -->
+
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/test.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/materialize.js"></script>
+<!-- <script src="js/materialize.min.js"></script> -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>-->
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!--<link rel="stylesheet" href="css/style.css">-->
+<link rel="stylesheet" href="css/test.css">
+<!-- Thanks to betul who created the css for the timeline! Here's a link: http://codepen.io/betdream/details/Ifvbi -->
+<link rel="stylesheet" href="css/timeline.css">
+<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+<!--<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>-->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"> -->
+<!--Import Google Icon Font-->
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+</head>
+<body>
+<div class="navbar">
+    <nav class="light-blue">
+        <div class="nav-wrapper">
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="test.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a class="active-page" href="timeline.html">Timeline</a></li>
+                <li><a href="/blog">Blog</a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            <ul id="slide-out" class="side-nav">
+                <li><a href="test.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a class="active-page" href="timeline.html">Timeline</a></li>
+                <li><a href="/blog">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="main">
+    <div class="container">
+        <header class="header center light-blue-text">
+            <h1>Timeline</h1>
+        </header>
+        <div class="row center">
+            <h5 class="header col s12 light">History In The Making</h5>
+        </div>
+          <ul class="timeline">
+            <li>
+              <div class="timeline-badge"><i class="material-icons">assignment</i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Rutgers University</h4>
+                  <p><small class="text-muted">2009 - 2015</small></p>
+                </div>
+                <div class="timeline-body">
+                  <h5>Student</h5>
+                  <p>Earned my bachelors degree in Information Technology and minored in Computer Science.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-badge warning"><i class="material-icons">business</i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">comScore</h4>
+                  <p><small class="text-muted">June - September 2012</small></p>
+                </div>
+                <div class="timeline-body">
+                  <h5>Data Analyst Intern - Automation Project</h5>
+                  <p>Self taught Python and PostgreSQL for job. Worked on creating a group of Python scripts in order to automate the sorting process. Process was responsible for categorizing Android and iOS apps based on data collected from in-house software against data aggregated from spider crawls. Project was shown to have 97% accuracy, but 50% hit rate. Project was shown to reduce workload on the project by 50%.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-badge danger"><i class="material-icons">business</i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">ECAASU</h4>
+                  <p><small class="text-muted">2015</small></p>
+                </div>
+                <div class="timeline-body">
+                  <h5>Lead Web Developer - ECAASU 2016</h5>
+                  <p>Volunteered as the head web developer for the ECAASU 2016 site. Worked closely with a team of people to create site for organization. This included a countdown counter, a calendar widget, and a mobile-ready site built using Bootstrap. Was repsonsible for choosing and implementing the design as well as the general layout of the site. Site was created with the help of a template and was enhanced with custom code. Left after several months due to time constraints.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-badge success"><i class="material-icons">business</i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Model N</h4>
+                  <p><small class="text-muted">2015 - Present</small></p>
+                </div>
+                <div class="timeline-body">
+                  <h5>Salesforce Developer - Backend</h5>
+                  <p>I helped work on the back end part of the software by developing new features, creating custom code for customers, and integrating third party software into Salesforce. Worked mostly on back end code, but has experience with working on smaller front end issues. Was also in charge of debugging issues in the code base and refactoring sections of code to work with new features. </p>
+                </div>
+              </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<footer class="page-footer light-blue">
+  <div class="container">
+    <div class="row">
+      <div class="col m6 s12">
+        <h5 class="white-text">Get In Touch</h5>
+        <p class="grey-text text-lighten-4"><a href="mailto:jnguyen7410@gmail.com">jnguyen7410@gmail.com</a></p>
+        <p class="grey-text text-lighten-4"><a href="tel:+17326146638">(732) 614-6638</a></p>
+      </div>
+      <div class="col m6 s12">
+        <h5 class="white-text">Find Me</h5>
+        <a href="https://github.com/jnguyen7410"><img id="github" src="img/github.png" alt="Github" class="responsive-img"></a>
+        <a href="https://www.linkedin.com/in/jonathan-nguyen-57b00161"><img id="linkedin" src="img/linkedin.png" alt="LinkedIn" class="responsive-img"></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2016 Nguyening Code. All Rights Reserved.
+    </div>
+  </div>
+</footer
+</body>
+</html>
