@@ -198,7 +198,7 @@ table tr td {
 
   #test-parallax {
     height: 30vh;
-    margin-bottom: 5px;
+    /*margin-bottom: 5px;*/
   }
 
   .hover-header{
@@ -255,6 +255,7 @@ table tr td {
   color: #507D7A !important;
 }
 
+/*
 .col {
   padding: 0 0.15rem !important;
 }
@@ -262,7 +263,7 @@ table tr td {
 .row {
   margin-bottom: 0.25rem !important;
 }
-
+*/
 .card {
   width: 100%;
 }
@@ -309,7 +310,8 @@ table tr td {
   color: white !important;
 }
 
- .active-page {
+ .active-page,
+ .accent-color {
    background-color: #FD3D50 !important;
  }
 

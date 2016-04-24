@@ -60,6 +60,16 @@
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 }
 
+.timeline > li > .timeline-panel > a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.timeline > li > .timeline-panel > img {
+  width: inherit;
+}
+
 .timeline > li > .timeline-panel > h4,
 .timeline > li > .timeline-panel > h5  {
   font-weight: normal;
@@ -186,16 +196,15 @@
   .timeline > li > .timeline-panel {
       float: left;
       margin-left: 5vh;
-      width: auto;
+      width: 75vw;
   }
 
   .timeline > li.timeline-inverted > .timeline-panel {
       float: left;
       margin-left: 5vh;
-      width: auto;
+      width: 75vw;
   }
 
   /* Own edits to page based on custom rules to fit design */
-
 
 }
