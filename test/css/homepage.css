@@ -1,0 +1,221 @@
+@charset "utf-8";
+/* CSS Document */
+
+.card {
+  position: relative !important;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-full-image {
+  height: auto;
+  width: 43vw;
+  display: block;
+  position: absolute;
+  overflow: auto;
+  margin: auto;
+  bottom: 0px;
+  right: 0px;
+}
+
+.card-full-image:hover {
+  opacity: 0;
+}
+
+#website-img {
+  height: 23vh;
+  width: auto;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  display: block;
+  overflow:hidden;
+}
+
+.card-image {
+    height: 125px !important;
+    display: block !important;
+    position: absolute;
+    overflow: auto;
+    margin: auto;
+    top: 15%;
+}
+
+.overlay    {
+  text-align:center;
+  width: inherit;
+  height: inherit;
+  opacity:0;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.card:hover .overlay {
+  opacity:1;
+}
+
+.hover-text {
+  color:rgba(255,255,255,.85);
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  transform: translateY(40px);
+  -webkit-transform: translateY(40px);
+
+}
+
+.card:hover .hover-header,
+.card:focus .hover-header {
+  opacity: 1;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+}
+
+.card:hover .hover-sub-text,
+.card:focus .hover-sub-text {
+  opacity: 1;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+}
+
+
+.hover-sub-text {
+  font-family: "Roboto Thin";
+  font-size: 1.25em;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.hover-header {
+  font-family: "Roboto Condensed";
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  opacity: 0;
+  transition-delay: 0.1s;
+  transition-duration: 0.2s;
+  margin: auto;
+  display: block;
+}
+
+
+.parallax-container {
+    height: "25px";
+  }
+
+@media screen and (min-width: 600px) and (max-width: 980px) {
+  .card {
+    margin: 0 0.1rem 0.05rem 0 !important;
+    height: 23vh;
+  }
+
+    #test-parallax {
+    height: 30vh;
+    margin-bottom: 5px;
+  }
+
+  .hover-header{
+    font-size: 5vw;
+    word-wrap: break-word;
+  }
+
+  .card-full-image {
+    width: 60vw;
+    top: 15%;
+  }
+
+}
+
+@media (min-width: 980px) {
+  .card {
+    margin: 0 0.1rem 0.05rem 0 !important;
+    height: 23vh;
+  }
+
+  #test-parallax {
+    height: 30vh;
+    margin-bottom: 5px;
+  }
+
+  .hover-header {
+    font-size:2.5vw;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .card {
+    height: 20vh;
+    margin: 10px 0 0 0;
+  }
+
+
+  #test-parallax {
+    height: 30vh;
+    margin-bottom: 5px;
+  }
+
+  .hover-header{
+    font-size: 10vw;
+  }
+
+  #timeline-img {
+    height: auto;
+    width: 95vw;
+    top: 15%;
+  }
+
+  #website-img {
+    height: 20vh;
+  }
+
+}
+
+.transparent {
+  background-color: transparent;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0) !important;
+  /*opacity: 0;*/
+}
+
+.no-shadow {
+  box-shadow: 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0) !important;
+}
+
+.col {
+  padding: 0 0.15rem !important;
+}
+
+.row {
+  margin-bottom: 0.25rem !important;
+}
+
+/*.card {
+  width: 100%;
+}*/
+
+
+ /*span {
+   text-align: center;
+   text-decoration: none;
+ }*/
+
+#intro-card {
+  font-weight: 100;
+  color: white !important;
+}
+
+.card .card-content a:not(.btn):not(.btn-large):not(.btn-floating):hover {
+  color: #C5C2C2;
+}
+
+.card .card-content a:not(.btn):not(.btn-large):not(.btn-floating) {
+  color: #FFFFFF;
+  transition: color .3s ease;
+}
