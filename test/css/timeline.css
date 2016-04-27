@@ -75,6 +75,10 @@
   font-weight: normal;
 }
 
+.timeline-heading {
+  text-align: center;
+}
+
 .timeline > li > .timeline-panel:before {
   position: absolute;
   top: 26px;
