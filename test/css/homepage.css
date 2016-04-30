@@ -84,6 +84,9 @@
   -webkit-transform: translateY(0px);
 }
 
+.no-hover:hover {
+  cursor: default;
+}
 
 .hover-sub-text {
   font-family: "Roboto Thin";
@@ -107,13 +110,13 @@
 
 
 .parallax-container {
-    height: "25px";
+    height: 25px;
   }
 
 @media screen and (min-width: 600px) and (max-width: 980px) {
   .card {
     margin: 0 0.1rem 0.05rem 0 !important;
-    height: 23vh;
+    height: 25vh;
   }
 
     #test-parallax {
@@ -152,7 +155,7 @@
 
 @media (max-width: 600px) {
   .card {
-    height: 20vh;
+    height: 28vh;
     margin: 10px 0 0 0;
   }
 
