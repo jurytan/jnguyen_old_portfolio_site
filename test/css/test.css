@@ -29,7 +29,7 @@ body {
 
 table tr td {
   color: white;
-  font-family: 'Roboto Thin';
+  font-family: 'Roboto Light';
 }
 
 .info-table {
@@ -201,6 +201,6 @@ footer p a {
 }
 
 .thin-text {
-  font-family: "Roboto Thin", sans-serif;
+  font-family: "Roboto Light", sans-serif;
   /*font-weight: bolder;*/
 }
