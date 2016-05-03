@@ -8,19 +8,23 @@
 }
 
 .left-text-block {
-
+  text-align: center;
+  width: 100%;
 }
 
 .right-text-block {
-
+  text-align: center;
+  width: 100%;
 }
 
 .left-picture-block {
-
+  text-align: center;
+  width: 100%;
 }
 
 .right-picture-block {
-
+  text-align: center;
+  width: 100%;
 }
 
 .row {
