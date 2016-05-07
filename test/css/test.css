@@ -186,7 +186,7 @@ table tr td {
 
 #portfolio-container {
   position: relative;
-  top: -175px;
+  /*top: -175px;*/
   /*top: -18vh;*/
   /*top: -130px; //for mobile*/
 }
@@ -203,4 +203,8 @@ footer p a {
 .thin-text {
   font-family: "Roboto Light", sans-serif;
   /*font-weight: bolder;*/
+}
+
+.hover-text {
+  font-family: "Roboto Condensed", sans-serif;
 }
