@@ -133,6 +133,10 @@ table tr td {
    background-color: #FD3D50 !important;
  }
 
+ .accent-color-text {
+   color: #FD3D50 !important;
+ }
+
  .blue-violet {
    background-color: #6B30EA !important;
  }
