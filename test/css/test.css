@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
+.uppercase, 
 nav ul li a {
   text-transform: uppercase;
 }
@@ -209,6 +210,7 @@ footer p a {
   /*font-weight: bolder;*/
 }
 
+.condensed,
 .hover-text {
   font-family: "Roboto Condensed", sans-serif;
 }
