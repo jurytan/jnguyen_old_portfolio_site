@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-.uppercase, 
+.uppercase,
 nav ul li a {
   text-transform: uppercase;
 }
@@ -201,6 +201,7 @@ footer p a {
   color: white;
 }
 
+.mdi-navigation-menu, 
 .mdi-navigation-menu:before {
   padding-left: 10px;
 }
