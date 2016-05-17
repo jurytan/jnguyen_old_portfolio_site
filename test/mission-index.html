@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Give-N-Take - Nguyening Code</title>
+<title>Nguyening Code</title>
 
 <!-- Define all CDNs for Angular, JQuery, Bootstrap -->
 
@@ -19,8 +19,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
+<link type="text/css" rel="stylesheet" href="../test/css/homepage.css" media="screen,projection">
 <link type="text/css" rel="stylesheet" href="../test/css/test.css" media="screen,projection">
-<link type="text/css" rel="stylesheet" href="../test/css/giventake.css" media="screen,projection">
 <link type="text/css" rel="stylesheet" href="../test/css/materialize.css"  media="screen,projection"/>
 <!--<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>-->
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"> -->
@@ -38,8 +38,8 @@
         <div class="nav-wrapper">
             <a href="test.html" class="brand-logo">NguyeningCode</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="test.html">Home</a></li>
-                <li><a class="active-page" href="projects.html">Projects</a></li>
+                <li><a class="active-page" href="test.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="timeline.html">Timeline</a></li>
                 <li><a href="/blog">Blog</a></li>
@@ -47,8 +47,8 @@
             <a href="test.html" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
             <ul id="slide-out" class="side-nav">
                 <li class="logo"><img id="logo" src="img/logo.png" alt="NguyeningCode Logo"/></li>
-                <li><a class="hoverable" href="test.html">Home</a></li>
-                <li><a class="active-page hoverable" href="projects.html">Projects</a></li>
+                <li><a class="active-page hoverable" href="test.html">Home</a></li>
+                <li><a class="hoverable" href="projects.html">Projects</a></li>
                 <li><a class="hoverable" href="portfolio.html">Portfolio</a></li>
                 <li><a class="hoverable" href="timeline.html">Timeline</a></li>
                 <li><a class="hoverable" href="/blog">Blog</a></li>
@@ -56,71 +56,31 @@
         </div>
     </nav>
 </div>
-<div class="container">
-  <div class="row">
-    <div class="col s12 m6">
-      <header class="header center white-text" style="font-family: 'Roboto Thin'" >
-          <h1>Give-N-Take</h1>
-      </header>
-    </div>
-    <div class="col s12 m3">
-        <a class="info" href="https://github.com/jnguyen7410/Give-N-Take"><img id="GnT-github-link" src="img/github.png" alt="Github" class="responsive-img"></a>
-    </div>
-    <div class="col s12 m3">
-        <a class="info" href="#"><p>Something Else</p></a>
-    </div>
-  </div>
-</div>
-<div class="parallax-container s12" id="GnT-parallax">
-      <div class="parallax"><img src="img/bg.jpg" alt="Give-N-Take parallax"></div>
-</div>
 <div class="main">
-      <div class="row on-row">
-          <div class="col s12 m6">
-            <div class="left-picture-block on-row-text">
-              <h2>Picture goes here</h2>
-            </div>
-          </div>
-          <div class="col s12 m6">
-            <div class="right-text-block on-row-text">
-              <h2>Feature 1</h2>
-              <p class="white-text">
-                Something about the app
-              </p>
-            </div>
-          </div>
-      </div>
-      <div class="row off-row">
-          <div class="col s12 m6">
-            <div class="left-text-block off-row-text">
-              <h2>Feature 2</h2>
-              <p>
-                Something about the app
-              </p>
-            </div>
-          </div>
-          <div class="col s12 m6">
-            <div class="right-picture-block off-row-text">
-              <h2>Picture goes here</h2>
-            </div>
-          </div>
-      </div>
-		<div class="row on-row">
+  <div class="container">
+    <div class="row">
       <div class="col s12">
-        <div class="left-picture-block on-row-text">
-          <h2>Headline Description</h2>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title uppercase">Enter the password: </span>
+          <form class="s12" action="index.html" method="post">
+            <div class="row">
+                <div class="input-field col s9">
+                    <i class="material-icons prefix">vpn_key</i>
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label for="icon_prefix">Password</label>
+                </div>
+                <button class="btn waves-effect waves-light s3" type="submit" name="action">Submit
+                  <i class="material-icons right">send</i>
+                </button>
+            </div>
+          </form>
         </div>
       </div>
-    </div>
-</div>
-<div class="parallax-container s12" id="GnT-parallax">
-      <div class="parallax"><img src="img/bg.jpg" alt="Give-N-Take parallax 2"></div>
-</div>
-<div class="row on-row">
-  <div class="col s12">
-    <div class="on-row-text">
-      <h2>Download now!</h2>
-      <h3 style="text-align: center;">Google Play</h3>
     </div>
   </div>
 </div>
