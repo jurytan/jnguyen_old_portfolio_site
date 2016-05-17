@@ -201,7 +201,7 @@ footer p a {
   color: white;
 }
 
-.mdi-navigation-menu, 
+.mdi-navigation-menu,
 .mdi-navigation-menu:before {
   padding-left: 10px;
 }
@@ -214,4 +214,8 @@ footer p a {
 .condensed,
 .hover-text {
   font-family: "Roboto Condensed", sans-serif;
+}
+
+.red-test {
+    color: red;
 }
