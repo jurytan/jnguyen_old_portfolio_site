@@ -9,9 +9,9 @@
 <!-- JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="../test/js/test.js"></script>
-<script src="../test/js/parallax.min.js"></script>
-<script src="../test/js/materialize.js"></script>
+<script src="js/test.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/materialize.js"></script>
 <!-- <script src="js/materialize.min.js"></script> -->
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>-->
 
@@ -19,9 +19,9 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
-<link type="text/css" rel="stylesheet" href="../test/css/homepage.css" media="screen,projection">
-<link type="text/css" rel="stylesheet" href="../test/css/test.css" media="screen,projection">
-<link type="text/css" rel="stylesheet" href="../test/css/materialize.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="css/homepage.css" media="screen,projection">
+<link type="text/css" rel="stylesheet" href="css/test.css" media="screen,projection">
+<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
 <!--<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>-->
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"> -->
 <!--Import Google Icon Font-->
@@ -58,29 +58,31 @@
 </div>
 <div class="main">
   <div class="container">
-    <div class="row">
+    <div class="row white-text">
       <div class="col s12">
-
+        <h1 class="uppercase center">Missions</h1>
+        <p>So, you want to feel like a spy, eh? Want to know what a taste of the hacker world is like? Well, here's your chance!</p>
+        <br>
+        <p>The following are a series of missions that will range in difficulty. Your mission, should you choose to accept this, is to crack these missions and...err, save the princess (who is in another castle at the moment). The first few missions will be pretty easy for any seasoned fellow, but as you progress, you will find that the missions get harder and more difficult than the previous ones. Take your time and use your hint wisely. It could mean the difference between getting the girl and being stuck staring at the password field, rueing the day you chose to cross paths with it.</p>
+        <br>
+        <p>If you think you're ready, click the button below...</p>
+        <br>
+        <form class="s12 center" action="missions/mission-001.html" method="post">
+          <button class="btn waves-effect waves-light accent-color" type="submit" name="action">Play
+            <i class="material-icons right">play_arrow</i>
+          </button>
+        </form>
+        <br>
+        <br>
+        <hr>
+        <p><span class="red-text">NOTE:</span> Please keep in mind these exercises are for fun and educational purposes, and should not be used for any malintent or illegal activities. If you haven't noticed, this is extremely influenced by hackthissite.org, so if you liked what you saw here, give them a try! Also, there might be bugs with the missions, as I'm building them out by myself and I haven't bulletproofed them (like hackthissite), so if you notice anything that might ruin the fun (i.e. game-breaker, non-intended outcomes, etc.), please let me know so I can try to fix it.
+        <br><br>
+        Plus, it wouldn't be fun if you beated the game without actually solving the puzzle now, would it? :)</p>
+        <hr>
       </div>
     </div>
     <div class="row">
-      <div class="card">
-        <div class="card-content">
-          <span class="card-title uppercase">Enter the password: </span>
-          <form class="s12" action="index.html" method="post">
-            <div class="row">
-                <div class="input-field col s9">
-                    <i class="material-icons prefix">vpn_key</i>
-                    <input id="icon_prefix" type="text" class="validate">
-                    <label for="icon_prefix">Password</label>
-                </div>
-                <button class="btn waves-effect waves-light s3" type="submit" name="action">Submit
-                  <i class="material-icons right">send</i>
-                </button>
-            </div>
-          </form>
-        </div>
-      </div>
+
     </div>
   </div>
 </div>
