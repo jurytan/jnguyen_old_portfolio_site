@@ -219,3 +219,7 @@ footer p a {
 .red-test {
     color: red;
 }
+
+.importantRed { background-color: #e74c3c !important; }
+
+.importantGreen { background-color: #2ecc71 !important; }

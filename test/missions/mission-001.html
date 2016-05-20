@@ -9,7 +9,7 @@
 <!-- JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="../js/test.js"></script>
+<script src="../js/missions/mission-001.js"></script>
 <script src="../js/parallax.min.js"></script>
 <script src="../js/materialize.js"></script>
 <!-- <script src="js/materialize.min.js"></script> -->
@@ -85,15 +85,15 @@
             </div>
           </form>
           <div class="card-action">
-              <a class="modal-trigger tooltipped accent-color-text" data-position="bottom" data-delay="50" data-tooltip="Let's see if you're right!" type="submit" href="#modal">Submit</a>
+              <a id="submit" class="modal-trigger tooltipped accent-color-text" data-position="bottom" data-delay="50" data-tooltip="Let's see if you're right!" type="submit" href="#modal">Submit</a>
           </div>
         </div>
       </div>
     </div>
     <div id="modal" class="modal modal-lg">
         <div class="modal-content modal-close">
-            <h4 class="uppercase">Sorry!</h4>
-            <p>We're still under construction! Please hold on while we fix this. Thanks!</p>
+            <h4 class="uppercase"><div id="resultHeader"></div></h4>
+            <p><div id="resultText"></div></p>
         </div>
         <div class="modal-footer">
             <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Okay</a>
