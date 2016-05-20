@@ -5,7 +5,7 @@ $(document).ready(function(){
 		dismissible: true, // Modal can be dismissed by clicking outside of the modal
 		opacity: .5, // Opacity of modal background
 		in_duration: 300, // Transition in duration
-		out_duration: 200, // Transition out duration
+		out_duration: 200 // Transition out duration
 	});
 	$('.button-collapse').sideNav({
       menuWidth: 300, // Default is 240
@@ -16,16 +16,34 @@ $(document).ready(function(){
 	$('.parallax').parallax();
 	$('.materialboxed').materialbox();
 	$("#submit").click(function(e){
-		if ($("#icon_prefix").val() == "058X098?0xG47dk") {
-			$("#resultHeader").text('Congrats!');
-			$("#resultText").text('You entered the right password! Smart one, aren\'t you?');
-			$("#modal").css('background-color', '#2ecc71');
-			$(".modal-footer").addClass("importantGreen");
-		} else {
-			$("#resultHeader").text('Sorry!');
-			$("#resultText").text('You entered the wrong password, buddy. Try again!');
-			$("#modal").css('background-color', '#e74c3c');
-			$(".modal-footer").addClass("importantRed");
+		checkPassword();
+	});
+	$('form input').keydown(function(e) {
+		if (e.keyCode == 13) {
+			event.preventDefault();
+			checkPassword();
+			$("#modal").openModal();
+			$("form input").blur();
 		}
 	});
+
 });
+
+function checkPassword() {
+	if ($("#password").val() == "058X098?0xG47dk") {
+		$("#resultHeader").text('Congrats!');
+		$("#resultText").text('You entered the right password! Smart one, aren\'t you?');
+		$("#modal").css('background-color', '#2ecc71');
+		$(".modal-footer").addClass("importantGreen");
+	} else if ($("#password").val() == ""){
+		$("#resultHeader").text('Error!');
+		$("#resultText").text('You didn\'t enter anything. Try again!');
+		$("#modal").css('background-color', '#e74c3c');
+		$(".modal-footer").addClass("importantRed");
+	} else {
+		$("#resultHeader").text('Sorry!');
+		$("#resultText").text('You entered the wrong password, buddy. Try again!');
+		$("#modal").css('background-color', '#e74c3c');
+		$(".modal-footer").addClass("importantRed");
+	}
+}

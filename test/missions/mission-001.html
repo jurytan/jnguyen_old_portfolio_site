@@ -10,6 +10,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="../js/missions/mission-001.js"></script>
+<script src="../js/cookies.js"></script>
 <script src="../js/parallax.min.js"></script>
 <script src="../js/materialize.js"></script>
 <!-- <script src="js/materialize.min.js"></script> -->
@@ -70,33 +71,29 @@
       <div class="card">
         <div class="card-content">
           <span class="card-title uppercase">Enter the password: </span>
-          <form class="s12" action="#" method="post">
+          <form class="s12" action="#modal" method="post" onsubmit="return false">
             <div class="row">
-                <div class="input-field col s9">
+                <div class="input-field col s12">
                     <i class="material-icons prefix">vpn_key</i>
-                    <input id="icon_prefix" type="text" class="validate">
-                    <label for="icon_prefix">Password</label>
+                    <input id="password" type="text" class="validate">
+                    <label for="password">Password</label>
                     <!-- The password this time is: 058X098?0xG47dk -->
                 </div>
-                <!--
-                <button class="btn waves-effect waves-light s3" type="submit" name="action">Submit
-                </button>
-                -->
             </div>
           </form>
           <div class="card-action">
-              <a id="submit" class="modal-trigger tooltipped accent-color-text" data-position="bottom" data-delay="50" data-tooltip="Let's see if you're right!" type="submit" href="#modal">Submit</a>
+              <a id="submit" class="modal-trigger tooltipped accent-color-text" data-position="bottom" data-delay="50" data-tooltip="Let's see if you're right!" type="submit" href="#modal">Check Answer</a>
           </div>
         </div>
       </div>
     </div>
     <div id="modal" class="modal modal-lg">
-        <div class="modal-content modal-close">
+        <div class="modal-content">
             <h4 class="uppercase"><div id="resultHeader"></div></h4>
             <p><div id="resultText"></div></p>
         </div>
         <div class="modal-footer">
-            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Okay</a>
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat center">Okay</a>
         </div>
     </div>
   </div>
