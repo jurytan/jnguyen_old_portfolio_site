@@ -223,3 +223,7 @@ footer p a {
 .importantRed { background-color: #e74c3c !important; }
 
 .importantGreen { background-color: #2ecc71 !important; }
+
+.root {
+  padding-left: 1vw;
+}
