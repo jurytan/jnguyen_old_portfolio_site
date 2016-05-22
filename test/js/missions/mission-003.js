@@ -30,12 +30,12 @@ $(document).ready(function(){
 });
 
 function checkPassword() {
-	if ($("#password").val() == "058X098?0xG47dk") {
+	if (false) {
 		$("#resultHeader").text('Congrats!');
-		$("#resultText").text('You entered the right password! Smart one, aren\'t you?');
+		$("#resultText").text('Nice job working this one out! But it only gets harder from here.');
 		$("#modal").css('background-color', '#2ecc71');
 		$(".modal-footer").addClass("importantGreen");
-		$(".modal-footer a").attr("href", "mission-002.html")
+		$(".modal-footer a").attr("href", "mission-004.html")
 	} else if ($("#password").val() == ""){
 		$("#resultHeader").text('Error!');
 		$("#resultText").text('You didn\'t enter anything. Try again!');

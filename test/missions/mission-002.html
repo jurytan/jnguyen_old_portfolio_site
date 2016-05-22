@@ -2,14 +2,14 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Mission 001 - Nguyening Code</title>
+<title>Mission 002 - Nguyening Code</title>
 
 <!-- Define all CDNs for Angular, JQuery, Bootstrap -->
 
 <!-- JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="../js/missions/mission-001.js"></script>
+<script src="../js/missions/mission-002.js"></script>
 <script src="../js/cookies.js"></script>
 <script src="../js/parallax.min.js"></script>
 <script src="../js/materialize.js"></script>
@@ -37,7 +37,7 @@
     <nav class="blue darken-7">
         <div class="nav-wrapper">
             <a href="../mission-index.html" class="breadcrumb root">Mission Info</a>
-            <a href="#!" class="breadcrumb">Mission 001</a>
+            <a href="#!" class="breadcrumb">Mission 002</a>
             <a href="../test.html" class="brand-logo center hide-on-small-only">NguyeningCode</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a class="active-page" href="../test.html">Home</a></li>
@@ -62,23 +62,21 @@
   <div class="container">
     <div class="row white-text">
       <div class="col s12">
-        <h1 class="uppercase center">Mission 001</h1>
-        <p class="center">Hmmmm...now where did I leave that password again? I know I left it somewhere around here...</p>
-        <!-- Okay, I lied. I left it down by line 81. :) Now go move on!-->
+        <h1 class="uppercase center">Mission 002</h1>
+        <p class="center">This should be easy. All you need is the password.</p>
         <br>
         <br>
       </div>
     </div>
       <div class="card">
         <div class="card-content">
-          <span class="card-title uppercase">Enter the password: </span>
+          <span class="card-title uppercase">Enter <a href="#successPopup" class="modal-trigger" style="color: rgba(0,0,0,0.87);">the password</a>: </span>
           <form class="s12" action="#modal" method="post" onsubmit="return false">
             <div class="row">
                 <div class="input-field col s12">
                     <i class="material-icons prefix">vpn_key</i>
                     <input id="password" type="text" class="validate">
                     <label for="password">Password</label>
-                    <!-- The password this time is: 058X098?0xG47dk -->
                 </div>
             </div>
           </form>
@@ -93,7 +91,16 @@
             <p><div id="resultText"></div></p>
         </div>
         <div class="modal-footer">
-            <a id="nextLink" href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat center">Okay</a>
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat center">Okay</a>
+        </div>
+    </div>
+    <div id="successPopup" class="modal modal-lg">
+        <div class="modal-content importantGreen">
+            <h4 class="uppercase">Congrats!</h4>
+            <p>Nice going. Made this one pretty easy, didn't I? This should keep you on your feet.</p>
+        </div>
+        <div class="modal-footer importantGreen">
+            <a href="mission-003.html" class=" modal-action modal-close waves-effect waves-green btn-flat center">Okay</a>
         </div>
     </div>
   </div>

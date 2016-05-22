@@ -29,14 +29,9 @@ $(document).ready(function(){
 
 });
 
-function checkPassword() {
-	if ($("#password").val() == "058X098?0xG47dk") {
-		$("#resultHeader").text('Congrats!');
-		$("#resultText").text('You entered the right password! Smart one, aren\'t you?');
-		$("#modal").css('background-color', '#2ecc71');
-		$(".modal-footer").addClass("importantGreen");
-		$(".modal-footer a").attr("href", "mission-002.html")
-	} else if ($("#password").val() == ""){
+
+function checkPassword() { 
+	if ($("#password").val() == ""){
 		$("#resultHeader").text('Error!');
 		$("#resultText").text('You didn\'t enter anything. Try again!');
 		$("#modal").css('background-color', '#e74c3c');
