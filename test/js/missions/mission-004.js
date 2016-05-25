@@ -35,7 +35,7 @@ function checkPassword() {
 		$("#resultText").text('Nice job working this one out! But it only gets harder from here.');
 		$("#modal").css('background-color', '#2ecc71');
 		$(".modal-footer").addClass("importantGreen");
-		$(".modal-footer a").attr("href", "mission-004.html")
+		$(".modal-footer a").attr("href", "mission-005.html")
 	} else if ($("#password").val() == ""){
 		$("#resultHeader").text('Error!');
 		$("#resultText").text('You didn\'t enter anything. Try again!');
