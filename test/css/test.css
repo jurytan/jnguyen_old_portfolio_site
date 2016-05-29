@@ -183,12 +183,6 @@ table tr td {
   display: inline-block;
 }
 
-@media (max-width: 992px) {
-  #portfolio-container {
-    top: -130px;
-  }
-}
-
 #portfolio-container {
   position: relative;
   /*top: -175px;*/
@@ -226,4 +220,29 @@ footer p a {
 
 .root {
   padding-left: 1vw;
+}
+
+#skillBars {
+  width: "100vw";
+}
+
+@media only screen and (max-width: 600px) {
+  #skillBars {
+    height: "25px";
+  }
+}
+
+@media only screen and (min-width: 601) and (max-width: 992px) {
+  #portfolio-container {
+    top: -130px;
+  }
+  #skillBars {
+    height: "25px";
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #skillBars {
+    height: "630px";
+  }
 }
