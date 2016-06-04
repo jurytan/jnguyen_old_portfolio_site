@@ -15,6 +15,7 @@ $(document).ready(function(){
 	$('.scrollspy').scrollSpy();
 	$('.parallax').parallax();
 	$('.materialboxed').materialbox();
+	$(".dropdown-button").dropdown();
 	$.ajax({
 			url: 'https://api.github.com/repos/jnguyen7410/NguyeningCode',
 			type: 'GET',

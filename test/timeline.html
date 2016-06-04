@@ -35,27 +35,47 @@
 </head>
 <body>
   <div class="navbar thin-text">
-      <nav class="blue darken-7">
-          <div class="nav-wrapper">
-              <a href="test.html" class="brand-logo center">NguyeningCode</a>
-              <ul id="nav-mobile" class="right hide-on-med-and-down">
-                  <li><a href="test.html">Home</a></li>
+    <nav class="blue darken-7">
+        <div class="nav-wrapper">
+            <a href="test.html" class="brand-logo center">NguyeningCode</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a class="active-page" href="test.html">Home</a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="projects-dropdown">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+                <ul id="projects-dropdown" class="dropdown-content">
                   <li><a href="projects.html">Projects</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a class="active-page" href="timeline.html">Timeline</a></li>
-                  <li><a href="/blog">Blog</a></li>
-              </ul>
-              <a href="test.html" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-              <ul id="slide-out" class="side-nav">
-                  <li class="logo"><img id="logo" src="img/logo.png" alt="NguyeningCode Logo"/></li>
-                  <li><a class="hoverable" href="test.html">Home</a></li>
-                  <li><a class="hoverable" href="projects.html">Projects</a></li>
-                  <li><a class="hoverable" href="portfolio.html">Portfolio</a></li>
-                  <li><a class="active-page hoverable" href="timeline.html">Timeline</a></li>
-                  <li><a class="hoverable" href="/blog">Blog</a></li>
-              </ul>
-          </div>
-      </nav>
+                  <li class="divider"></li>
+                  <li><a href="giventake.html">Give-N-Take</a></li>
+                  <li><a href="scrumbutler.html">ScrumButler</a></li>
+                </ul>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="/blog">Blog</a></li>
+            </ul>
+            <a href="test.html" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            <ul id="slide-out" class="side-nav">
+                <li class="logo"><img id="logo" src="img/logo.png" alt="NguyeningCode Logo"/></li>
+                <li><a class="active-page hoverable" href="test.html">Home</a></li>
+                <li class="no-padding">
+                  <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a class="collapsible-header" href="#!" data-activates="projects-dropdown-sidebar">Projects<i class="material-icons right">arrow_drop_down</i></a>
+                      <div class="collapsible-body">
+                        <ul>
+                          <li><a href="projects.html">Projects</a></li>
+                          <li class="divider"></li>
+                          <li><a href="giventake.html">Give-N-Take</a></li>
+                          <li><a href="scrumbutler.html">ScrumButler</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li><a class="hoverable" href="portfolio.html">Portfolio</a></li>
+                <li><a class="hoverable" href="timeline.html">Timeline</a></li>
+                <li><a class="hoverable" href="/blog">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
   </div>
 <div class="main">
     <div class="container">
