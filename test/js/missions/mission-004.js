@@ -28,11 +28,12 @@ $(document).ready(function(){
 	});
 
 });
+$.cookie("canAccessNextLevel", "false");
 
 function checkPassword() {
-	if (false) {
+	if ($.cookie("canAccessNextLevel") == true) {
 		$("#resultHeader").text('Congrats!');
-		$("#resultText").text('Nice job working this one out! But it only gets harder from here.');
+		$("#resultText").text('Nice! Get it? \'Cookie\' jar? It\'s okay, I crack myself up...');
 		$("#modal").css('background-color', '#2ecc71');
 		$(".modal-footer").addClass("importantGreen");
 		$(".modal-footer a").attr("href", "mission-005.html")
