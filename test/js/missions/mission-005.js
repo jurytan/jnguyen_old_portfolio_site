@@ -28,10 +28,10 @@ $(document).ready(function(){
 	});
 
 });
-setCookie("canAccessNextLevel", "false");
+$.cookie("canAccessNextLevel", "false");
 
 function checkPassword() {
-	if (getCookie("canAccessNextLevel") == "true") {
+	if ($.cookie("canAccessNextLevel") == true) {
 		$("#resultHeader").text('Congrats!');
 		$("#resultText").text('Nice! Get it? \'Cookie\' jar? It\'s okay, I crack myself up...');
 		$("#modal").css('background-color', '#2ecc71');
@@ -48,23 +48,4 @@ function checkPassword() {
 		$("#modal").css('background-color', '#e74c3c');
 		$(".modal-footer").addClass("importantRed");
 	}
-}
-
-function setCookie(cname, cvalue) {
-	document.cookie += cname + "=" + cvalue + ";";
-}
-
-function getCookie(cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    for(var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
 }
