@@ -67,6 +67,7 @@
   transition: all 300ms ease-out;
   transform: translateY(40px);
   -webkit-transform: translateY(40px);
+  position: relative;
 
 }
 
@@ -112,6 +113,14 @@
 .parallax-container {
     height: 25px;
   }
+
+.hover-header {
+  top: 5vh;
+}
+
+.hover-text {
+  top: 3vh;
+}
 
 @media screen and (min-width: 600px) and (max-width: 980px) {
   .card {
