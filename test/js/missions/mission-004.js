@@ -27,7 +27,7 @@ $(document).ready(function(){
 		}
 	});
 });
-document.cookie="";
+
 setCookie("canAccessNextLevel", "false", 1);
 
 function checkPassword() {
