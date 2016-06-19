@@ -28,7 +28,8 @@ $(document).ready(function(){
 	});
 
 });
-setCookie("canAccessNextLevel", "false");
+
+setCookie("canAccessNextLevel", "false", 1);
 
 function checkPassword() {
 	if (getCookie("canAccessNextLevel") == "true") {
@@ -50,8 +51,14 @@ function checkPassword() {
 	}
 }
 
-function setCookie(cname, cvalue) {
-	document.cookie += cname + "=" + cvalue + ";";
+function setCookie(cname, cvalue, days) {
+	if (days) {
+        var date = new Date();
+        date.setTime(date.getTime()+(days*24*60*60*1000));
+        var expires = "; expires="+date.toGMTString();
+     }
+     else var expires = "";
+     document.cookie = cname+"="+cvalue+expires+";";
 }
 
 function getCookie(cname) {

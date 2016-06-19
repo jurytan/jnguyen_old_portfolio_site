@@ -4394,7 +4394,7 @@ small {
   font-weight: 300;
 }
 
-@media only screen and (min-width: 360px) {
+/*@media only screen and (min-width: 360px) {
   .flow-text {
     font-size: 1.2rem;
   }
@@ -4440,15 +4440,16 @@ small {
   .flow-text {
     font-size: 1.368rem;
   }
-}
+}*/
 
 @media only screen and (min-width: 600px) {
   .flow-text {
-    font-size: 1.392rem;
+    /*font-size: 1.392rem;*/
+    font-size: 1.4rem;
   }
 }
 
-@media only screen and (min-width: 630px) {
+/*@media only screen and (min-width: 630px) {
   .flow-text {
     font-size: 1.416rem;
   }
@@ -4512,11 +4513,12 @@ small {
   .flow-text {
     font-size: 1.656rem;
   }
-}
+}*/
 
 @media only screen and (min-width: 960px) {
   .flow-text {
-    font-size: 1.68rem;
+    /*font-size: 1.68rem;*/
+    font-size: 1.5rem;
   }
 }
 

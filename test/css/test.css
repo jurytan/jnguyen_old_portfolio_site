@@ -42,16 +42,16 @@ table tr td {
 }
 
 .navbar .nav-wrapper .brand-logo {
-  padding-left: 5vh;
+  padding-left: 2vw;
   font-weight: 100;
   font-family: "Roboto";
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-.logo {
+/*.logo {
   height: 10vh;
-}
+}*/
 
 #logo {
   height: 10vh;

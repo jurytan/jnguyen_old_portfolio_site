@@ -5,6 +5,7 @@
   position: relative !important;
   overflow: hidden;
   cursor: pointer;
+  height: 220px;
 }
 
 .card-full-image {
@@ -52,6 +53,7 @@
   top: 0;
   left: 0;
   z-index: 1000;
+  padding: 0 15px;
 }
 
 .card:hover .overlay {
@@ -111,11 +113,13 @@
 
 
 .parallax-container {
-    height: 25px;
+    height: 220px;
   }
 
 .hover-header {
   top: 5vh;
+  font-size: 3rem;
+  word-break: break-all;
 }
 
 .hover-text {
@@ -125,17 +129,14 @@
 @media screen and (min-width: 600px) and (max-width: 980px) {
   .card {
     margin: 0 0.1rem 0.05rem 0 !important;
-    height: 25vh;
+    /*height: 25vh;*/
   }
+
+  .hover-header
 
     #test-parallax {
     height: 30vh;
     margin-bottom: 5px;
-  }
-
-  .hover-header{
-    font-size: 5vw;
-    word-wrap: break-word;
   }
 
   .card-full-image {
@@ -148,7 +149,7 @@
 @media (min-width: 980px) {
   .card {
     margin: 0 0.1rem 0.05rem 0 !important;
-    height: 23vh;
+    /*height: 23vh;*/
   }
 
   #test-parallax {
@@ -156,15 +157,11 @@
     margin-bottom: 5px;
   }
 
-  .hover-header {
-    font-size:2.5vw;
-  }
-
 }
 
 @media (max-width: 600px) {
   .card {
-    height: 28vh;
+    /*height: 28vh;*/
     margin: 10px 0 0 0;
   }
 
@@ -172,10 +169,6 @@
   #test-parallax {
     height: 30vh;
     margin-bottom: 5px;
-  }
-
-  .hover-header{
-    font-size: 10vw;
   }
 
   #timeline-img {
