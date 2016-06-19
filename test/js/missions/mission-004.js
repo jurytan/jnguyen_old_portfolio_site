@@ -26,9 +26,8 @@ $(document).ready(function(){
 			$("form input").blur();
 		}
 	});
-
 });
-
+document.cookie="";
 setCookie("canAccessNextLevel", "false", 1);
 
 function checkPassword() {
