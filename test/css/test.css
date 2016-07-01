@@ -42,7 +42,7 @@ table tr td {
 }
 
 .navbar .nav-wrapper .brand-logo {
-  padding-left: 2vw;
+  /*padding-left: 2vw;*/
   font-weight: 100;
   font-family: "Roboto";
   text-transform: uppercase;
