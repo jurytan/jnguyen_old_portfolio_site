@@ -2248,7 +2248,7 @@
  *    without disabling user zoom.
  */
 html {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -4394,7 +4394,7 @@ small {
   font-weight: 300;
 }
 
-@media only screen and (min-width: 360px) {
+/*@media only screen and (min-width: 360px) {
   .flow-text {
     font-size: 1.2rem;
   }
@@ -4440,15 +4440,16 @@ small {
   .flow-text {
     font-size: 1.368rem;
   }
-}
+}*/
 
 @media only screen and (min-width: 600px) {
   .flow-text {
-    font-size: 1.392rem;
+    /*font-size: 1.392rem;*/
+    font-size: 1.4rem;
   }
 }
 
-@media only screen and (min-width: 630px) {
+/*@media only screen and (min-width: 630px) {
   .flow-text {
     font-size: 1.416rem;
   }
@@ -4512,11 +4513,12 @@ small {
   .flow-text {
     font-size: 1.656rem;
   }
-}
+}*/
 
 @media only screen and (min-width: 960px) {
   .flow-text {
-    font-size: 1.68rem;
+    /*font-size: 1.68rem;*/
+    font-size: 1.5rem;
   }
 }
 
@@ -5035,7 +5037,8 @@ button.btn-floating {
 }
 
 .dropdown-content {
-  background-color: #fff;
+  /*background-color: #fff;*/
+  background-color: #00202B;
   margin: 0;
   display: none;
   min-width: 100px;
@@ -5073,7 +5076,8 @@ button.btn-floating {
 
 .dropdown-content li > a, .dropdown-content li > span {
   font-size: 16px;
-  color: #26a69a;
+  /*color: #26a69a;*/
+  color: white;
   display: block;
   line-height: 22px;
   padding: 14px 16px;

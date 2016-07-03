@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Nguyening Code</title>
+
+<!-- Define all CDNs for Angular, JQuery, Bootstrap -->
+
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/materialize.js"></script>
+<!--<script src="js/materialize.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>-->
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="css/style.css">
+<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+<!--<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>-->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"> -->
+<!--Import Google Icon Font-->
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,500,300|Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+</head>
+<body>
+<div class="navbar">
+    <nav class="light-blue">
+        <div class="nav-wrapper">
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="/blog">Blog</a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            <ul id="slide-out" class="side-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="/blog">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="parallax-container">
+      <div class="parallax"><img src="img/parallax1.jpg" alt="Sunset in Big Sur, CA"></div>
+</div>
+<div class="main">
+  <div class="container" id="portfolio-container">
+      <img id="profilepic" class="circle responsive-img" src="img/profile.jpg" alt="" data-caption="Profile pic of me!">
+      <header class="header center light-blue-text">
+          <h1>Jonathan Nguyen</h1>
+      </header>
+      <div class="row center">
+          <h5 class="header col s12 light">Dream-fueled Programmer</h5>
+      </div>
+      <div class="row">
+          <div class="col s12 m6">
+              <div class="card">
+                  <div class="card-content">
+                      <span class="card-title">About This Site</span>
+                      <p>Welcome! I built this site from scratch to act as both a portfolio as well as a landing page for all
+                        future projects. Make sure to check back frequently to see what stuff I have in store!</p>
+                        <br/>
+                      <p>Sorry for the state of the site right now. I've been busy at work, so I haven't had time to fix everything.
+                      However, I will be slowly building this over time, so please excuse the mess in the meanwhile! </p>
+                  </div>
+              </div>
+          </div>
+          <div class="col s12 m6">
+              <div class="card">
+                  <div class="card-content">
+                      <span class="card-title">About Me</span>
+                      <p>My name is Jonathan Nguyen and I'm a programmer by profession! Here's some things about me:</p>
+                      <br/>
+                      <ul id="staggered-list-1" class="collapsible hoverable" data-collapsible="accordion">
+                          <li>
+                              <div class="collapsible-header"><i class="material-icons">assessment</i>Skills</div>
+                              <div class="collapsible-body">
+                                  <ul class="collection">
+                                      <li class="collection-item">Java</li>
+                                      <li class="collection-item">Apex</li>
+                                      <li class="collection-item">Salesforce</li>
+                                      <li class="collection-item">Git</li>
+                                      <li class="collection-item">SOQL / SQL / PostgreSQL</li>
+                                      <li class="collection-item">HTML5/JS/CSS3</li>
+                                      <li class="collection-item">XML</li>
+                                      <li class="collection-item">Bootstrap</li>
+                                      <li class="collection-item">Materialize</li>
+                                      <li class="collection-item">Bash / Batch</li>
+                                      <li class="collection-item">Android Development</li>
+                                  </ul>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col s12">
+              <div class="card">
+                  <div class="card-content">
+                      <span class="card-title">Contact Me</span>
+                      <form class="col s12">
+                          <div class="row">
+                              <div class="input-field col s6">
+                                  <i class="material-icons prefix">person_pin</i>
+                                  <input id="icon_prefix" type="text" class="validate">
+                                  <label for="icon_prefix">First Name</label>
+                              </div>
+                              <div class="input-field col s6">
+                                  <i class="material-icons prefix">phone</i>
+                                  <input id="icon_telephone" type="tel" class="validate">
+                                  <label for="icon_telephone">Telephone</label>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="input-field col s12">
+                                  <i class="material-icons prefix">email</i>
+                                  <input id="email" type="email" class="validate">
+                                  <label for="email" data-error="wrong" data-success="right">Email</label>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="row">
+                                  <div class="input-field col s12">
+                                      <i class="material-icons prefix">mode_edit</i>
+                                      <textarea id="icon_prefix2" class="materialize-textarea" length="500"></textarea>
+                                      <label for="icon_prefix2">Message</label>
+                                  </div>
+                              </div>
+                          </div>
+                      </form>
+                      <div class="card-action">
+                          <a class="modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to send" href="#modal">Submit</a>
+                      </div>
+                      <div id="modal" class="modal modal-lg">
+                          <div class="modal-content modal-close">
+                              <h4>Oops!</h4>
+                              <p>This part is missing right now! Come back later to see it in action!</p>
+                          </div>
+                          <div class="modal-footer">
+                              <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Okay</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<footer class="page-footer light-blue">
+  <div class="container">
+    <div class="row">
+      <div class="col m6 s12">
+        <h5 class="white-text">Get In Touch</h5>
+        <p class="grey-text text-lighten-4"><a href="mailto:jnguyen7410@gmail.com">jnguyen7410@gmail.com</a></p>
+        <p class="grey-text text-lighten-4"><a href="tel:+17326146638">(732) 614-6638</a></p>
+      </div>
+      <div class="col m6 s12">
+        <h5 class="white-text">Find Me</h5>
+        <a href="https://github.com/jnguyen7410"><img id="github" src="img/github.png" alt="Github" class="responsive-img"></a>
+        <a href="https://www.linkedin.com/in/jonathan-nguyen-57b00161"><img id="linkedin" src="img/linkedin.png" alt="LinkedIn" class="responsive-img"></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2016 Nguyening Code. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+<script>
+    var options = [
+      //{selector: '#profilepic', offset: 50, callback: 'Materialize.toast("Welcome!", 1500); $("#call-1").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});' },
+      {selector: '#profilepic', offset: 0, callback: 'Materialize.fadeInImage("#profilepic"); $("#call-4").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});' },
+      {selector: '#staggered-list-1', offset: 10, callback: 'Materialize.showStaggeredList("#staggered-list-1"); $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});' },
+      {selector: '#staggered-list-2', offset: 10, callback: 'Materialize.showStaggeredList("#staggered-list-2"); $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});' }
+    ];
+    Materialize.scrollFire(options);
+</script>
+</body>
+</html>

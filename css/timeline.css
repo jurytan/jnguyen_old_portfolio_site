@@ -15,7 +15,8 @@
   position: absolute;
   content: " ";
   width: 3px;
-  background-color: #eeeeee;
+  /*background-color: #eeeeee;*/
+  background-color: #546e7a;
   left: 50%;
   margin-left: -1.5px;
 }
@@ -48,12 +49,37 @@
 .timeline > li > .timeline-panel {
   width: 46%;
   float: left;
-  border: 1px solid #d4d4d4;
+  /*border: 1px solid #d4d4d4;*/
+  /*border: 1px solid #FFFFFF;*/
+  border: 1px solid #546e7a;
+/*   background-color: #FFFFFF; */
+  background-color: #546e7a !important;
+  font-family: "Roboto" !important;
+  font-weight: normal !important;
   border-radius: 2px;
   padding: 20px;
   position: relative;
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+.timeline > li > .timeline-panel > a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.timeline > li > .timeline-panel > img {
+  width: inherit;
+}
+
+.timeline > li > .timeline-panel > h4,
+.timeline > li > .timeline-panel > h5  {
+  font-weight: normal;
+}
+
+.timeline-heading {
+  text-align: center;
 }
 
 .timeline > li > .timeline-panel:before {
@@ -62,10 +88,11 @@
   right: -15px;
   display: inline-block;
   border-top: 15px solid transparent;
-  border-left: 15px solid #ccc;
-  border-right: 0 solid #ccc;
+  border-left: 15px solid #546e7a;
+  border-right: 0 solid #546e7a;
   border-bottom: 15px solid transparent;
   content: " ";
+  /*background-color: #546e7a !important;*/
 }
 
 .timeline > li > .timeline-panel:after {
@@ -74,10 +101,11 @@
   right: -14px;
   display: inline-block;
   border-top: 14px solid transparent;
-  border-left: 14px solid #fff;
-  border-right: 0 solid #fff;
+  border-left: 14px solid #546e7a;
+  border-right: 0 solid #546e7a;
   border-bottom: 14px solid transparent;
   content: " ";
+  /*background-color: #546e7a !important;*/
 }
 
 .timeline > li > .timeline-badge {
@@ -143,7 +171,8 @@
 
 .timeline-title {
   margin-top: 0;
-  color: inherit;
+/*   color: inherit; */
+  color: white;
 }
 
 .timeline-body > p,
@@ -155,6 +184,21 @@
   margin-top: 5px;
 }
 
+.timeline-desc > h5,
+.modal-footer > a {
+  color: white;
+}
+
+.timeline-desc > p,
+.text-muted {
+  /*color: #507D7A !important;*/
+  color: white;
+}
+
+
+.modal-content, .modal-footer {
+  background-color: #546e7a !important;
+}
 /* Written by me to make it mobile friendly :) */
 
 @media (max-width: 992px) {
@@ -177,12 +221,15 @@
   .timeline > li > .timeline-panel {
       float: left;
       margin-left: 5vh;
-      width: auto;
+      width: 75vw;
   }
 
   .timeline > li.timeline-inverted > .timeline-panel {
       float: left;
       margin-left: 5vh;
-      width: auto;
+      width: 75vw;
   }
+
+  /* Own edits to page based on custom rules to fit design */
+
 }

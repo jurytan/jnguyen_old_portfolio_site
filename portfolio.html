@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Nguyening Code</title>
+<title>Portfolio - Nguyening Code</title>
 
 <!-- Define all CDNs for Angular, JQuery, Bootstrap -->
 
@@ -12,6 +12,8 @@
 <script src="js/script.js"></script>
 <script src="js/parallax.min.js"></script>
 <script src="js/materialize.js"></script>
+<script src="js/portfolio.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
 <!--<script src="js/materialize.min.js"></script>-->
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>-->
 
@@ -19,9 +21,10 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
-<link rel="stylesheet" href="css/style.css">
+<link type="text/css" rel="stylesheet" href="css/test.css" media="screen,projection">
+<!-- <link type="text/css" rel="stylesheet" href="../css/style.css" media="screen,projection"> -->
 <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
-<!--<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>-->
+<!-- <link type="text/css" rel="stylesheet" href="../css/materialize.css"  media="screen,projection"/> -->
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"> -->
 <!--Import Google Icon Font-->
 <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -32,27 +35,50 @@
 
 </head>
 <body>
-<div class="navbar">
-    <nav class="light-blue">
+  <div class="navbar thin-text">
+    <nav class="blue darken-7">
         <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo center">NguyeningCode</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a class="active-page" href="index.html">Home</a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="projects-dropdown">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+                <ul id="projects-dropdown" class="dropdown-content">
+                  <li><a href="projects.html">Projects</a></li>
+                  <li class="divider"></li>
+                  <li><a href="giventake.html">Give-N-Take</a></li>
+                  <li><a href="scrumbutler.html">ScrumButler</a></li>
+                </ul>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="timeline.html">Timeline</a></li>
                 <li><a href="/blog">Blog</a></li>
             </ul>
-            <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            <a href="index.html" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
             <ul id="slide-out" class="side-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="timeline.html">Timeline</a></li>
-                <li><a href="/blog">Blog</a></li>
+                <li class="logo"><img id="logo" src="img/logo.png" alt="NguyeningCode Logo"/></li>
+                <li><a class="active-page hoverable" href="index.html">Home</a></li>
+                <li class="no-padding">
+                  <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a class="collapsible-header" href="#!" data-activates="projects-dropdown-sidebar">Projects<i class="material-icons right">arrow_drop_down</i></a>
+                      <div class="collapsible-body">
+                        <ul>
+                          <li><a href="projects.html">Projects</a></li>
+                          <li class="divider"></li>
+                          <li><a href="giventake.html">Give-N-Take</a></li>
+                          <li><a href="scrumbutler.html">ScrumButler</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li><a class="hoverable" href="portfolio.html">Portfolio</a></li>
+                <li><a class="hoverable" href="timeline.html">Timeline</a></li>
+                <li><a class="hoverable" href="/blog">Blog</a></li>
             </ul>
         </div>
     </nav>
-</div>
+  </div>
+
 <div class="parallax-container">
       <div class="parallax"><img src="img/parallax1.jpg" alt="Sunset in Big Sur, CA"></div>
 </div>
@@ -60,60 +86,83 @@
   <div class="container" id="portfolio-container">
       <img id="profilepic" class="circle responsive-img" src="img/profile.jpg" alt="" data-caption="Profile pic of me!">
       <header class="header center light-blue-text">
-          <h1>Jonathan Nguyen</h1>
+          <h1 class="uppercase">Jonathan Nguyen</h1>
       </header>
       <div class="row center">
-          <h5 class="header col s12 light">Dream-fueled Programmer</h5>
+          <h5 class="header col s12 light white-text">Dream-fueled Programmer</h5>
+      </div>
+      <div class="row">
+        <div class="col s12">
+            <div class="card">
+                <div class="card-content dark-card">
+                    <span class="card-title">About Me</span>
+                    <p>My name is Jonathan Nguyen and I'm a programmer by profession.</p>
+                    <br>
+                    <p>I am a Chinese-Viet guy originally from New Jersey and is currently residing in the Bay Area. I have a lot of side projects and I love doing various activities. I'm always down for helping people and learning new things. I love to explore new areas and is an active gamer. I'm an open person and love to make friends, so don't be shy and say hi or talk to me. Hope you guys like my site!</p>
+                    <p>If you have any suggestions to make my site better, please don't hesitate to contact me via email.</p>
+                </div>
+            </div>
+        </div>
       </div>
       <div class="row">
           <div class="col s12 m6">
               <div class="card">
                   <div class="card-content">
-                      <span class="card-title">About This Site</span>
-                      <p>Welcome! I built this site from scratch to act as both a portfolio as well as a landing page for all
-                        future projects. Make sure to check back frequently to see what stuff I have in store!</p>
-                        <br/>
-                      <p>Sorry for the state of the site right now. I've been busy at work, so I haven't had time to fix everything.
-                      However, I will be slowly building this over time, so please excuse the mess in the meanwhile! </p>
+                      <span class="card-title">Fun Facts</span>
+                      <ul class="collection">
+                        <li class="collection-item">Was a monk at the age of 10</li>
+                        <li class="collection-item">Was part of a hip-hop dance team for several years</li>
+                        <li class="collection-item">I'm a HUGE Disney fan</li>
+                        <li class="collection-item">I am an active Imgurian</li>
+                        <li class="collection-item">I enjoy snowboarding</li>
+                        <li class="collection-item">Once drove from NJ to Toronto, CA with my family for food</li>
+                        <li class="collection-item">Used to play classical piano</li>
+                        <li class="collection-item">I love eating. A lot.</li>
+                        <li class="collection-item">PC Gamer with a liking for RPGs</li>
+                        <li class="collection-item">I went to bartending school once</li>
+                        <li class="collection-item">I can fix any electronic device on the market.</li>
+                      </ul>
                   </div>
               </div>
           </div>
           <div class="col s12 m6">
               <div class="card">
                   <div class="card-content">
-                      <span class="card-title">About Me</span>
-                      <p>My name is Jonathan Nguyen and I'm a programmer by profession! Here's some things about me:</p>
-                      <br/>
-                      <ul id="staggered-list-1" class="collapsible hoverable" data-collapsible="accordion">
-                          <li>
-                              <div class="collapsible-header"><i class="material-icons">assessment</i>Skills</div>
-                              <div class="collapsible-body">
-                                  <ul class="collection">
-                                      <li class="collection-item">Java</li>
-                                      <li class="collection-item">Apex</li>
-                                      <li class="collection-item">Salesforce</li>
-                                      <li class="collection-item">Git</li>
-                                      <li class="collection-item">SOQL / SQL / PostgreSQL</li>
-                                      <li class="collection-item">HTML5/JS/CSS3</li>
-                                      <li class="collection-item">XML</li>
-                                      <li class="collection-item">Bootstrap</li>
-                                      <li class="collection-item">Materialize</li>
-                                      <li class="collection-item">Bash / Batch</li>
-                                      <li class="collection-item">Android Development</li>
-                                  </ul>
-                              </div>
-                          </li>
+                      <span class="card-title">Skills</span>
+                      <ul class="collection">
+                        <li class="collection-item">Java</li>
+                        <li class="collection-item">Apex</li>
+                        <li class="collection-item">Salesforce</li>
+                        <li class="collection-item">Git</li>
+                        <li class="collection-item">SOQL / SQL / PostgreSQL</li>
+                        <li class="collection-item">HTML5/JS/CSS3</li>
+                        <li class="collection-item">Python</li>
+                        <li class="collection-item">Bootstrap</li>
+                        <li class="collection-item">Materialize</li>
+                        <li class="collection-item">Bash / Batch</li>
+                        <li class="collection-item">Android Development</li>
                       </ul>
                   </div>
               </div>
           </div>
       </div>
       <div class="row">
+        <div class="col s12">
+          <div class="card">
+              <div class="card-content">
+                  <span class="card-title">Stats</span>
+                  <canvas id="skillBars" width="100vw" height="40vh"></canvas>
+                  <!-- <p>Coming soon...</p> -->
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
           <div class="col s12">
               <div class="card">
                   <div class="card-content">
                       <span class="card-title">Contact Me</span>
-                      <form class="col s12">
+                      <form class="s12">
                           <div class="row">
                               <div class="input-field col s6">
                                   <i class="material-icons prefix">person_pin</i>
@@ -130,21 +179,19 @@
                               <div class="input-field col s12">
                                   <i class="material-icons prefix">email</i>
                                   <input id="email" type="email" class="validate">
-                                  <label for="email" data-error="wrong" data-success="right">Email</label>
+                                  <label for="email" data-error="Please fix your email" data-success="right">Email</label>
                               </div>
                           </div>
                           <div class="row">
-                              <div class="row">
-                                  <div class="input-field col s12">
-                                      <i class="material-icons prefix">mode_edit</i>
-                                      <textarea id="icon_prefix2" class="materialize-textarea" length="500"></textarea>
-                                      <label for="icon_prefix2">Message</label>
-                                  </div>
+                              <div class="input-field col s12">
+                                  <i class="material-icons prefix">mode_edit</i>
+                                  <textarea id="icon_prefix2" class="materialize-textarea" length="500"></textarea>
+                                  <label for="icon_prefix2">Message</label>
                               </div>
                           </div>
                       </form>
                       <div class="card-action">
-                          <a class="modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to send" href="#modal">Submit</a>
+                          <a class="modal-trigger tooltipped accent-color-text" data-position="bottom" data-delay="50" data-tooltip="Click to send" href="#modal">Submit</a>
                       </div>
                       <div id="modal" class="modal modal-lg">
                           <div class="modal-content modal-close">
@@ -161,7 +208,7 @@
       </div>
   </div>
 </div>
-<footer class="page-footer light-blue">
+<footer class="page-footer blue darken-7">
   <div class="container">
     <div class="row">
       <div class="col m6 s12">
