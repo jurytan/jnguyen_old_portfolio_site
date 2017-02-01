@@ -11,9 +11,9 @@
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="js/script.js"></script>
 <script src="js/parallax.min.js"></script>
-<script src="js/materialize.js"></script>
-<!-- <script src="js/materialize.min.js"></script> -->
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>-->
+<!-- <script src="js/materialize.js"></script> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 
 <!-- CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -21,7 +21,7 @@
 
 <link type="text/css" rel="stylesheet" href="css/homepage.css" media="screen,projection">
 <link type="text/css" rel="stylesheet" href="css/test.css" media="screen,projection">
-<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+<!-- <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/> -->
 <!--<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>-->
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"> -->
 <!--Import Google Icon Font-->
@@ -60,7 +60,7 @@
                 <li><a href="timeline.html">Timeline</a></li>
                 <li><a href="/blog">Blog</a></li>
             </ul>
-            <a href="index.html" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            <a href="index.html" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul id="slide-out" class="side-nav">
                 <li class="logo"><img id="logo" src="img/logo.png" alt="NguyeningCode Logo"/></li>
                 <li><a class="active-page hoverable" href="index.html">Home</a></li>
@@ -118,7 +118,7 @@
           <div class="col s12 m5">
             <a href="timeline.html">
               <div class="card hoverable waves-effect waves-light" style="background-color: #9fb3c1">
-                <img id="timeline-img" class="card-full-image" src="img/timeline.png"/>
+                <img id="timeline-img" class="card-image" src="img/timeline.png" style="transform: scale(1.4, 1.4);"/>
                 <div class="overlay" style="background-color: #9fb3c1">
                     <span class="hover-text hover-header">Timeline</span>
                     <br/>
@@ -182,20 +182,30 @@
       </div>
       <div class="row">
           <div class="col s12 m4 offset-m2">
-            <a href="scrumbutler.html">
+            <!-- <a href="scrumbutler.html"> -->
+            <a class="modal-trigger" href="#wipmodal">
               <div class="card light-blue darken-1 hoverable waves-effect waves-light">
                 <div class="overlay light-blue darken-1">
                     <span class="hover-text hover-header">ScrumButler</span>
                     <br/>
-                    <span class="hover-text hover-sub-text flow-text"> Hmmmm 0:) </span>
+                    <span class="hover-text hover-sub-text flow-text"> Check back later! </span>
                 </div>
               </div>
             </a>
+            <div id="wipmodal" class="modal modal-lg">
+                <div class="modal-content modal-close">
+                    <h4>Sorry!</h4>
+                    <p>This part is under construction right now! Come back later to see it in all of its glory!</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Okay</a>
+                </div>
+            </div>
           </div>
           <div class="col s12 m4">
             <a href="mission-index.html">
               <div class="card blue-violet hoverable waves-effect waves-light">
-                <img class="card-image" src="img/spy.png"/ style="transform: scale(1.6, 1.6);">
+                <img class="card-image" src="img/spy.png" style="transform: scale(1.6, 1.6);"/>
                 <div class="overlay blue-violet">
                     <span class="hover-text hover-header">Missions</span>
                     <br/>
@@ -212,6 +222,7 @@
           <div class="col s12 m7 offset-m5">
             <a href="portfolio.html">
               <div class="card red hoverable waves-effect waves-light">
+                <img class="card-image" src="img/Folder-Doc-icon.png" />
                 <div class="overlay red">
                     <span class="hover-text hover-header">Portfolio</span>
                     <br/>

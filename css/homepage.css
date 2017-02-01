@@ -35,6 +35,7 @@
 
 .card-image {
     height: 125px !important;
+    /*height: auto;*/
     display: block !important;
     position: absolute;
     overflow: auto;
@@ -165,7 +166,7 @@
     margin: 10px 0 0 0;
   }
 
-
+/*
   #test-parallax {
     height: 30vh;
     margin-bottom: 5px;
@@ -179,7 +180,7 @@
 
   #website-img {
     height: 20vh;
-  }
+  }*/
 
 }
 

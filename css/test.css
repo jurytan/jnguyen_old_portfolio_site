@@ -244,3 +244,27 @@ footer p a {
 @media only screen and (min-width: 993px) {
 
 }
+
+.parallax-container {
+  height: 25vh !important;
+}
+
+/*@media only screen and (min-width: 600px) {
+  .flow-text {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .flow-text {
+    font-size: 1.5rem !important;
+  }
+}*/
+
+.dropdown-content {
+  background-color: #00202B !important;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+  color: white !important;
+}
