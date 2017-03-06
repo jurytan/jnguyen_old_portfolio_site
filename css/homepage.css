@@ -24,8 +24,8 @@
 }
 
 #website-img {
-  height: 23vh;
-  width: auto;
+  width: 25vw;
+  height: auto;
   bottom: 0;
   right: 0;
   position: absolute;
@@ -115,6 +115,12 @@
 
 .parallax-container {
     height: 220px;
+    padding-left: 0px !important;
+    padding-right: : 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
   }
 
 .hover-header {
@@ -128,6 +134,10 @@
 }
 
 @media screen and (min-width: 600px) and (max-width: 980px) {
+  #website-img {
+    width: 35vw;
+  }
+
   .card {
     margin: 0 0.1rem 0.05rem 0 !important;
     /*height: 25vh;*/
@@ -161,6 +171,10 @@
 }
 
 @media (max-width: 600px) {
+  #website-img {
+    width: 55vw;
+  }
+
   .card {
     /*height: 28vh;*/
     margin: 10px 0 0 0;

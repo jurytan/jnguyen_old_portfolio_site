@@ -2,7 +2,7 @@
 Source code for [NguyeningCode] (http://www.nguyeningcode.com)
 
 ##Introduction
-Portfolio website for myself, as well as a landing page for future web endeavors!
+Portfolio website for myself, as well as a landing page for future web endeavors! I'm not super savvy in design, so the main inspiration for this site came from www.circularchaos.com (I tried my best to recreate the theme by myself from scratch). Thanks goes out to the developer of that site for giving me inspiration on my site!
 
 ##Running It
 Just run the index.html file to get the landing page. All libraries and files are included in the repository, so everything should work.
@@ -12,18 +12,17 @@ Just run the index.html file to get the landing page. All libraries and files ar
 - Materalize CSS (Pretty!)
 - Links to other profiles
 - Wordpress Blog
+- Brand new Missions (give it a try!)
+- Frequent tweaks to enhance performance and usability of site
+
 
 ##To-Do
-- Fix timeline
+- Fix timeline hover issue
 - Add in more content
 - Refactor layout of page
-- Create skills graph
 - Create calendar (?)
 - Fix form at bottom (PHP page for form submit?)
-- Do visual cleanup and fix color accents
 - Figure out transition between pages
-- Try to recreate graph dashboard layout for portfolio
-- Add compass support
 
-##Bugs
+##Blocker Bugs
 - None so far!
