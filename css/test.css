@@ -9,7 +9,7 @@ nav ul li a {
 nav ul li a:hover {
    text-decoration:none;
    background-color: white;
-   color: black;
+   color: #002331 !important;
 }
 
 h1 {
@@ -30,7 +30,7 @@ body {
 
 table tr td {
   color: white;
-  font-family: 'Roboto Light';
+  font-family: 'Roboto Condensed';
 }
 
 .info-table {
