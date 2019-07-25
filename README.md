@@ -1,5 +1,5 @@
-# NguyeningCode
-Source code for [NguyeningCode] (http://www.nguyeningcode.com)
+# jnguyen.me
+Source code for [jnguyen.me] (http://www.nguyeningcode.com)
 
 ##Introduction
 Portfolio website for myself, as well as a landing page for future web endeavors! I'm not super savvy in design, so the main inspiration for this site came from www.circularchaos.com (I tried my best to recreate the theme by myself from scratch). Thanks goes out to the developer of that site for giving me inspiration on my site!
